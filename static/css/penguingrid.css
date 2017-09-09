@@ -990,7 +990,7 @@ a {
     right: auto;
   }
 }
-@media (min-width: 65.625rem) {
+@media (min-width: 1024px) {
   .col-e-1 {
     width: 8.33333%;
   }
