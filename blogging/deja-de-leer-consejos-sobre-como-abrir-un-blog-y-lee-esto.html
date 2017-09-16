@@ -14,19 +14,21 @@
 
 <!-- Milligram CSS minified -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">-->
-<link rel="stylesheet" href="static/css/penguingrid.css">
-<link rel="stylesheet" href="static/css/skeletonblog.css">
+<!--<link rel="stylesheet" href="/static/css/penguingrid.css">-->
+<link rel="stylesheet" href="../static/css/bootstrapgrid.min.css">
+<link rel="stylesheet" href="../static/css/skeletonblog.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
-<script src="static/js/jquery.sticky.js"></script>
+<script src="../static/js/jquery.sticky.js"></script>
+<script src="../static/js/collapse.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
 <style>
 
 @font-face {
   font-family: "james";
-  src: url(static/LiberationSans-Regular.ttf);
+  src: url(../static/LiberationSans-Regular.ttf);
 }
 
     body {
@@ -37,7 +39,7 @@
     }
     body{
       background-color: black;
-      background: url(static/images/roaring3.jpg);
+      background: url(../static/images/roaring3.jpg);
       background-attachment: fixed;
       background-size: cover;
     }
@@ -97,11 +99,13 @@
     }  
 
    h4 { 
-      text-transform: uppercase; text-align: center; margin:0 0 40px 0; padding:0 0 20px 0; 
+      text-transform: uppercase; 
+      text-align: center; 
+      padding:0 0 20px 0; 
       font-size: 24px;
       font-weight: bold;
       color: #222;
-      background: url(static/images/lines.png) bottom repeat-x;
+      background: url(../static/images/lines.png) bottom repeat-x;
     }  
     @media only screen and (max-width: 767px) .site-container {
       padding: 20px 5%;
@@ -143,9 +147,8 @@
     }
     .subtitle{
       font-size:14px;
-      font-weight:800;
-      color:white;
-      text-transform:uppercase;
+      color: #ddd;
+      font-weight: 600;
     }
     .menu_outer_class{
     }
@@ -218,7 +221,7 @@
 
         <div class="menu_outer_class" style="">
           <h1 class="logotitle">Mejor<span>Hombre<span></h1>
-          <div class="subtitle">Hora de vivir a lo grande</div>
+          <div class="subtitle">¿Hasta dónde quieres llegar antes de morir?</div>
         </div>
 
         <div class="menu">
@@ -226,25 +229,25 @@
             <ul>
               <li>
               
-                <a  href="index.html">
+                <a  href="../index.html">
               
                   Inicio
                 </a>
               </li>
-              <li>
+              <li style="color: #de1b1b !important; font-weight: bolder;">
               
-                <a href="about-mejorhombre.html">
+                <a href="../about-mejorhombre.html" style="text-decoration:underline; font-weight: bolder;">
               
                 ¿Nuevo? Click Aquí
                 </a>
               </li>
               <li>
-                <a href="segundopost.html#">
+                <a href="../contacto.html">
                 Contacto
                 </a>
               </li>
               <li>
-                <a href="segundopost.html#">
+                <a href="deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html#">
                 Recursos aprobados
                 </a>
               </li>
@@ -256,7 +259,7 @@
 
           <div class="row" style="padding-top:4rem; margin:auto;">
 
-            <div class="col-e-8" style="padding-left:0px">
+            <div class="col-md-8" style="padding-left:0px">
               
 
 <style>
@@ -280,25 +283,65 @@
 .relatedthumb {
   position: relative;
   overflow: hidden;
+  height: 210px;
+}
+.relatedthumb h6{
+  font-size: 14px;
 }
 .relatedthumb:hover img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+    
+
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.rvid {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  margin-bottom: 20px;
+}
+ 
+.rvid iframe,
+.rvid object,
+.rvid embed {
+position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
 
 </style>
 
 <div class="postTitleWithAuthor">
   <h1>
-    Deja de leer consejos sobre cómo abrir un blog y lee esto.
+    Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto
   </h1>
   
-    <p>02 de Enero de 2010, por Jaime RockAndRoll</p>
+    <p>26 de Abril de 2017, por Jaime RockAndRoll</p>
   
 </div>
 
-  <img class="border-image cover-img" src="static/images/posts/empezarblog.jpg" alt="">
+  <img class="border-image cover-img" src="../static/images/posts/empezarblog.jpg" alt="">
 
   <br/><br/>
 
@@ -308,31 +351,33 @@
 <p>Lo primero es que aclares tus engranajes internos, tu motivación e incluso tu estrategia interna. La filosofía interior que te mueve a lanzarte a algo tan jodido (parece fácil, eh?) antes de lanzarte a la aventura de montar un blog</p>
 <p>Todo lo demás, son temas técnicos que puedes encontrar en cualquier blog. Pero un blog es mucho más que aspectos técnicos.</p>
 <p>Un blog es todo psicología y emoción. Tanto internas (que te motiva, por qué lo haces... etc) como externas (las emociones que transmitirá tu blog y tus palabras).</p>
-<p>Sobre todo, no olvides nunca el punto 2.</p>
-<p>Punto 1. Demanda. Validación</p>
-<p>El punto más jodidamente importante. Antes de comprar un dominio, antes de escribir una maldita palabra.</p>
+<p>Sobre todo, no olvides nunca el punto 2.
+<h2>Punto 1. Demanda. Validación</h2>
+El punto más jodidamente importante. Antes de comprar un dominio, antes de escribir una maldita palabra.</p>
 <p>¿Estás seguro de que tienes demanda para tu blog? ¿Estás seguro de que hay gente buscando lo que ofreces?</p>
 <p>Si la respuesta no es un claro sí y sí, tira tu idea a la basura, o al menos intenta validarla antes de lanzarte a la piscina (escribiré un post sobre como validar una idea de negocio próximamente).</p>
 <p>Puede que te apasione hablar sobre la reproducción del ornitorrinco, pero si solo hay cuatro gatos en el mundo interesados en ella, ni se te ocurra abrir un blog sobre el tema.</p>
 <p>Mejorhombre.com es un blog sobre motivación y mejora personal. Hay miles de blogs, libros y demás material sobre ello. Hay una industria tras todo ello, eso prueba que ya hay un público, una demanda.</p>
 <p>Otra cosa es si un blog como este puede tener cabida en un mercado tan saturado (y a veces denostado). Para eso, lee el punto 2.</p>
 <p>Además, en el mundo anglosajón empieza a haber una tendencia creciente de blogs orientados a tíos exclusivamente. Normalmente las tendencias en EEUU acaban llegando y replicándose en el mundo hispano a los pocos años. Aprende a detectar dichas tendencias y aprovecharlas para ti.</p>
-<p>Así que mi idea de blog, de momento, está validada, tiene demanda.</p>
-<p>Punto 2. Tu voz. ¿Cómo vas a divertirte? ¿Cómo vas a ser único?</p>
-<p>Abrir un blog es fácil y rápido. Y ahí acaba lo fácil. Mantener un blog con un mínimo de calidad es duro, duro de cojones.</p>
+<p>Así que mi idea de blog, de momento, está validada, tiene demanda.
+<h2>Punto 2. Tu voz. ¿Cómo vas a divertirte? ¿Cómo vas a ser único?</h2>
+Abrir un blog es fácil y rápido. Y ahí acaba lo fácil. Mantener un blog con un mínimo de calidad es duro, duro de cojones.</p>
 <p>Hay una cantidad de trabajo en las tripas de cualquier blog, que el lector medio ignora. Plugins, diseño, mantenimiento, escribir periódicamente... etc. Repito: es duro y no es para todos.</p>
 <p>Así que más vale que te diviertas con él. ¿Y cómo lo vas a hacer?</p>
-<p>EXPRESÁNDOTE</p>
-<p>Te haré una pregunta... ¿quién eres tú?</p>
+<p><b>EXPRESÁNDOTE</b></p>
+<p>Te haré una pregunta... <b>¿quién eres tú?</b></p>
 <p>Piensa en tu historia personal, en tus experiencias, en lo que arde dentro de ti. En tus miedos, tus fantasmas, tus fortalezas... Piensa en todo el conjunto de fotos e historias que llevas en tu interior.</p>
 <p>Ahora coge todo eso, y empapa tu blog de ello. Exprésate como nunca. Utilizalo para montar tu propio show.</p>
 <p>¿Cuáles son las mejores canciones que se escriben?</p>
 <p>Aquellas en las que el cantante consigue plasmar algo personal en ellas, algo real de sus experiencias vitales. Esas que van cargadas de autenticidad.</p>
 <p>Tu blog va a ser eso mismo, un reflejo de ti, una expresión de tu interior, tu escenario principal.</p>
 <p>Los seres humanos siempre hemos querido expresarnos. Gritar un "yo estoy aquí".</p>
-<p>Encontrando esa voz tuya propia, ese toque que nadie más que tú puede darle a tu blog (sea el tema que trates en él) conseguirás dos cosas:</p>
-<p>Divertirte.
-Crear posts auténticos y únicos.
+<p>Encontrando esa voz tuya propia, ese toque que nadie más que tú puede darle a tu blog (sea el tema que trates en él) conseguirás dos cosas:
+<ul>
+    <li>Divertirte.</li>
+    <li>Crear posts auténticos y únicos.</li>
+</ul>
 Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. Es tu patio de recreo y tu escenario. Úsalo a tu favor.</p>
 <p>La gente al final, no sigue a blogs, sigue a personas. Sigue a personas porque les gustan las historias que cuentan y como las cuentan.</p>
 <p>Solo tu puedes contar tus propias historias. Be real. Be different.</p>
@@ -340,7 +385,8 @@ Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. E
 <p>Yo soy Jaime. El pequeño gran inadaptado. El misfit. Con mi punto de perdedor, flipado, peliculero y friki. Y uso todo ello en cada post. Es más, mejorhombre es el sitio de mejora personal para gente que se sienta igual. Para toda esa gente que este bloqueada, sintiéndose distinto o no tratándose todo lo bien que podrían y decirles en un susurro "despertad, otro mundo es posible".</p>
 <p>Todo ello hace además que mi blog sea único, personal y que tenga sentido. Hay muchos blogs y sitios de desarrollo personal, cargados de blablabla y de "haz esto y esto otro". Pero no hay ninguno como el mío. Punto.</p>
 <p>Este punto de distinción, de contarte todo a través de tu manera de ver el mundo, tus experiencias y desde lo más profundo de tus tripas es lo que te dará la autenticidad. Busca esa voz propia que le de sentido a todo.</p>
-<p>3.- Céntrate en ayudar. Construye algo único de lo que puedas estar orgulloso.</p>
+<h2>3.- Céntrate en ayudar. Construye algo único de lo que puedas estar orgulloso.</h2>
+
 <p>Tu blog no va a ser sólo un blog. Va a ser un sitio del que vivir, dónde ganar dinero, va a ser tu negocio digital.</p>
 <p>Pero antes de todo eso, sienta esta idea base y grápate esta frase: tu blog es para ayudar a gente.</p>
 <p>Tu blog estará centrado en ayudar y en mejorar la vida de las personas. En proporcionar valor a sus vidas. Tanto en los artículos gratuitos como en los productos y servicios que vendas o promociones, tu finalidad será esa: aportar valor a sus vidas.</p>
@@ -363,9 +409,9 @@ Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. E
       <ul>
         <li>
           <div class="relatedthumb">
-            <a href="primerpost&#32;(copia).html">
-              <img class="related-post-thumbnail" src="static/images/posts/grizzley_opt.jpg" alt="">
-              <h6> Mata a la bestia o muere intentándolo </h6>
+            <a href="../superpoderes/como-vencer-cualquier-miedo.html">
+              <img class="related-post-thumbnail" src="../static/images/posts/bestiaMiedo_opt.jpg" alt="">
+              <h6> Cómo vencer cualquier miedo </h6>
             </a>
           </div>
         </li>
@@ -374,9 +420,9 @@ Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. E
       <ul>
         <li>
           <div class="relatedthumb">
-            <a href="blogging/segundopost2.html">
-              <img class="related-post-thumbnail" src="static/images/posts/empezarblog.jpg" alt="">
-              <h6> estoy dentro de una carpeta!! </h6>
+            <a href="../sex-and-girls/como-superar-una-ruptura.html">
+              <img class="related-post-thumbnail" src="../static/images/posts/lonley_opt.jpg" alt="">
+              <h6> Cómo Superar Una Ruptura </h6>
             </a>
           </div>
         </li>
@@ -385,9 +431,9 @@ Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. E
       <ul>
         <li>
           <div class="relatedthumb">
-            <a href="segundopost.html">
-              <img class="related-post-thumbnail" src="static/images/posts/empezarblog.jpg" alt="">
-              <h6> Deja de leer consejos sobre cómo abrir un blog y lee esto. </h6>
+            <a href="../superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">
+              <img class="related-post-thumbnail" src="../static/images/posts/jamesBondLenguajeCorporal.jpg" alt="">
+              <h6> Lenguaje Corporal Alfa - Aumenta Tu Testosterona </h6>
             </a>
           </div>
         </li>
@@ -396,9 +442,31 @@ Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. E
       <ul>
         <li>
           <div class="relatedthumb">
-            <a href="segundopost2.html">
-              <img class="related-post-thumbnail" src="static/images/posts/empezarblog.jpg" alt="">
-              <h6> Deja de leer consejos sobre cómo abrir un blog y lee esto. </h6>
+            <a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">
+              <img class="related-post-thumbnail" src="../static/images/posts/lagranmentira.jpg" alt="">
+              <h6> La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees </h6>
+            </a>
+          </div>
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          <div class="relatedthumb">
+            <a href="../motivacion/que-hacer-cuando-estas-deprimido.html">
+              <img class="related-post-thumbnail" src="../static/images/posts/deprimido2.jpg" alt="">
+              <h6> Qué Hacer Cuando Estás Deprimido </h6>
+            </a>
+          </div>
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          <div class="relatedthumb">
+            <a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
+              <img class="related-post-thumbnail" src="../static/images/posts/planet-fitness-deadlift.jpg" alt="">
+              <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
             </a>
           </div>
         </li>
@@ -473,13 +541,16 @@ textarea{
 
 jQuery(function() {
 
-    var ref = new Firebase("https://mishell-comments.firebaseio.com/"),
+    var ref = new Firebase("https://mishell-comments.firebaseio.com/comments");
+    var refemails = new Firebase("https://mishell-comments.firebaseio.com/emails");
+
     postRef = ref.child(slugify(window.location.pathname));
+    postRefemails = refemails.child(slugify(window.location.pathname));
+
 
 
     postRef.on("child_added", function(snapshot) {
       var newPost = snapshot.val();
-      newPost = newPost.readable;
       $(".comments").prepend(
         '<div class="comment">' +
           '<div class="header_wrapper_comment">' + 
@@ -494,23 +565,28 @@ jQuery(function() {
     });
 
     $("#comment").submit(function() {
-      var id = postRef.push(); 
-        id.set(
-          {readable : {
+
+      var id = postRef.push();
+
+      id.set( {
             name: $("#name").val(),
             message: $("#message").val(),
             md5Email: md5($("#email").val()),
-            postedAt: Firebase.ServerValue.TIMESTAMP
-          }, 
-          not_readable : {
-            email: $("#email").val(),
-          } }
-      );
-      alert(id);
+            postedAt: Firebase.ServerValue.TIMESTAMP,
+      });
 
+      var id2 = postRefemails.push();
 
+      id2.set({
+            name: $("#name").val(),
+            message: $("#message").val(),
+            postedAt: Firebase.ServerValue.TIMESTAMP,
+            email: $("#email").val()
+      });
+     
       $("input[type=text], textarea").val("");
       return false;
+
     });
 
     function buildDate(momentDate) {
@@ -533,7 +609,7 @@ function slugify(text) {
 
             </div>
 
-            <div class="col-e-4" style="padding-right:0px">
+            <div class="col-md-4" style="padding-right:0px">
               <style>
     .optinwrapper{
       text-align:center;
@@ -560,6 +636,7 @@ function slugify(text) {
       width: 100%;
       max-width:260px;
       border-radius:2px;
+      color: #111;
     }
     .optinform {
       margin: auto;
@@ -571,12 +648,42 @@ function slugify(text) {
     }
     .widthlimiter {
       width: 100%;
-      max-width:240px;
+      max-width:260px;
       margin: auto;
+    }
+    .thesticky h4{
+      padding-top:30px;
+    }
+    .triangle {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-left: 10px solid black;
+      border-bottom: 4px solid transparent;
+      padding:0;
+      display:inline-block;
+      padding-right: 4px;
+    }
+    .categories{
+      font-size:15px;
+      padding-top:10px;
+    }
+    .categories > a{
+      padding-bottom:25px;
+    }
+    .categories > ul div{
+      padding-left:30px;
+    }
+    .categories > ul div::before{
+      content: '\00BB \00A0' !important;
+      color: black;
+      text-decoration:none;
     }
 </style>
 
               <div class="anotherwrapper" style="">
+                <div class="thesticky">
                 <div class="optinwrapper">
 
                   <h2 style="font-size:24px; max-width:100%;">
@@ -584,12 +691,12 @@ function slugify(text) {
                   </h2>
 
                   <div class="widthlimiter">
-                        <p style="font-size:18px;text-align:left; font-weight:500; color:#eee">
-                          Vive una vida motivada y con sentido. Que nadie te pare.
+                        <p style="font-size:17px;text-align:left; font-weight:600; color:#ccc">
+                          Únete a la banda de rebeldes, inadaptados, héroes y guerreros. <br/>
+                          Mantente motivado, concentrado, y vive como nunca.
                         </p>
-                      </div>
 
-  <form class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/ue0pj0hhqj" method="post">
+                    <form class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/ue0pj0hhqj" method="post">
                     <fieldset>
                       <input type="hidden" name="groups[]" value="1"></dd>
                       <input type="text" placeholder="Nombre" iname="name" id="name" value=""></dd>
@@ -606,13 +713,81 @@ function slugify(text) {
  <input type="hidden" name="confirmationUrl" value="http://mejorhombre.com/bienvenido" id="confirmationUrl"></dd>
                     </fieldset>
                   </form>
+
                   </div>
                 </div>
-              </div>
+
+
+              <h4>Categorías</h4>
+
+                  <div class="categories" data-collapse>
+                    
+                      <div style="padding-bottom:10px"><div class="triangle"></div>Life</div>
+                      <ul>
+                        
+                        <div><a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></div>
+                        
+                      </ul>
+                    
+                      <div style="padding-bottom:10px"><div class="triangle"></div>Superpoderes</div>
+                      <ul>
+                        
+                        <div><a href="../superpoderes/como-vencer-cualquier-miedo.html">Cómo vencer cualquier miedo</a></div>
+                        
+                        <div><a href="../superpoderes/como-hablar-claro-directo-y-relajado.html">Cómo Hablar Claro Directo Y Relajado</a></div>
+                        
+                        <div><a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5</a></div>
+                        
+                        <div><a href="../superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">Lenguaje Corporal Alfa - Aumenta Tu Testosterona</a></div>
+                        
+                        <div><a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">Guía Definitiva Sobre Duchas Frías</a></div>
+                        
+                      </ul>
+                    
+                      <div style="padding-bottom:10px"><div class="triangle"></div>Blogging Y Negocios Digitales</div>
+                      <ul>
+                        
+                        <div><a href="deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></div>
+                        
+                      </ul>
+                    
+                      <div style="padding-bottom:10px"><div class="triangle"></div>Sex And Girls</div>
+                      <ul>
+                        
+                        <div><a href="../sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></div>
+                        
+                        <div><a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></div>
+                        
+                        <div><a href="../sex-and-girls/como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></div>
+                        
+                      </ul>
+                    
+                      <div style="padding-bottom:10px"><div class="triangle"></div>Motivación</div>
+                      <ul>
+                        
+                        <div><a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">Mata A La Bestia O Muere Intentándolo</a></div>
+                        
+                        <div><a href="../motivacion/que-hacer-cuando-estas-deprimido.html">Qué Hacer Cuando Estás Deprimido</a></div>
+                        
+                      </ul>
+                    
+                      <div style="padding-bottom:10px"><div class="triangle"></div>Fitness</div>
+                      <ul>
+                        
+                        <div><a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">¿Deprimido? Hora De Levantar Pesas</a></div>
+                        
+                      </ul>
+                    
+                  </div>
+
+            </div> <!-- end thesticky-->
+          </div>
+
 
 <script>
+
   $(document).ready(function(){
-    $(".optinwrapper").sticky({topSpacing:20, bottomSpacing:600});
+    $(".thesticky").sticky({topSpacing:20, bottomSpacing:500});
   });
 </script>
 
