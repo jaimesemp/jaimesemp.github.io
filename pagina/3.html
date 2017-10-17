@@ -52,7 +52,7 @@
     .site-container {
       background-color: #fff;
       margin: 32px auto;
-      max-width: 1140px;
+      max-width: 1150px;
       overflow: hidden;
       padding: 3%;
     }
@@ -119,6 +119,103 @@
        font-size: 3.2rem;
       }
     }
+
+::selection {
+  background: #333; /* WebKit/Blink Browsers */
+  color: #eee;
+}
+::-moz-selection {
+  background: #333; /* Gecko Browsers */
+  color: #eee;
+}
+
+
+
+.fab {
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #3F51B5;
+  border-radius: 50%;
+  position: fixed;
+  border: 1px solid #555;
+  bottom: 2.375vh;
+  right: 2.375vh;
+  cursor: pointer;
+  z-index: 3;
+  overflow: hidden;
+  transition: bottom .2s .2s, right .2s .2s, transform .2s .4s;
+}
+.fab.clicked {
+  bottom: calc(50% - 4.45313vh);
+  right: calc(50% - 4.45313vh);
+  transform: scale(15) !important;
+  transition: bottom .2s, right .2s, transform .2s;
+}
+
+.screen2 {
+  background:white;
+  position: fixed;
+    overflow-y: scroll;
+    height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 240px;
+  height: 400px;
+  z-index: 4;
+  transition: .2s ease;
+  display:none;
+}
+.screen2.active {
+  transition: .2s .4s ease;
+  left: 0;
+  display:block;
+}
+
+
+.box1, .box2, .box3 {
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  background: #FFEB3B;
+  width: 90%;
+  height: 20%;
+  left: 100%;
+}
+.box1.active, .box2.active, .box3.active {
+  left: 5%;
+}
+
+.box1 {
+  transition: .2s .5s ease;
+  margin-top: 5%;
+}
+
+.box2 {
+  transition: .2s .6s ease;
+  margin-top: 45%;
+}
+
+.box3 {
+  transition: .2s .7s ease;
+  margin-top: 85%;
+}
+
+@keyframes center {
+  from {
+    transform: scale(1);
+  }
+  to {
+    bottom: calc(50% - 4.45313vh);
+    right: calc(50% - 4.45313vh);
+    transform: scale(15) !important;
+  }
+}
+            
+
 </style>
 
     
@@ -170,6 +267,7 @@
       text-transform: uppercase;
       display: inline-block;
       margin-bottom: 0;
+      line-height: 42px;
     }
     .menubuttonswrapper {
       background-color: transparent;
@@ -195,9 +293,6 @@
       h1.logotitle{
         font-size:24px;
       }
-    }
-    .menubuttonswrapper li {
-      line-height: 37px;
     }
     .menu_outer_class{
       position: static;
@@ -242,7 +337,9 @@
                 </a>
               </li>
               <li>
+              
                 <a href="../contacto.html">
+              
                 Contacto
                 </a>
               </li>
@@ -257,8 +354,8 @@
 
 
 
-          <div class="row" style="padding-top:4rem; margin:auto;">
-            <div class="col-md-8" style="padding-left:0px">
+          <div class="row" style="padding-top:4rem;">
+            <div class="col-md-8" style="">
               
 
 <style>
@@ -308,7 +405,9 @@
   <p>31 de Octubre de 2016, por Jaime RockAndRoll</p>
 </div>
   <div class="entry_wrapper">
-    <img class="border-image" src="../static/images/posts/Spartans-Rain.jpg" alt="">
+    <a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">
+      <img class="border-image" src="../static/images/posts/thumbnails/Spartans-Rain.jpg" alt="">
+    </a>
     <p>
       5 minutos al día,  eso es todo lo que necesitas.
 Todo lo que necesitas para forjar tu voluntad, sentirte como un león rugiendo al salvaje mundo, aumentar tu testosterona, reafirmar tus objetivos y además trabajar tu abdomen.
@@ -324,7 +423,6 @@ Cinco minutos p ...
 <div style="clear:both">
 
   <ul>
-
     
       
       <li class="pagination_item">
@@ -334,14 +432,12 @@ Cinco minutos p ...
     
 
     
-
-    
   </ul>
 
 </div>
 
             </div>
-            <div class="col-md-4" style="padding-right:0px">
+            <div class="col-md-4" style="">
               <style>
     .optinwrapper{
       text-align:center;
@@ -349,6 +445,11 @@ Cinco minutos p ...
       border: 1px solid #ccc;
       background-color: #111;
       color:white;
+    }
+    @media screen and (max-width: 991px) {
+      .optinwrapper{
+        display: none;
+      }
     }
     .optinwrapper p{
       font-size:18px;
@@ -359,6 +460,7 @@ Cinco minutos p ...
       width:100%;
       margin: auto;
       margin-right: 0px;
+      padding-bottom:40px;
     }
     .anotherwrapper h2{
       text-transform: uppercase;
@@ -385,32 +487,6 @@ Cinco minutos p ...
     }
     .thesticky h4{
       padding-top:30px;
-    }
-    .triangle {
-      content: "";
-      width: 0;
-      height: 0;
-      border-top: 4px solid transparent;
-      border-left: 10px solid black;
-      border-bottom: 4px solid transparent;
-      padding:0;
-      display:inline-block;
-      padding-right: 4px;
-    }
-    .categories{
-      font-size:15px;
-      padding-top:10px;
-    }
-    .categories > a{
-      padding-bottom:25px;
-    }
-    .categories > ul div{
-      padding-left:30px;
-    }
-    .categories > ul div::before{
-      content: '\00BB \00A0' !important;
-      color: black;
-      text-decoration:none;
     }
 </style>
 
@@ -448,76 +524,12 @@ Cinco minutos p ...
 
                   </div>
                 </div>
-
-
-              <h4>Categorías</h4>
-
-                  <div class="categories" data-collapse>
-                    
-                      <div style="padding-bottom:10px"><div class="triangle"></div>Life</div>
-                      <ul>
-                        
-                        <div><a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></div>
-                        
-                      </ul>
-                    
-                      <div style="padding-bottom:10px"><div class="triangle"></div>Superpoderes</div>
-                      <ul>
-                        
-                        <div><a href="../superpoderes/como-vencer-cualquier-miedo.html">Cómo vencer cualquier miedo</a></div>
-                        
-                        <div><a href="../superpoderes/como-hablar-claro-directo-y-relajado.html">Cómo Hablar Claro Directo Y Relajado</a></div>
-                        
-                        <div><a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5</a></div>
-                        
-                        <div><a href="../superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">Lenguaje Corporal Alfa - Aumenta Tu Testosterona</a></div>
-                        
-                        <div><a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">Guía Definitiva Sobre Duchas Frías</a></div>
-                        
-                      </ul>
-                    
-                      <div style="padding-bottom:10px"><div class="triangle"></div>Blogging Y Negocios Digitales</div>
-                      <ul>
-                        
-                        <div><a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></div>
-                        
-                      </ul>
-                    
-                      <div style="padding-bottom:10px"><div class="triangle"></div>Sex And Girls</div>
-                      <ul>
-                        
-                        <div><a href="../sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></div>
-                        
-                        <div><a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></div>
-                        
-                        <div><a href="../sex-and-girls/como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></div>
-                        
-                      </ul>
-                    
-                      <div style="padding-bottom:10px"><div class="triangle"></div>Motivación</div>
-                      <ul>
-                        
-                        <div><a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">Mata A La Bestia O Muere Intentándolo</a></div>
-                        
-                        <div><a href="../motivacion/que-hacer-cuando-estas-deprimido.html">Qué Hacer Cuando Estás Deprimido</a></div>
-                        
-                      </ul>
-                    
-                      <div style="padding-bottom:10px"><div class="triangle"></div>Fitness</div>
-                      <ul>
-                        
-                        <div><a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">¿Deprimido? Hora De Levantar Pesas</a></div>
-                        
-                      </ul>
-                    
-                  </div>
-
             </div> <!-- end thesticky-->
           </div>
 
 
-<script>
 
+<script>
   $(document).ready(function(){
     /*
     $(".thesticky").sticky({topSpacing:20, bottomSpacing:500});
@@ -525,11 +537,167 @@ Cinco minutos p ...
   });
 </script>
 
+              <style>
+    .triangle {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 18px solid black;
+      border-bottom: 5px solid transparent;
+      padding:0;
+      display:inline-block;
+      padding-right: 12px;
+      float: left;
+    }
+    .categories{
+      font-size:15px;
+      padding-top:10px;
+      padding-bottom:30px;
+    }
+    .categories > a{
+      padding-bottom:25px;
+    }
+    .categories  ul {
+      margin-bottom: 10px;
+      margin-top: 4px;
+    }
+    .categories  ul span{
+      display: block;
+      margin-left:30px;
+    }
+    .categories  ul a{
+    }
+    .categories  ul span::before{
+      content: '\00BB \00A0' !important;
+      color: black;
+      text-decoration:none;
+    }
+    .foo {
+      display: inline-block;
+      float:left;
+      padding: 8px;
+    }
+    .pullright{
+    }
+</style>
+
+
+
+              <h4>Categorías</h4>
+                   <!--this use  http://github.com/danielstocks/jQuery-Collapse/ plugin:-->
+                  <div class="categories" style="padding-left:20px">
+                    
+                      <div style="padding-bottom:10px">
+                        <a class="pullright" href="../category/life.html">Life</a>
+                        <div class="foo"><span class="triangle"></span></div>
+                        <ul>
+                          
+                          <span><a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></span>
+                          
+                        </ul>
+                      </div>
+                    
+                      <div style="padding-bottom:10px">
+                        <a class="pullright" href="../category/superpoderes.html">Superpoderes</a>
+                        <div class="foo"><span class="triangle"></span></div>
+                        <ul>
+                          
+                          <span><a href="../superpoderes/como-vencer-cualquier-miedo.html">Cómo vencer cualquier miedo</a></span>
+                          
+                          <span><a href="../superpoderes/como-hablar-claro-directo-y-relajado.html">Cómo Hablar Claro Directo Y Relajado</a></span>
+                          
+                          <span><a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5</a></span>
+                          
+                          <span><a href="../superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">Lenguaje Corporal Alfa - Aumenta Tu Testosterona</a></span>
+                          
+                          <span><a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">Guía Definitiva Sobre Duchas Frías</a></span>
+                          
+                        </ul>
+                      </div>
+                    
+                      <div style="padding-bottom:10px">
+                        <a class="pullright" href="../category/blogging.html">Blogging Y Negocios Digitales</a>
+                        <div class="foo"><span class="triangle"></span></div>
+                        <ul>
+                          
+                          <span><a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
+                          
+                        </ul>
+                      </div>
+                    
+                      <div style="padding-bottom:10px">
+                        <a class="pullright" href="../category/sex-and-girls.html">Sex And Girls</a>
+                        <div class="foo"><span class="triangle"></span></div>
+                        <ul>
+                          
+                          <span><a href="../sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
+                          
+                          <span><a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></span>
+                          
+                          <span><a href="../sex-and-girls/como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></span>
+                          
+                        </ul>
+                      </div>
+                    
+                      <div style="padding-bottom:10px">
+                        <a class="pullright" href="../category/motivacion.html">Motivación</a>
+                        <div class="foo"><span class="triangle"></span></div>
+                        <ul>
+                          
+                          <span><a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">Mata A La Bestia O Muere Intentándolo</a></span>
+                          
+                          <span><a href="../motivacion/que-hacer-cuando-estas-deprimido.html">Qué Hacer Cuando Estás Deprimido</a></span>
+                          
+                        </ul>
+                      </div>
+                    
+                      <div style="padding-bottom:10px">
+                        <a class="pullright" href="../category/fitness.html">Fitness</a>
+                        <div class="foo"><span class="triangle"></span></div>
+                        <ul>
+                          
+                          <span><a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">¿Deprimido? Hora De Levantar Pesas</a></span>
+                          
+                        </ul>
+                      </div>
+                    
+                  </div>
+
+<script>
+  $(document).ready(function(){
+    console.log("hey");
+      new jQueryCollapse($(".categories"), {
+        query: '.foo'
+      });
+  });
+</script>
+
             </div>
           </div>
 
+          <!--
+          <div class="fab"></div>
+          -->
+          <div class="screen2">
+          <div class="fab" id="close"> </div>
+
       </div>
 
+
   </body>
+<script>
+$(".fab").on("click", function(){
+  console.log("clicked");
+  $(this).toggleClass("clicked");
+  $(".screen2").addClass("active");
+});
+
+$("#close").on("click", function(){
+  $(".screen2").removeClass("active");
+  $(".fab").removeClass("clicked");  
+});
+
+</script>
 
 </html>
