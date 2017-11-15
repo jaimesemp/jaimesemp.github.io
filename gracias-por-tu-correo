@@ -7,25 +7,25 @@
     
     <title>Mishell | Post</title>
 <!-- Google Fonts -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
 
 <!-- CSS Reset -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
 
 <!-- Milligram CSS minified -->
-<link rel="stylesheet" href="../static/css/bootstrap.2.css">
+<link rel="stylesheet" href="/static/css/bootstrap.2.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
-<script src="../static/js/jquery.sticky.js"></script>
-<script src="../static/js/collapse.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+<script src="/static/js/collapse.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
 <style>
 
 @font-face {
   font-family: "james";
-  src: url(../static/LiberationSans-Regular.ttf);
+  src: url(/static/LiberationSans-Regular.ttf);
 }
 
     body {
@@ -36,7 +36,7 @@
     }
     body{
       background-color: black;
-      background: url(../static/images/roaring3.jpg);
+      background: url(/static/images/roaring3.jpg);
       background-attachment: fixed;
       background-size: cover;
     }
@@ -300,7 +300,7 @@
 </style>
 
         <div class="menu_outer_class" style="">
-          <a href="../index.html">
+          <a href="/">
             <h1 class="logotitle">Mejor<span>Hombre<span></h1>
           </a>
           <div class="subtitle">¿Hasta dónde quieres llegar antes de morir?</div>
@@ -311,27 +311,27 @@
             <ul style="padding:0">
               <li>
               
-                <a  href="../blog.html">
+                <a  href="/blog">
               
                   Blog
                 </a>
               </li>
               <li style="color: #de1b1b !important; font-weight: bolder;">
               
-                <a href="../about-mejorhombre.html" style="text-decoration:underline; font-weight: bolder;">
+                <a href="/about-mejorhombre" style="text-decoration:underline; font-weight: bolder;">
               
                 ¿Nuevo? Click Aquí
                 </a>
               </li>
               <li>
               
-                <a href="../contacto.html">
+                <a href="/contacto">
               
                 Contacto
                 </a>
               </li>
               <li>
-                <a href="¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html#">
+                <a href="#">
                 Recursos aprobados
                 </a>
               </li>
@@ -394,72 +394,20 @@ position: absolute;
 
               <div class="postTitleWithAuthor">
                 <h1>
-                  ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.
+                  Gracias por tu correo
                 </h1>
-                
-                  <p>11 de Mayo de 2017, por Jaime RockAndRoll</p>
                 
               </div>
 
-              <img class="border-image cover-img" src="../static/images/posts/chicaPlaya.jpg" alt="">
+              <img class="border-image cover-img" src="/static/images/posts/" alt="">
 
               <br/><br/>
 
-              <p>Allí estaba yo.</p>
-<p>En ese centro comercial repleto de gente.</p>
-<p>Y ella. Bonita y adorable. Promocionando algún estúpido producto del centro. </p>
-<p>Si hubieses estado allí, y la hubieras visto, tú también hubieses querido. </p>
-<p>Hubieses querido hablar con ella, preguntarle que tal el día, conocerla un poco mejor, fantasear con que la hacías reír y con que todo acababa con una bonita historia de amor en tu cama.</p>
-<p>O al menos, encontrar el valor para intentarlo.</p>
-<p>Era todo lo que quería. Pero el futuro desconocido, el actuar como todos los demás, y el miedo... nos atornilla al suelo y nos jode de maneras que ni nos damos cuenta.</p>
-<p>Por eso, volví a aquel día, a recuperar aquel momento, con la chica de la playa.</p>
-<p>Verano. Un parque. Y una chica con la que solo hablaba en inglés. De la república checa, jovencita, de paso por mi ciudad. Adorable.</p>
-<p>Nuestro segundo encuentro, y ahí estábamos los dos, hablando de todo y nada, pero divirtiéndonos y conociéndonos un poco.</p>
-<p>No tenía ni idea si le gustaba. Yo sólo era un chico majo que había conocido en una ciudad en la que no conocía a nadie, uno que hablaba algo de inglés y era medio gracioso.</p>
-<p>Y aún peor, no sabía cuánto me gustaba. ¿Sabes cuando piensas "vale, la chica está bien, pero no se si me arriesgaría a cagarla por intentar besarla"? </p>
-<p>Pues por ahí andaba. Nos estábamos conociendo y yo era un amigo más que otra cosa.</p>
-<p>Sería una estupidez plantarle un beso ahora sin que surja más naturalmente. Podría volverse incómodo de la hostia. </p>
-<p>Dejé de pensar. Me dije '¿y por qué no? Puede ser el comienzo de algo bueno'.</p>
-<p>Y simplemente entonces, apareció el momento. No lo esperé. Simplemente lo hice aparecer. La besé. Aún recuerdo ese instante como una parte de mí.</p>
-<p>Tiempo más tarde, me diría algo tan bonito como "mi vida era de una manera, entonces me besaste y rompiste mi mundo". </p>
-<p>Parece fácil narrado ahora. Pero seguro que has estado en momentos así. Pensando si merecía la pena o no. </p>
-<p>Dónde tus miedos te atraparon y pensando que eras dueño de ti mismo, y que simplemente no te apetecía esforzarte... lo dejaste pasar. </p>
-<p>Todos lo hemos hecho.</p>
-<p>A ese beso siguieron bonitos recuerdos y momentos con ella. </p>
-<p>Diversiones. </p>
-<p>Risas. </p>
-<p>Viajes a la playa. </p>
-<p>Sexo. </p>
-<p>Y alguna perversión que compartíamos. </p>
-<p>"Esta noche ha sido la noche más sexual de mi vida" me susurró al oído una vez.</p>
-<p>Pero de todos ellos, me quedo con uno, de las últimas veces que estuvimos juntos.</p>
-<p>Había vuelto a España por tercer verano consecutivo. Ella era una enamorada del agua. Los parques con agua. Fuentes. La playa.</p>
-<p>Y allí estábamos. Antes de nuestro viaje a una playa real, en La playa artificial de mi ciudad. </p>
-<p>Pedimos unos bocadillos en el chiringuito. Nos sentamos en las sillas de plástico. Era una tarde de verano agradable a la sombra. Nos quedamos callados. Sin tensiones, relajados.</p>
-<p>Y yo, desde mi silla de plástico, la observé a ella.</p>
-<p>Estaba sonriendo. Una sonrisa de paz con el mundo. De estar exactamente en el sitio dónde quería estar. </p>
-<p>Y sólo tuve que llevarle a aquella pequeña playa artificial y ofrecerle mi compañía para que me dejara mirar dentro de su alma.</p>
-<p>Aquella sonrisa fue el mejor regalo.</p>
-<p>Y todo comenzó con un salto. Un beso. Con un "¿y por qué no? Puede ser el comienzo de algo bueno"</p>
-<h2>...Así que volví a mis zapatos, a aquel centro comercial.</h2>
-<p>No quería vivir la vida que los demás quieren que viva. </p>
-<p>Quería sentirme fuera de matrix. Hacer lo que me daba la gana. Sentir que podía hacer lo que quisiera. Ser el protagonista de mi propia película.</p>
-<p>Escribí una tontada en un papel, además de mi número. </p>
-<p>Y armado sólamente con la mejor de mis sonrisas... comencé a andar hacia ella.</p>
-<p>Tuve una conversación divertida con ella, un flirteo. Pero no me la llevé a casa. Ni conseguí su número. </p>
-<p>Esta no es una historia que acaba con un final épico. </p>
-<p>Esta es una historia que acaba conmigo, alejándome de allí, con una media sonrisa, la cabeza alta y orgulloso de mi mismo. Toma riesgos. Échale huevos. Siéntete orgulloso.</p>
-<h2>Ahora te toca a ti</h2>
-<p>La próxima vez qué pienses ¿para qué? ¿qué va a haber en mi para que se fije? simplemente repítete <b>"¿y por qué no?"</b>.</p>
-<p><strong>Encuentra ese momento dónde le echaste huevos, vuelve a él y confía en ti mismo.</strong></p>
-<p>Como ya te conté <a target="_blank" href="http://mejorhombre.com/vencer-cualquier-miedo/">aquí</a>, el miedo siempre va a estar ahí.</p>
-<p>Lo que importa es que sepas, que a pesar de que tengas miedo, tienes esa fuerza interior para saltar sobre la bestia y decirle: Yo estoy aquí. Yo soy. Es mi momento</p>
-<p>Y si aún así, el miedo te paraliza... mira a la gente de tu alrededor.</p>
-<p>Siguiendo las reglas. Atenazados por el miedo. Viviendo como autómatas en matrix. Sin echarle huevos.</p>
-<p>Y déjame preguntarte...</p>
-<p><strong>¿Dónde quieres vivir tú?</strong></p>
+              <p>Gracias! Tu correo se ha enviado correctamente.</p>
+<p>En cuanto pueda te responderé.</p>
+<p>Ten un puto gran día. </p>
 <blockquote>
-Fallas el 100% de los disparos que no haces (Neil Strauss)
+<p>Jaime</p>
 </blockquote>
 
               <style>
@@ -472,26 +420,8 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/jamesBondLenguajeCorporal.jpg" alt="">
-                            <h6> Lenguaje Corporal Alfa - Aumenta Tu Testosterona </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/empezarblog.jpg" alt="">
-                            <h6> Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../superpoderes/como-hablar-claro-directo-y-relajado.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lionroaring.jpg" alt="">
+                          <a href="/superpoderes/como-hablar-claro-directo-y-relajado">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/lionroaring.jpg" alt="">
                             <h6> Cómo Hablar Claro Directo Y Relajado </h6>
                           </a>
                         </div>
@@ -499,17 +429,17 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../motivacion/que-hacer-cuando-estas-deprimido.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/deprimido2.jpg" alt="">
-                            <h6> Qué Hacer Cuando Estás Deprimido </h6>
+                          <a href="/superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/jamesBondLenguajeCorporal.jpg" alt="">
+                            <h6> Lenguaje Corporal Alfa - Aumenta Tu Testosterona </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../blogging/como-abrir-un-blog.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/empezarblog.jpg" alt="">
+                          <a href="/blogging/como-abrir-un-blog">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/empezarblog.jpg" alt="">
                             <h6> Como abrir un blog </h6>
                           </a>
                         </div>
@@ -517,9 +447,27 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="como-superar-una-ruptura.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lonley_opt.jpg" alt="">
-                            <h6> Cómo Superar Una Ruptura </h6>
+                          <a href="/life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/lagranmentira.jpg" alt="">
+                            <h6> La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="/sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida?-lee-esto.">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/chicaPlaya.jpg" alt="">
+                            <h6> ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto. </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="/motivacion/que-hacer-cuando-estas-deprimido">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/deprimido2.jpg" alt="">
+                            <h6> Qué Hacer Cuando Estás Deprimido </h6>
                           </a>
                         </div>
                       </li>
@@ -613,154 +561,6 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
 
 
               </div>
-
-              
-                <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
-
-<style>
-.header_wrapper_comment, .header_wrapper_comment > div{
-  float:left;
-  overflow: auto;
-}
-.comment p{
-  clear:both;
-  overflow: auto;
-}
-.comment {
-  background-color: #f5f5f5;
-  padding:16px; margin-bottom: 20px;
-  border: 1px solid #fff;
-}
-.header_wrapper_comment > img{
-  width:60px;
-  height: auto;
-  margin-right:20px;
-}
-.author_comment > p {
-  margin-bottom:0px;
-}
-.pull-left {
-  float: left !important;
-}
-textarea{
-  width: 90%;
-  height: 130px;
-}
-.date_comment {
-  color: #de1b1b
-}
-label, legend {
-    display: block;
-    margin-bottom: .5rem;
-    font-weight: 600;
-    font-size:17px;
-    color: #000;
-}
-</style>
-
-
-<h4>Deja un comentario</h4>
-
-  <form id="comment">
-    <label for="message">Mensaje</label>
-    <textarea id="message"></textarea>
-
-    <label for="name">Nombre</label>
-    <input type="text" id="nombre">
-
-    <label for="myemail">Email</label>
-    <input type="text" id="myemail"><br/>
-
-    <input type="submit" style="background-color: #222; color:white" value="Enviar comentario">
-  </form>
-
-  <br>
-
-<h4 id="comments_title" style="display:none">Comentarios</h4>
-<div class="comments"></div>
-
-
-<script>
-
-
-jQuery(function() {
-
-    var ref = new Firebase("https://mishell-comments.firebaseio.com/comments");
-    var refemails = new Firebase("https://mishell-comments.firebaseio.com/emails");
-
-    postRef = ref.child(slugify(window.location.pathname));
-    postRefemails = refemails.child(slugify(window.location.pathname));
-
-
-    console.log(postRef);
-
-    postRef.on("child_added", function(snapshot) {
-      $('#comments_title').show();
-      var newPost = snapshot.val();
-      $(".comments").prepend(
-        '<div class="comment">' +
-          '<div class="header_wrapper_comment">' + 
-            '<img width="54" height="60" class="pull-left author_thumb" src="http://www.gravatar.com/avatar/' + newPost.md5Email + '?s=100&d=retro">' +
-            '<div class="author_comment">' + 
-              '<p>' + newPost.nombre + '</p>' +
-              '<h6 class="date_comment">' + buildDate(moment(newPost.postedAt))+ '</h6>' +
-            '</div>' +
-          '</div>' +
-         '<p style="white-space: pre-wrap;">' + newPost.message  + '</p>'+ 
-        '</div>');
-    });
-
-
-
-    $("#comment").submit(function() {
-
-      console.log($("#name").val());
-
-      var id = postRef.push();
-      var nowMoment = moment(new Date());
-      var readableDate = moment().format("D/MM/YY hh:mm");
-
-      id.set( {
-            nombre: $("#nombre").val(),
-            message: $("#message").val(),
-            md5Email: md5($("#myemail").val()),
-            readableDate : readableDate,
-            postedAt: Firebase.ServerValue.TIMESTAMP,
-      });
-
-      var id2 = postRefemails.push();
-
-      id2.set({
-            nombre: $("#nombre").val(),
-            message: $("#message").val(),
-            postedAt: Firebase.ServerValue.TIMESTAMP,
-            readableDate : readableDate,
-            myemail: $("#myemail").val()
-      });
-     
-      $("input[type=text], textarea").val("");
-      return false;
-
-    });
-
-    function buildDate(momentDate) {
-      var day = momentDate.date(); var month = getReadableMonth(momentDate.month()); var year = momentDate.year();
-      var alas = momentDate.format("hh:mm");
-      return day + " de " + month + ", " + year + ", a las " + alas;
-    }
-
-    function getReadableMonth(monthNumber){
-        if (monthNumber == 0) return "Enero"; if (monthNumber == 1) return "Febrero"; if (monthNumber == 2) return "Marzo"; if (monthNumber == 3) return "Abril"; if (monthNumber == 4) return "Mayo"; if (monthNumber == 5) return "Junio"; if (monthNumber == 6) return "Julio"; if (monthNumber == 7) return "Agosto"; if (monthNumber == 8) return "Septiembre"; if (monthNumber == 9) return "Octubre"; if (monthNumber == 10) return "Noviembre"; if (monthNumber == 11) return "Deciembre";
-    }
-});
-
-function slugify(text) {
-  return text.toString().toLowerCase().trim()
-    .replace(/&/g, '-and-').replace(/[\s\W-]+/g, '-').replace(/[^a-zA-Z0-9-_]+/g,'');
-}
-</script>
 
               
 
@@ -917,77 +717,77 @@ function slugify(text) {
           <div class="categories" style="padding-left:20px">
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/life.html">Life</a>
+                <a class="pullright" href="/category/life">Life</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></span>
+                  <span><a href="/life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/superpoderes.html">Superpoderes</a>
+                <a class="pullright" href="/category/superpoderes">Superpoderes</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../superpoderes/como-vencer-cualquier-miedo.html">Cómo vencer cualquier miedo</a></span>
+                  <span><a href="/superpoderes/como-vencer-cualquier-miedo">Cómo vencer cualquier miedo</a></span>
                   
-                  <span><a href="../superpoderes/como-hablar-claro-directo-y-relajado.html">Cómo Hablar Claro Directo Y Relajado</a></span>
+                  <span><a href="/superpoderes/como-hablar-claro-directo-y-relajado">Cómo Hablar Claro Directo Y Relajado</a></span>
                   
-                  <span><a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5</a></span>
+                  <span><a href="/superpoderes/¿hasta-los-cojones-de-todo?-cambia-tu-vida-levantandote-a-las-5">¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5</a></span>
                   
-                  <span><a href="../superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">Lenguaje Corporal Alfa - Aumenta Tu Testosterona</a></span>
+                  <span><a href="/superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona">Lenguaje Corporal Alfa - Aumenta Tu Testosterona</a></span>
                   
-                  <span><a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">Guía Definitiva Sobre Duchas Frías</a></span>
+                  <span><a href="/superpoderes/guia-definitiva-sobre-duchas-frias">Guía Definitiva Sobre Duchas Frías</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/blogging.html">Blogging Y Negocios Digitales</a>
+                <a class="pullright" href="/category/blogging">Blogging Y Negocios Digitales</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../blogging/como-abrir-un-blog.html">Como abrir un blog</a></span>
+                  <span><a href="/blogging/como-abrir-un-blog">Como abrir un blog</a></span>
                   
-                  <span><a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
+                  <span><a href="/blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/sex-and-girls.html">Sex And Girls</a>
+                <a class="pullright" href="/category/sex-and-girls">Sex And Girls</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
+                  <span><a href="/sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida?-lee-esto.">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
                   
-                  <span><a href="como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></span>
+                  <span><a href="/sex-and-girls/como-vencer-la-ansiedad-sexual">Cómo Vencer La Ansiedad Sexual</a></span>
                   
-                  <span><a href="como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></span>
+                  <span><a href="/sex-and-girls/como-superar-una-ruptura">Cómo Superar Una Ruptura</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/motivacion.html">Motivación</a>
+                <a class="pullright" href="/category/motivacion">Motivación</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">Mata A La Bestia O Muere Intentándolo</a></span>
+                  <span><a href="/motivacion/mata-a-la-bestia-o-muere-intentandolo">Mata A La Bestia O Muere Intentándolo</a></span>
                   
-                  <span><a href="../motivacion/que-hacer-cuando-estas-deprimido.html">Qué Hacer Cuando Estás Deprimido</a></span>
+                  <span><a href="/motivacion/que-hacer-cuando-estas-deprimido">Qué Hacer Cuando Estás Deprimido</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/fitness.html">Fitness</a>
+                <a class="pullright" href="/category/fitness">Fitness</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">¿Deprimido? Hora De Levantar Pesas</a></span>
+                  <span><a href="/fitness/¿deprimido?-hora-de-levantar-pesas">¿Deprimido? Hora De Levantar Pesas</a></span>
                   
                 </ul>
               </div>
