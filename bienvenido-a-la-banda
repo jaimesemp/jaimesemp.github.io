@@ -7,25 +7,25 @@
     
     <title>Mishell | Post</title>
 <!-- Google Fonts -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
 
 <!-- CSS Reset -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
 
 <!-- Milligram CSS minified -->
-<link rel="stylesheet" href="../static/css/bootstrap.2.css">
+<link rel="stylesheet" href="/static/css/bootstrap.2.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
-<script src="../static/js/jquery.sticky.js"></script>
-<script src="../static/js/collapse.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+<script src="/static/js/collapse.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
 <style>
 
 @font-face {
   font-family: "james";
-  src: url(../static/LiberationSans-Regular.ttf);
+  src: url(/static/LiberationSans-Regular.ttf);
 }
 
     body {
@@ -36,7 +36,7 @@
     }
     body{
       background-color: black;
-      background: url(../static/images/roaring3.jpg);
+      background: url(/static/images/roaring3.jpg);
       background-attachment: fixed;
       background-size: cover;
     }
@@ -300,7 +300,7 @@
 </style>
 
         <div class="menu_outer_class" style="">
-          <a href="../index.html">
+          <a href="/">
             <h1 class="logotitle">Mejor<span>Hombre<span></h1>
           </a>
           <div class="subtitle">¿Hasta dónde quieres llegar antes de morir?</div>
@@ -311,27 +311,27 @@
             <ul style="padding:0">
               <li>
               
-                <a  href="../blog.html">
+                <a  href="/blog">
               
                   Blog
                 </a>
               </li>
               <li style="color: #de1b1b !important; font-weight: bolder;">
               
-                <a href="../about-mejorhombre.html" style="text-decoration:underline; font-weight: bolder;">
+                <a href="/about-mejorhombre" style="text-decoration:underline; font-weight: bolder;">
               
                 ¿Nuevo? Click Aquí
                 </a>
               </li>
               <li>
               
-                <a href="../contacto.html">
+                <a href="/contacto">
               
                 Contacto
                 </a>
               </li>
               <li>
-                <a href="como-abrir-un-blog.html#">
+                <a href="#">
                 Recursos aprobados
                 </a>
               </li>
@@ -394,24 +394,41 @@ position: absolute;
 
               <div class="postTitleWithAuthor">
                 <h1>
-                  Como abrir un blog
+                  Bienvenido A La Banda
                 </h1>
                 
-                  <p>08 de Noviembre de 2017, por Jaime RockAndRoll</p>
+                  <p>16 de Octubre de 2017, por Jaime RockAndRoll</p>
                 
               </div>
 
-              <img class="border-image cover-img" src="../static/images/posts/empezarblog.jpg" alt="">
+              <img class="border-image cover-img" src="/static/images/posts/" alt="">
 
               <br/><br/>
 
-              <p>Malditos bloggers. Diciéndote cómo montar tu blog. Hablándote de wordpress, plugins, y vendiéndote el sueño de cómo conseguir tu libertad. Cómo seguir tu pasión</p>
-<p>Y se olvidan de empezar contándote lo más importante.</p>
-<p>Aquí te dejo los 3 pilares básicos por los que deberías de empezar a la hora de montar tu propio blog.</p>
-<p>Lo primero es que aclares tus engranajes internos, tu motivación e incluso tu estrategia interna. La filosofía interior que te mueve a lanzarte a algo tan jodido (parece fácil, eh?) antes de lanzarte a la aventura de montar un blog</p>
-<p>Todo lo demás, son temas técnicos que puedes encontrar en cualquier blog. Pero un blog es mucho más que aspectos técnicos.</p>
-<p>Un blog es todo psicología y emoción. Tanto internas (que te motiva, por qué lo haces… etc) como externas (las emociones que transmitirá tu blog y tus palabras).</p>
-<p>Sobre todo, no olvides nunca el punto 2.</p>
+              <p>Hola guerrero.</p>
+<p>Te has unido a mi lista de correo, de gente buscando motivación y crear algo diferente en sus vidas.</p>
+<p>Gracias por la confianza depositada en mi.</p>
+<p>Mejorhombre es mi proyecto personal, y sólo tengo una obsesión con él: que realmente te sirva de ayuda en tu vida.</p>
+<p>Quiero que al leer uno de mis artículos pienses "esta mierda es buena tío". </p>
+<p>Quiero recibir algún día correos que digan "gracias por escribir este post, o grabar aquel vídeo, me ayudaron a XXX".</p>
+<p>Y he llegado a un punto, en el que me da igual todo. No hay retorno para mi. Me dejaré la piel y un pedazo de mi en conseguir que este proyecto tenga sentido.</p>
+<p>Y dejaremos un rincón para la diversión.</p>
+<p>Un sitio dónde podamos hacer el payaso, el freak, mirar a los demás con cara de "qué cojones te importa" y hacer lo que siempre quisimos: hacer lo que nos dé la puta gana y ser quién decidamos ser.</p>
+<p>Pero te aviso: no será un trabajo fácil, necesitaremos algo de disciplina y trabajo duro. </p>
+<p>Esa es la fórmula que predico: actitud y trabajo duro.</p>
+<p>¿Tienes miedo? Nuestro mayor miedo es a brillar por nosotros mismos, te susurró aquel viejo que ya había visto todo.</p>
+<p>El miedo siempre va a estar ahí. Tus sueños siempre van a estar al otro lado de ellos.</p>
+<p>Es hora de que decidas que quieres hacer. Como quieres vivir tu vida. Hoy y cada día de ella.</p>
+<p>Si lucharás cada día del resto de tu día.</p>
+<p>O si tirarás la toalla y serás absorvido por la rueda del ratón. La rueda se conoce también como rutina. Otros le llaman mediocridad.</p>
+<p>Adelante.</p>
+<p>Hoy somos uno más.</p>
+<p>Si escuchas mi podcast "El club de los inadaptados" conocerás la primera regla del club:</p>
+<h3>Esta prohibido rendirse hasta que no hayas ganado.</h3>
+<p>Bienvenido.</p>
+<blockquote>
+<p>Jaime</p>
+</blockquote>
 
               <style>
 </style>
@@ -423,8 +440,17 @@ position: absolute;
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
+                          <a href="/superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/jamesBondLenguajeCorporal.jpg" alt="">
+                            <h6> Lenguaje Corporal Alfa - Aumenta Tu Testosterona </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="/motivacion/mata-a-la-bestia-o-muere-intentandolo">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
                             <h6> Mata A La Bestia O Muere Intentándolo </h6>
                           </a>
                         </div>
@@ -432,17 +458,8 @@ position: absolute;
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/mananasMilagrosas.jpg" alt="">
-                            <h6> ¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5 </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
+                          <a href="/fitness/¿deprimido?-hora-de-levantar-pesas">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
                             <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
                           </a>
                         </div>
@@ -450,27 +467,27 @@ position: absolute;
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/empezarblog.jpg" alt="">
-                            <h6> Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto </h6>
+                          <a href="/superpoderes/como-hablar-claro-directo-y-relajado">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/lionroaring.jpg" alt="">
+                            <h6> Cómo Hablar Claro Directo Y Relajado </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../superpoderes/como-vencer-cualquier-miedo.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/bestiaMiedo_opt.jpg" alt="">
-                            <h6> Cómo vencer cualquier miedo </h6>
+                          <a href="/life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/lagranmentira.jpg" alt="">
+                            <h6> La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/sexyGirlBed_opt.jpg" alt="">
-                            <h6> Cómo Vencer La Ansiedad Sexual </h6>
+                          <a href="/sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida?-lee-esto.">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/chicaPlaya.jpg" alt="">
+                            <h6> ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto. </h6>
                           </a>
                         </div>
                       </li>
@@ -868,77 +885,77 @@ function slugify(text) {
           <div class="categories" style="padding-left:20px">
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/life.html">Life</a>
+                <a class="pullright" href="/category/life">Life</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></span>
+                  <span><a href="/life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/superpoderes.html">Superpoderes</a>
+                <a class="pullright" href="/category/superpoderes">Superpoderes</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../superpoderes/como-vencer-cualquier-miedo.html">Cómo vencer cualquier miedo</a></span>
+                  <span><a href="/superpoderes/como-vencer-cualquier-miedo">Cómo vencer cualquier miedo</a></span>
                   
-                  <span><a href="../superpoderes/como-hablar-claro-directo-y-relajado.html">Cómo Hablar Claro Directo Y Relajado</a></span>
+                  <span><a href="/superpoderes/como-hablar-claro-directo-y-relajado">Cómo Hablar Claro Directo Y Relajado</a></span>
                   
-                  <span><a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5</a></span>
+                  <span><a href="/superpoderes/¿hasta-los-cojones-de-todo?-cambia-tu-vida-levantandote-a-las-5">¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5</a></span>
                   
-                  <span><a href="../superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">Lenguaje Corporal Alfa - Aumenta Tu Testosterona</a></span>
+                  <span><a href="/superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona">Lenguaje Corporal Alfa - Aumenta Tu Testosterona</a></span>
                   
-                  <span><a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">Guía Definitiva Sobre Duchas Frías</a></span>
+                  <span><a href="/superpoderes/guia-definitiva-sobre-duchas-frias">Guía Definitiva Sobre Duchas Frías</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/blogging.html">Blogging Y Negocios Digitales</a>
+                <a class="pullright" href="/category/blogging">Blogging Y Negocios Digitales</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="como-abrir-un-blog.html">Como abrir un blog</a></span>
+                  <span><a href="/blogging/como-abrir-un-blog">Como abrir un blog</a></span>
                   
-                  <span><a href="deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
+                  <span><a href="/blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/sex-and-girls.html">Sex And Girls</a>
+                <a class="pullright" href="/category/sex-and-girls">Sex And Girls</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
+                  <span><a href="/sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida?-lee-esto.">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
                   
-                  <span><a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></span>
+                  <span><a href="/sex-and-girls/como-vencer-la-ansiedad-sexual">Cómo Vencer La Ansiedad Sexual</a></span>
                   
-                  <span><a href="../sex-and-girls/como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></span>
+                  <span><a href="/sex-and-girls/como-superar-una-ruptura">Cómo Superar Una Ruptura</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/motivacion.html">Motivación</a>
+                <a class="pullright" href="/category/motivacion">Motivación</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">Mata A La Bestia O Muere Intentándolo</a></span>
+                  <span><a href="/motivacion/mata-a-la-bestia-o-muere-intentandolo">Mata A La Bestia O Muere Intentándolo</a></span>
                   
-                  <span><a href="../motivacion/que-hacer-cuando-estas-deprimido.html">Qué Hacer Cuando Estás Deprimido</a></span>
+                  <span><a href="/motivacion/que-hacer-cuando-estas-deprimido">Qué Hacer Cuando Estás Deprimido</a></span>
                   
                 </ul>
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/fitness.html">Fitness</a>
+                <a class="pullright" href="/category/fitness">Fitness</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">¿Deprimido? Hora De Levantar Pesas</a></span>
+                  <span><a href="/fitness/¿deprimido?-hora-de-levantar-pesas">¿Deprimido? Hora De Levantar Pesas</a></span>
                   
                 </ul>
               </div>
