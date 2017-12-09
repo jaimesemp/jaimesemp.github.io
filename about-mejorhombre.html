@@ -5,29 +5,82 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Mishell | Post</title>
 <!-- Google Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
 
 <!-- CSS Reset -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
 
-<!-- Milligram CSS minified -->
 <link rel="stylesheet" href="static/css/bootstrap.2.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
-<script src="static/js/jquery.sticky.js"></script>
+<!--<script src="/static/js/jquery.sticky.js"></script>-->
 <script src="static/js/collapse.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
+<!--social plugin -->
+<link rel="stylesheet" href="static/js/social/stylesheets/arthref.css">
+<!--notification bar-->
+<link rel="stylesheet" href="static/js/notification-bar/css/jquery.peekabar.css">
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon.ico%3Fv=3">
+<link rel="apple-touch-icon" sizes="57x57" href="static/images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="static/images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="static/images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="static/images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="static/images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="static/images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="static/images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="static/images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="static/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="static/images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:8004/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- social metatags -->
+<!-- Place this data between the <head> tags of your website -->
+<title>MejorHombre | El blog del hombre del mañana</title>
+<meta name="description" content="Como hacer dinero con un blog. Fitness. Sexo y relaciones. Motivación. Lifestyle" />
+
+<!-- Twitter Card data -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@mejorhombre_com">
+<meta name="twitter:title" content="Sobre MejorHombre">
+<meta name="twitter:description" content="
+Mi nombre real es Jaime Sempere. Aunque a veces use el nick de Jaime RockAndRoll.
+¿Conoces esos &#x27;sobre mí&#x27; en el que el autor del blog empieza a contarte &#x27;me gusta hacer ganchillo y jugar al rabino?
+Este no va a ser uno de esos.
+2016 fue el peor año de mi vida. 
+Per ...">
+<meta name="twitter:creator" content="@mejorhombre_com">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="/static/images/posts/">
+
+
+<!-- Open Graph data -->
+
+<meta property="og:title" content="Sobre MejorHombre" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="request.env.web2py_original_uri[1:]" />
+<meta property="og:image" content="/static/images/posts/" />
+<meta property="og:description" content="
+Mi nombre real es Jaime Sempere. Aunque a veces use el nick de Jaime RockAndRoll.
+¿Conoces esos &#x27;sobre mí&#x27; en el que el autor del blog empieza a contarte &#x27;me gusta hacer ganchillo y jugar al rabino?
+Este no va a ser uno de esos.
+2016 fue el peor año de mi vida. 
+Per ..." /> 
+<meta property="og:site_name" content="Mejor Hombre" />
+
+
+
 <style>
-
-@font-face {
-  font-family: "james";
-  src: url(static/LiberationSans-Regular.ttf);
-}
-
     body {
       margin: 0px;
     }
@@ -57,15 +110,6 @@
     a {
       color: #de1b1b;
       text-decoration: underline;
-    }
-    p {
-      font-family: 'james', sans-serif;
-      font-style: normal;
-      font-size:20px;
-      font-size: 1.2em;
-      font-weight: 400;
-      color: #111;
-      line-height: 1.625;
     }
     body{
       color: black;
@@ -228,7 +272,7 @@
       color:white;
     }
     .subtitle{
-      font-size:14px;
+      font-size:17px;
       color: #ddd;
       font-weight: 600;
     }
@@ -243,7 +287,7 @@
     .menubuttonswrapper a{
       color:white;
       text-decoration: none;
-      padding: 13px 14px 12px 14px;
+      padding: 13px 14px 9px 14px;
     }
     .menubuttonswrapper li{
       list-style:none;
@@ -269,14 +313,17 @@
     .menubuttonswrapper {
         margin-top: -55px;
     }
-    @media only screen and (max-width: 360px)
+    @media only screen and (max-width: 719px)
     .menubuttonswrapper {
         margin-top: 0;
-        font-size: 14px;
+        font-size: 16px;
     }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 719px) {
       h1.logotitle{
-        font-size:24px;
+        font-size:32px;
+      }
+      .subtitle{
+        font-size:16px;
       }
     }
     .menu_outer_class{
@@ -299,8 +346,8 @@
     }
 </style>
 
-        <div class="menu_outer_class" style="">
-          <a href="index.html">
+        <div class="menu_outer_class" style="padding:9px 0 20px 0;">
+          <a href="index.html" style="text-decoration:none;">
             <h1 class="logotitle">Mejor<span>Hombre<span></h1>
           </a>
           <div class="subtitle">¿Hasta dónde quieres llegar antes de morir?</div>
@@ -316,7 +363,7 @@
                   Blog
                 </a>
               </li>
-              <li style="color: #de1b1b !important; font-weight: bolder;">
+              <li style="color: #de1b1b !important;">
               
                 <a class="active" href="about-mejorhombre.html" >
               
@@ -346,13 +393,6 @@
               
 
 <style>
-
-    .cover-img{
-      width:100%;
-      height:360px;
-    }
-    
-    
 
 .video-responsive {
 position: relative;
@@ -388,6 +428,10 @@ position: absolute;
 	width: 100% !important;
 	height: 100% !important;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 800 ;
+}
 
 </style>
 
@@ -403,16 +447,16 @@ position: absolute;
 
               <br/><br/>
 
-              <p><img src="static/images/pages/cuatro_2.jpg" style="max-width:100%" alt=""></p>
+              <p><img src="static/images/pages/cuatro_2.jpg" style="max-width:60%" alt=""></p>
 <p>Mi nombre real es Jaime Sempere. Aunque a veces use el nick de Jaime RockAndRoll.</p>
 <p>¿Conoces esos 'sobre mí' en el que el autor del blog empieza a contarte 'me gusta hacer ganchillo y jugar al rabino?</p>
 <p><strong>Este no va a ser uno de esos.</strong></p>
 <p>2016 fue el peor año de mi vida. </p>
 <p>Perdí a una chica. </p>
-<p>Ni siquiera eramos novios. Íbamos y volvíamos, pero era la chica que más he querido nunca en mi vida. Y al final, en una de esas y venidas, ya no volvió. </p>
-<p>Se quedó con otro.</p>
+<p>Ni siquiera eramos novios. Íbamos y volvíamos, pero era la chica que más he querido nunca en mi vida. Y al final, en una de esas y venidas, <strong>ya no volvió</strong>. </p>
+<p><strong>Se quedó con otro.</strong></p>
 <p>"Bueno, tampoco es para tanto" dirás. </p>
-<p>Sí, eso pensaba yo. Pero perder algo es doloroso. Y perder a la cosa que más te gustaba de la vida, duele de cojones.</p>
+<p>Eso pensaba yo. Pero perder la cosa que más te gustaba de la vida, duele de cojones.</p>
 <p>Junta todos los fetiches sexuales, románticos e intelectuales que puedas tener sobre tu chica ideal, e igual podrás hacerte una idea.</p>
 <p>Irónicamente también fue el año con el que mas chicas me he acostado, pero nada, seguía hecho polvo.</p>
 <p>Aún recuerdo alguno de esos días, salir del trabajo, subir al coche, desmoronarme y empezar a llorar. </p>
@@ -433,19 +477,21 @@ position: absolute;
 <p>El mundo hispanohablante necesitaba más blogs así.</p>
 <p>Me dejaría las tripas, mi alma, un pedazo de mi... lo que fuese.</p>
 <p>Quizá haría el ridículo, quedaría como un freak, un flipado trasnochado... pero lo haría. </p>
-<p>Triunfaría o moriría intentándolo.</p>
+<p><a href="motivacion/mata-a-la-bestia-o-muere-intentandolo.html" target="_blank">Triunfaría o moriría intentándolo.</a></p>
 <p>No fue fácil. Ni sigue siéndolo. Es duro. Aún tengo un trabajo de 40 horas semanales (y alguna más que le he hecho).</p>
 <p>Y estaba <strong>ACOJONADO</strong>. </p>
-<p>Aún a veces me pregunto que cojones estoy haciendo con este blog (así que si un post te motiva, resuena dentro de ti, te agradecería que me dejes un comentario, o mejor aún: échame una mano y compártelo en las redes sociales. <strong>Difunde el mensaje</strong>).</p>
+<p>Aún a veces me pregunto que cojones estoy haciendo con este blog (así que si un post te motiva, resuena dentro de ti, te agradecería que me dejes un comentario, o mejor aún: échame una mano y compártelo en las redes sociales: <strong>Difunde el mensaje</strong>).</p>
 <p>Me daba miedo exponerme tanto como lo estaba haciendo (ahí puedes leer un post en el que te hablo de mis gatillazos, que he estado a punto de borrar mil veces.)</p>
 <p>O que alguien conocido descubriese mi blog y dijera "ostias tío, ¿qué coño es esto?".</p>
 <h3>Mi punto de inflexión: El autoreto de "Spartan Blog Challenge"</h3>
-<p>21 días en los que me levantaba todas las mañanas a las 4, entrenaba como una bestia en el gimnasio, me duchaba con agua fría,  hacía sólo una comida al día, y procuraba no masturbarme ni tener sexo (aunque aquí, tengo que confesar que fallé en ambos puntos :) ).  </p>
-<p>En esos 21 días, me encontré un poco a mi mismo. Perdí el miedo a exponerme, a hablar de lo que hablo en el blog, a hacer el ridículo. </p>
-<p>Lo que fuese. Así quería vivir. </p>
+<p>21 días en los que me levantaba todas las mañanas a las 4, entrenaba como una bestia en el gimnasio, me duchaba con agua fría,  hacía sólo una comida al día, y procuraba no masturbarme ni tener sexo (aunque aquí, tengo que confesar que fallé en ambos puntos :) ).<br />
+En esos 21 días, me encontré a mi mismo. </p>
+<p>Perdí el miedo a exponerme, a hablar de lo que hablo en el blog, a hacer el ridículo. </p>
+<p>A lo que fuese. </p>
 <p>Deseaba vivir de manera diferente. Ser intenso. Pulir mi actitud de rock and roll star. Ser <strong>jodidamente diferente y auténtico</strong>. </p>
 <p>Ser dueño de mi vida.</p>
-<p>No quería ser cómo los demás. No quería trabajar para siempre en un trabajo de 40 horas semanales. Ni vivir en la rutina aburrida que viven la mayoría de los mortales.</p>
+<p>No quería ser cómo los demás. No quería trabajar para siempre en un trabajo de 40 horas semanales. </p>
+<p>Quería dejar la rutina aburrida que viven la mayoría de los mortales.</p>
 <p>No quería vivir, nunca maś, con miedo...</p>
 <h3>¿Te suena familiar?</h3>
 <p>Es lo que buscamos todos los hombres, ¿no? Construir algo y ser dueños de nuestra vida. Nuestros putos protagonistas.</p>
@@ -459,106 +505,41 @@ position: absolute;
 <p><strong>Sé testigo de mi camino.</strong></p>
 <p>Ahora mismo persigo dos objetivos:</p>
 <ul>
-<li>Convertir este blog en un negocio digital y hacer pasta con él (todo hombre debería aspirar a hacer pasta de verdad)</li>
-<li>Que un día, tú que estas leyendo esto, me puedas llegar a escribir diciendo "gracias por tu blog, gracias a él me has ayudado a xxx..."</li>
+<li>Convertir este blog en un negocio digital y hacer pasta con él (todo hombre debería aspirar a ello)</li>
+<li>Motivar a gente como tú y como yo, a los bloqueados, a los inadaptados, a la gente que quiere hacer algo con su vida, a que salgáis hay fuera <strong>lo déis todo, y empecéis a patear culos</strong>.</li>
 </ul>
 <p>Y en cierta manera, impresionarme a mi mismo, y a aquella chica. Mi venganza poética.</p>
 <p>Una cosa sí que dejaré escrita al final de esta introducción patética.</p>
 <p>Un correo que la chica me escribió pasados unos meses. Una frase de aquel correo.</p>
 <p><strong><em><em> Lo que sí te diré es que el sexo era mil veces mejor contigo. Y no lo digo por decir. Me has hecho una guarra, y ahora el sexo normal me aburre</em></em> </strong></p>
-<p>I win!! Una pequeña victoria de la que mi ego sexual se siente orgulloso. </p>
-<p>Le deseo mucha suerte al otro chico. La necesitará: eres una chica complicada, Tigrilla.</p>
+<p>Le deseo mucha suerte al otro chico. La necesitará: eres una chica complicada, Tigrilla. Ahora has engordado y estás con un chico por el que no sientes atracción sexual. Yo gano. Yo ganaré.</p>
 <p>Lo repetiré.</p>
 <p>Me llamo Jaime Sempere y esta es mi historia. <strong>¿Cuál va a ser la tuya?</strong></p>
-<p>¿Cuando vas a empezar a trabajar sobre tus sueños? ¿Cuando vas a ir en búsqueda versión más auténtica? </p>
+<p><strong>¿Cuándo vas a empezar a trabajar sobre tus sueños? ¿Cuando vas a ir en búsqueda de tu versión más auténtica? </strong></p>
 <p>No te digo que saques "tu mejor versión". Deja esa patraña para la industria de autoayuda barata.</p>
-<p>Simplemente, trabaja duro. En tu sueño, en tus objetivos.</p>
+<p>Simplemente, <strong>trabaja duro</strong>. En tu sueño, en tus objetivos. <strong>Ves a por ello, sin mirar atrás.</strong></p>
 <p>Vive sin miedo. Convierte tus cicatrices en motivación. </p>
 <p>Si eres raro, como me han dicho a mi tantas veces, cojonudo. </p>
 <p>Aprovéchalo. No lo escondas. Haz de ello tu fortaleza. Se diferente.</p>
 <p>No seas otro robot. </p>
-<h3>Y por eso, este blog.</h3>
-<p>La vida puede ser dura a veces. Necesitarás leer cosas que te den poder y fuerzas para superar tus baches. </p>
-<p>Necesitarás tomar acciones que marquen la dirección de tu camino. </p>
-<p>Necesitarás esculpir tu actitud en piedra. Necesitarás forjar tu disciplina y hacer de ella un live motive de tu vida.</p>
-<p>Por favor, no seas otro robot como los demás. Vive como tu quieras vivir. Vive sin miedo. Con pasión. Con propósito.</p>
+<h2>Por eso, este blog.</h2>
+<p>La vida puede ser dura a veces. Necesitarás leer cosas que te den fuerzas para superar tus baches. </p>
+<p><strong>Necesitarás recargar tu batería</strong> </p>
+<p>Los seres humanos somos como una batería: de vez en cuando necesitamos recargar nuestra motivación, recordar nuestros propósitos y nuestro motivo de vida. </p>
+<p><strong>Toma este blog como un enchufe donde recargarte cuando vengan mal dadas.</strong></p>
+<h3>Aquí trabajamos en esculpir tu actitud en piedra. En forjar tu disciplina y hacer de ella un live motive de tu vida.</h3>
+<p>No seas otro robot. Vive como tu quieras vivir. Vive sin miedo. Con pasión. Con propósito.</p>
 <h2>¿Quieres unirte a la banda?</h2>
-<p>Déjame tu correo y compartiré contigo el material más auténtico que pueda sacar de mis tripas y entrañas sobre como construir una vida.</p>
-<p>Sin mierdas y sin chorradas. </p>
-<p>Ese es uno de mis propósitos.</p>
-<p>Así que si te apuntas... bienvenido guerrero.</p>
+<p>Mejorhombre.com es <strong>el blog para el hombre del mañana.</strong></p>
+<p>Un blog donde puedes aprender sobre <strong>negocios digitales (get the fucking money), sexo, chicas, encontrar tu propósito, vivir motivado, esculpir un cuerpo y forjar una mente imparables.</strong></p>
+<p>Déjame tu correo y compartiré contigo el material más auténtico que pueda sacar de mis entrañas sobre como construir una vida. </p>
+<p>Sé cómplice de mi propia historia. </p>
+<p>Forma parte de la banda de rebeldes e indaptados buscando una vida intensa y sin límites.</p>
+<p>Sin mierdas. Sin chorradas. </p>
 <p><strong>Hoy empezaremos a patear culos</strong></p>
 <p><strong>Hora de ponerse serio. Hora del Rock And Roll.</strong></p>
 <p>Tu amigo, freak y espartano,</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Jaime RockAndRoll</em></p>
-
-              <style>
-</style>
-
-              <div class="relatedposts">
-                <h4>Quizá también te interese</h4>
-                  <div style="margin:auto">
-                    <ul>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
-                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
-                            <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">
-                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/jamesBondLenguajeCorporal.jpg" alt="">
-                            <h6> Lenguaje Corporal Alfa - Aumenta Tu Testosterona </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="sex-and-girls/como-superar-una-ruptura.html">
-                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/lonley_opt.jpg" alt="">
-                            <h6> Cómo Superar Una Ruptura </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="motivacion/que-hacer-cuando-estas-deprimido.html">
-                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/deprimido2.jpg" alt="">
-                            <h6> Qué Hacer Cuando Estás Deprimido </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">
-                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/lagranmentira.jpg" alt="">
-                            <h6> La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="superpoderes/guia-definitiva-sobre-duchas-frias.html">
-                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/Spartans-Rain.jpg" alt="">
-                            <h6> Guía Definitiva Sobre Duchas Frías </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                    </ul>
-                  </div>
-              </div>
-
-
 
               <div>
               <style>
@@ -568,7 +549,8 @@ position: absolute;
       border: 1px solid #ccc;
       background-color: #111;
       color:white;
-      margin-bottom:40px;
+      margin-bottom:30px;
+      margin-top:20px;
     }
     .optinwrapper2 p{
       font-size:18px;
@@ -608,15 +590,15 @@ position: absolute;
 
               <div class="anotherwrapper2" style="">
                 <div class="thesticky2">
-                <div class="optinwrapper2">
+                <div class="optinwrapper2 myshadow">
 
-                  <h2 style="font-size:24px; max-width:100%;">
+                  <h2 style="color:#eee;font-size:24px; margin-top:0px; max-width:100%;">
                     ¿Cómo quieres pasar por este planeta?
                   </h2>
 
                   <div class="widthlimiter2">
                         <p style="font-size:17px;text-align:center; font-weight:500; color:#d7d7d7">
-                          <B>ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                          <b class="myred">ES HORA DE HACER ALGO CON TU VIDA. </b><BR/>
                           Mantente motivado, concentrado, y vive como nunca.
                         </p>
 
@@ -644,10 +626,75 @@ position: absolute;
 
               </div>
 
+              <style>
+</style>
+
+              <div class="relatedposts">
+                <h4>Quizá también te interese</h4>
+                  <div style="margin:auto">
+                    <ul>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">
+                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/jamesBondLenguajeCorporal.jpg" alt="">
+                            <h6> Lenguaje Corporal Alfa - Aumenta Tu Testosterona </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
+                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
+                            <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="motivacion/que-hacer-cuando-estas-deprimido.html">
+                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/deprimido2.jpg" alt="">
+                            <h6> Qué Hacer Cuando Estás Deprimido </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="superpoderes/como-hablar-claro-directo-y-relajado.html">
+                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/lionroaring.jpg" alt="">
+                            <h6> Cómo Hablar Claro Directo Y Relajado </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="sex-and-girls/como-hacer-el-amor-realmente-bien-a-una-mujer.html">
+                            <img class="related-post-thumbnail" src="static/images/posts/thumbnails/makinglove.jpg" alt="">
+                            <h6> Cómo hacer el amor, REALMENTE BIEN, a una mujer </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="como-hacer-10.000-euros-en-un-dia-con-un-blog.html">
+                            <img class="related-post-thumbnail" src="http://localhost:8004/static/images/posts/thumbnails/" alt="">
+                            <h6> Cómo hacer 10.000 euros en un día con un blog </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                    </ul>
+                  </div>
+              </div>
+
+
+
               
-
-
-
 
 
 
@@ -708,15 +755,15 @@ position: absolute;
 
               <div class="anotherwrapper" style="">
                 <div class="thesticky">
-                <div class="optinwrapper">
+                <div class="optinwrapper myshadow">
 
-                  <h2 style="font-size:24px; max-width:100%; font-weight:800; line-height:32px; padding-bottom:15px">
+                  <h2 style="color:#eee; font-size:24px; max-width:100%; font-weight:800; margin-top:0;line-height:32px; padding-bottom:15px">
                     ¿Cómo quieres pasar por este planeta?
                   </h2>
 
                   <div class="widthlimiter">
-                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:james; color:#d7d7d7">
-                        <B>ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Roboto; color:#d7d7d7">
+                        <B class="myred">ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
                           Únete a la banda, mantente motivado y concentrado y vive como nunca.
                         </p>
 
@@ -775,6 +822,7 @@ position: absolute;
     }
     .categories  ul span{
       display: block;
+      margin-top: 6px;
     }
     .categories  ul a{
     }
@@ -786,7 +834,8 @@ position: absolute;
     .foo {
       display: inline-block;
       float:left;
-      padding: 8px;
+      padding-top: 4px;
+      padding-right: 2px;
     }
     .pullright{
     }
@@ -831,8 +880,6 @@ position: absolute;
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="blogging/como-abrir-un-blog.html">Como abrir un blog</a></span>
-                  
                   <span><a href="blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
                   
                 </ul>
@@ -843,11 +890,25 @@ position: absolute;
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
+                  <span><a href="sex-and-girls/como-hacer-el-amor-realmente-bien-a-una-mujer.html">Cómo hacer el amor, REALMENTE BIEN, a una mujer</a></span>
+                  
                   <span><a href="sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
                   
                   <span><a href="sex-and-girls/como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></span>
                   
                   <span><a href="sex-and-girls/como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></span>
+                  
+                </ul>
+              </div>
+            
+              <div style="padding-bottom:10px">
+                <a class="pullright" href="category/como-hacer-10.000-euros-en-un-dia-con-un-blog.html">None</a>
+                <div class="foo"><span class="triangle"></span></div>
+                <ul>
+                  
+                  <span><a href="como-hacer-10.000-euros-en-un-dia-con-un-blog.html">Cómo hacer 10.000 euros en un día con un blog</a></span>
+                  
+                  <span><a href="como-resolver-tus-problemas-como-alejandro-magno.html">Cómo resolver tus problemas como Alejandro Magno</a></span>
                   
                 </ul>
               </div>
@@ -878,7 +939,6 @@ position: absolute;
 
 <script>
   $(document).ready(function(){
-    console.log("hey");
       new jQueryCollapse($(".categories"), {
         query: '.foo'
       });
@@ -893,9 +953,10 @@ position: absolute;
           <div class="fab" id="close"> </div>
 
       </div>
-
   </body>
+
 <script>
+
 $(".fab").on("click", function(){
   console.log("clicked");
   $(this).toggleClass("clicked");

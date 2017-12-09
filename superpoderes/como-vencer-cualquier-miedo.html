@@ -5,29 +5,86 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Mishell | Post</title>
 <!-- Google Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
 
 <!-- CSS Reset -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
 
-<!-- Milligram CSS minified -->
 <link rel="stylesheet" href="../static/css/bootstrap.2.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
-<script src="../static/js/jquery.sticky.js"></script>
+<!--<script src="/static/js/jquery.sticky.js"></script>-->
 <script src="../static/js/collapse.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
+<!--social plugin -->
+<link rel="stylesheet" href="../static/js/social/stylesheets/arthref.css">
+<!--notification bar-->
+<link rel="stylesheet" href="../static/js/notification-bar/css/jquery.peekabar.css">
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicons/favicon.ico%3Fv=3">
+<link rel="apple-touch-icon" sizes="57x57" href="../static/images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../static/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:8004/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- social metatags -->
+<!-- Place this data between the <head> tags of your website -->
+<title>MejorHombre | El blog del hombre del mañana</title>
+<meta name="description" content="Como hacer dinero con un blog. Fitness. Sexo y relaciones. Motivación. Lifestyle" />
+
+<!-- Twitter Card data -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@mejorhombre_com">
+<meta name="twitter:title" content="Cómo vencer cualquier miedo">
+<meta name="twitter:description" content="El miedo es fuerte.
+Deprime a la gente. Les bloquea. Les hunde. 
+El miedo pone a la gente en el hospital.
+El miedo te paraliza a hacer las cosas que quieres hacer. 
+A ser quien quieres ser. 
+A llegar a los sitios que te gustaría llegar. 
+El miedo te &quot;envejece&quot;. 
+...Y c ...">
+<meta name="twitter:creator" content="@mejorhombre_com">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="/static/images/posts/bestiaMiedo_opt.jpg">
+
+
+<!-- Open Graph data -->
+
+<meta property="og:title" content="Cómo vencer cualquier miedo" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="request.env.web2py_original_uri[1:]" />
+<meta property="og:image" content="/static/images/posts/bestiaMiedo_opt.jpg" />
+<meta property="og:description" content="El miedo es fuerte.
+Deprime a la gente. Les bloquea. Les hunde. 
+El miedo pone a la gente en el hospital.
+El miedo te paraliza a hacer las cosas que quieres hacer. 
+A ser quien quieres ser. 
+A llegar a los sitios que te gustaría llegar. 
+El miedo te &quot;envejece&quot;. 
+...Y c ..." /> 
+<meta property="og:site_name" content="Mejor Hombre" />
+
+
+
 <style>
-
-@font-face {
-  font-family: "james";
-  src: url(../static/LiberationSans-Regular.ttf);
-}
-
     body {
       margin: 0px;
     }
@@ -57,15 +114,6 @@
     a {
       color: #de1b1b;
       text-decoration: underline;
-    }
-    p {
-      font-family: 'james', sans-serif;
-      font-style: normal;
-      font-size:20px;
-      font-size: 1.2em;
-      font-weight: 400;
-      color: #111;
-      line-height: 1.625;
     }
     body{
       color: black;
@@ -228,7 +276,7 @@
       color:white;
     }
     .subtitle{
-      font-size:14px;
+      font-size:17px;
       color: #ddd;
       font-weight: 600;
     }
@@ -243,7 +291,7 @@
     .menubuttonswrapper a{
       color:white;
       text-decoration: none;
-      padding: 13px 14px 12px 14px;
+      padding: 13px 14px 9px 14px;
     }
     .menubuttonswrapper li{
       list-style:none;
@@ -269,14 +317,17 @@
     .menubuttonswrapper {
         margin-top: -55px;
     }
-    @media only screen and (max-width: 360px)
+    @media only screen and (max-width: 719px)
     .menubuttonswrapper {
         margin-top: 0;
-        font-size: 14px;
+        font-size: 16px;
     }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 719px) {
       h1.logotitle{
-        font-size:24px;
+        font-size:32px;
+      }
+      .subtitle{
+        font-size:16px;
       }
     }
     .menu_outer_class{
@@ -299,8 +350,8 @@
     }
 </style>
 
-        <div class="menu_outer_class" style="">
-          <a href="../index.html">
+        <div class="menu_outer_class" style="padding:9px 0 20px 0;">
+          <a href="../index.html" style="text-decoration:none;">
             <h1 class="logotitle">Mejor<span>Hombre<span></h1>
           </a>
           <div class="subtitle">¿Hasta dónde quieres llegar antes de morir?</div>
@@ -316,9 +367,9 @@
                   Blog
                 </a>
               </li>
-              <li style="color: #de1b1b !important; font-weight: bolder;">
+              <li style="color: #de1b1b !important;">
               
-                <a href="../about-mejorhombre.html" style="text-decoration:underline; font-weight: bolder;">
+                <a href="../about-mejorhombre.html">
               
                 ¿Nuevo? Click Aquí
                 </a>
@@ -346,13 +397,6 @@
               
 
 <style>
-
-    .cover-img{
-      width:100%;
-      height:360px;
-    }
-    
-    
 
 .video-responsive {
 position: relative;
@@ -388,6 +432,10 @@ position: absolute;
 	width: 100% !important;
 	height: 100% !important;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 800 ;
+}
 
 </style>
 
@@ -396,8 +444,6 @@ position: absolute;
                 <h1>
                   Cómo vencer cualquier miedo
                 </h1>
-                
-                  <p>17 de Mayo de 2017, por Jaime RockAndRoll</p>
                 
               </div>
 
@@ -412,20 +458,24 @@ position: absolute;
 A ser quien quieres ser. 
 A llegar a los sitios que te gustaría llegar. </p>
 <p>El miedo te "envejece". </p>
-<p>...Y cuando notas el miedo, cuando tus propios latidos suenan en tus oídos, te odias a ti mismo por ello.</p>
+<p><strong>...Y cuando notas el miedo, cuando tus propios latidos suenan en tus oídos, te odias a ti mismo por ello.</strong></p>
 <p>El miedo te ha atrapado. Y no lo puedes controlar.</p>
-<p>Tú, que te creías fuerte, te encuentras bloqueado de nuevo. Sin atreverte a dar ese paso. Sin valor para saltar hacia dónde deseas.</p>
-<p>Eso te hace sentirte furioso. Y tener más miedo. Miedo a no controlar tu propio miedo.</p>
+<p>Tú, que te creías fuerte, te encuentras bloqueado de nuevo.  </p>
+<p>Sin atreverte a dar ese paso. </p>
+<p>Sin valor para saltar hacia dónde deseas.</p>
+<p>Eso te hace sentirte furioso. Y tener más miedo. Miedo a no controlar tu propio miedo. </p>
 <p>Y vuelves a entrar en el bucle y bucle sin final.</p>
 <p>Y te preguntas:</p>
 <p>¿Alguna vez voy a dejar de tener miedo? ¿Alguna vez será capaz de controlarlo?</p>
-<h2>La verdad</h2>
-
-<p><b>NUNCA</b></p>
-<p>Y cuando entiendas que nunca vas a dejar de tenerlo, verás el agujero de salida, la luz. Y tu liberación.</p>
-<p>Las malas emociones, como el miedo, van a estar ahí siempre. El hecho de atravesarlas te hará crecer, si sabes afrontarlas. </p>
-<p>La primera vez que te acercas a una chica, sientes miedo.
-Y la segunda, y la tercera... y siempre.</p>
+<h2>¿La verdad?</h2>
+<h2>NUNCA</h2>
+<p>Y cuando entiendas que nunca vas a dejar de tenerlo, verás el agujero de salida. </p>
+<p>La luz. </p>
+<p><strong>Y tu liberación.</strong></p>
+<p>Las malas emociones, como el miedo, van a estar ahí siempre. </p>
+<p>El hecho de atravesarlas, si sabes afrontarlas, te harán crecer, hacerte más fuerte</p>
+<p>La primera vez que te acercas a una chica, sientes miedo.</p>
+<p>Y la segunda, y la tercera... y siempre.</p>
 <p>Soy un sinvergüenza cuando quiero serlo. Me he cruzado un parking entero para pedirle el teléfono a una chica delante de su amiga (y lo conseguí).</p>
 <p>Me he bajado los pantalones hasta los tobillos un sábado para demostrar que podía conseguir un número de teléfono hasta en calzoncillos.</p>
 <p>Me he besado con una chica sin decir ni una palabra...</p>
@@ -434,26 +484,36 @@ Y la segunda, y la tercera... y siempre.</p>
 <p>No te odies por tener miedo.</p>
 <p>Por temblar.</p>
 <p>Por estar cagado.</p>
-<p>Lo que necesitas es un primer momento héroe.</p>
-<p>Tu momento héroe no fue aquella vez que actuaste como un James Bond. Todo cool y con nervios de acero, consiguiendo a la chica con una media sonrisa.</p>
+<p><strong>Lo que necesitas es un primer momento héroe.</strong></p>
+<p>Tu momento héroe no fue aquella vez que actuaste como un James Bond. </p>
+<p>Todo cool y con nervios de acero, consiguiendo a la chica con una media sonrisa.</p>
 <p>No.</p>
+<blockquote>
 <p>Tu momento héroe, es aquél que estabas nervioso que te cagas, y aún así, conseguiste hacer lo que querías.</p>
+</blockquote>
 <p>Puede que lo hicieras mal. Fatal. Puede que te estrellaras. </p>
 <p>Lo que sea.</p>
-<p>Pero lo hiciste. Ole tú, y tus cojones.</p>
+<p><strong>Pero lo hiciste. Ole tú, y tus cojones.</strong></p>
 <p>Ese es tu momento héroe.</p>
-<p>Esa es tu prueba de que el miedo, puede estar ahí, pero no va a frentarte a hacer lo que tú quieres. </p>
-<p>Es la prueba, de que si quieres algo bueno, vas a tener que correr riesgos. Salir de la zona de confort (por cierto, ¿qué es eso?).</p>
-<p>Es la prueba, de que si tuviste miedo y pudiste hacerlo, esta vez también.</p>
+<p>Esa es tu prueba de que el miedo, puede estar ahí, pero no va a frenarte a hacer lo que tú quieres. </p>
+<p>Es la prueba, de que si quieres algo bueno, vas a tener que correr riesgos. </p>
+<p>Salir de tu zona de confort dicen algunos.</p>
+<p>¿Qué es eso? Ah sí, la puta guarra que yo me follo de vez en cuando, no sabía que se llamaba así.</p>
 <p>No intentes controlar el miedo. Déjalo estar ahí. Simplemente recuerda ese momento héroe y salta.</p>
 <p>¿Que nunca tuviste un momento héroe?</p>
 <p>Pues ahora es el momento: salta. </p>
-<p>Ni te preguntes que va a pasar. Sólo salta. Eres más fuerte y más poderoso de lo que imaginas. Tienes todos los recursos en tu interior. Estás hecho del polvo de estrellas, coño. Tu adn está formado de generaciones y generaciones de tu estirpe que sobrevivieron a glaciaciones, guerras, plagas y enfermedades.</p>
+<p>Ni te preguntes que va a pasar.  </p>
+<p>Sólo salta. </p>
+<p>Eres más fuerte y más poderoso de lo que imaginas. </p>
+<p>Tienes todos los recursos en tu interior. </p>
+<p>Estás hecho del polvo de estrellas, coño. </p>
+<p>Tu ADN está formado de generaciones y generaciones de tu estirpe que sobrevivieron a glaciaciones, guerras, plagas y enfermedades.</p>
 <p>Me da igual como lo hagas. Si la pifias estrepitosamente.</p>
 <p>A mi sólo me importa que le eches cojones. Y que saltes. Ahí te ganarás mi respeto.</p>
 <p>¿Y sabes una cosa?</p>
 <p>En el fondo, es lo único que te importa a ti también. </p>
-<p>Los resultados están bien. Pero saber que puedes mirar a la bestia a los ojos y decirle "aparta". Oh, amigo, eso si que nos pone cachondos.</p>
+<p>Los resultados están bien. </p>
+<p>Pero saber que puedes mirar a la bestia a los ojos y decirle "aparta". Oh, amigo, eso si que nos pone cachondos.</p>
 <p>Y a ellas... a ellas más aún.</p>
 <h2>Resumen práctico</h2>
 
@@ -462,76 +522,17 @@ Y la segunda, y la tercera... y siempre.</p>
   <li>Cuando sientas miedo, no te odies por tenerlo o no poder controlarlo</li>
   <li>Lo importante, es que a pesar de tenerlo, no dejes de hacer las cosas que quiero.</li>
   <li>Recuerda tu momento héroe: aquella vez que sentiste miedo y aún así hiciste lo que querías</li>
-  <li>Simplemente salta. Da el primer salto. Es sólo el salto a la piscina. El primer paso es el más jodido. Luego dirás "no era para tanto". Confía en mi. Confía en ti mismo</li>
+  <li>Simplemente salta. Da el primer salto. Es sólo el salto a la piscina. El primer paso es el más jodido. Luego dirás "no era para tanto". </li>
 </ul>
 
-              <style>
-</style>
-
-              <div class="relatedposts">
-                <h4>Quizá también te interese</h4>
-                  <div style="margin:auto">
-                    <ul>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
-                            <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/chicaPlaya.jpg" alt="">
-                            <h6> ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto. </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/sexyGirlBed_opt.jpg" alt="">
-                            <h6> Cómo Vencer La Ansiedad Sexual </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../sex-and-girls/como-superar-una-ruptura.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lonley_opt.jpg" alt="">
-                            <h6> Cómo Superar Una Ruptura </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
-                            <h6> Mata A La Bestia O Muere Intentándolo </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="como-vencer-cualquier-miedo.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/bestiaMiedo_opt.jpg" alt="">
-                            <h6> Cómo vencer cualquier miedo </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                    </ul>
-                  </div>
-              </div>
-
-
+<p>Te lo dice alguien que cada día empuja sus límites más y más.</p>
+<p>Aún a riesgo de volverme loco, perder la cabeza, estrellarme o que me señalen entre risas.</p>
+<p>Ya te lo dije en otro post, <a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html" target="_blank">Mata a la bestia o muere intentándolo</a></p>
+<p>¿Y sabes?</p>
+<p>Todos esos putos escenarios terribles que nos imaginamos, rara vez suelen ocurrir.</p>
+<p>Todas esas imágenes sólo están en nuestra cabeza</p>
+<p>Hazme caso. Confía en mi. Confía en ti mismo. </p>
+<p>Échale pelotas. Coño. </p>
 
               <div>
               <style>
@@ -541,7 +542,8 @@ Y la segunda, y la tercera... y siempre.</p>
       border: 1px solid #ccc;
       background-color: #111;
       color:white;
-      margin-bottom:40px;
+      margin-bottom:30px;
+      margin-top:20px;
     }
     .optinwrapper2 p{
       font-size:18px;
@@ -581,15 +583,15 @@ Y la segunda, y la tercera... y siempre.</p>
 
               <div class="anotherwrapper2" style="">
                 <div class="thesticky2">
-                <div class="optinwrapper2">
+                <div class="optinwrapper2 myshadow">
 
-                  <h2 style="font-size:24px; max-width:100%;">
+                  <h2 style="color:#eee;font-size:24px; margin-top:0px; max-width:100%;">
                     ¿Cómo quieres pasar por este planeta?
                   </h2>
 
                   <div class="widthlimiter2">
                         <p style="font-size:17px;text-align:center; font-weight:500; color:#d7d7d7">
-                          <B>ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                          <b class="myred">ES HORA DE HACER ALGO CON TU VIDA. </b><BR/>
                           Mantente motivado, concentrado, y vive como nunca.
                         </p>
 
@@ -616,6 +618,74 @@ Y la segunda, y la tercera... y siempre.</p>
 
 
               </div>
+
+              <style>
+</style>
+
+              <div class="relatedposts">
+                <h4>Quizá también te interese</h4>
+                  <div style="margin:auto">
+                    <ul>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/sexyGirlBed_opt.jpg" alt="">
+                            <h6> Cómo Vencer La Ansiedad Sexual </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="como-hablar-claro-directo-y-relajado.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lionroaring.jpg" alt="">
+                            <h6> Cómo Hablar Claro Directo Y Relajado </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
+                            <h6> Mata A La Bestia O Muere Intentándolo </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lagranmentira.jpg" alt="">
+                            <h6> La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
+                            <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../motivacion/que-hacer-cuando-estas-deprimido.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/deprimido2.jpg" alt="">
+                            <h6> Qué Hacer Cuando Estás Deprimido </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                    </ul>
+                  </div>
+              </div>
+
+
 
               
                 <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
@@ -765,10 +835,39 @@ function slugify(text) {
 }
 </script>
 
+                
+<script asyn src="../static/js/notification-bar/js/jquery.peekabar.min.js"></script>
+<script asyn src="../static/js/social/javascripts/socialShare.js"></script>
+
+<script>
+
+	$(document).ready(function () {
+    window.setTimeout(loadNotificationBar, 200);
+	});
+
+function loadNotificationBar() {
+
+    var bar = new $.peekABar({
+        position: 'bottom',
+        backgroundColor: '#0e0e0e'
+    });
+    bar.show({
+      html: '<span style="color:#f7f7f7;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H</span>',
+    });
+
+		$('.peek-a-bar').socialShare({
+			social: 'facebook,twitter,google',
+			blur: false
+		});
+
+    a = $(".arthrefSocialShare .centered").html();
+    $(".arthrefSocialShare .centered").html("<p style='color:black'>Gana karma!</p>" + a);
+}
+</script>
+
+
+
               
-
-
-
 
 
 
@@ -829,15 +928,15 @@ function slugify(text) {
 
               <div class="anotherwrapper" style="">
                 <div class="thesticky">
-                <div class="optinwrapper">
+                <div class="optinwrapper myshadow">
 
-                  <h2 style="font-size:24px; max-width:100%; font-weight:800; line-height:32px; padding-bottom:15px">
+                  <h2 style="color:#eee; font-size:24px; max-width:100%; font-weight:800; margin-top:0;line-height:32px; padding-bottom:15px">
                     ¿Cómo quieres pasar por este planeta?
                   </h2>
 
                   <div class="widthlimiter">
-                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:james; color:#d7d7d7">
-                        <B>ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Roboto; color:#d7d7d7">
+                        <B class="myred">ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
                           Únete a la banda, mantente motivado y concentrado y vive como nunca.
                         </p>
 
@@ -896,6 +995,7 @@ function slugify(text) {
     }
     .categories  ul span{
       display: block;
+      margin-top: 6px;
     }
     .categories  ul a{
     }
@@ -907,7 +1007,8 @@ function slugify(text) {
     .foo {
       display: inline-block;
       float:left;
-      padding: 8px;
+      padding-top: 4px;
+      padding-right: 2px;
     }
     .pullright{
     }
@@ -952,8 +1053,6 @@ function slugify(text) {
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../blogging/como-abrir-un-blog.html">Como abrir un blog</a></span>
-                  
                   <span><a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
                   
                 </ul>
@@ -964,11 +1063,25 @@ function slugify(text) {
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
+                  <span><a href="../sex-and-girls/como-hacer-el-amor-realmente-bien-a-una-mujer.html">Cómo hacer el amor, REALMENTE BIEN, a una mujer</a></span>
+                  
                   <span><a href="../sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
                   
                   <span><a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></span>
                   
                   <span><a href="../sex-and-girls/como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></span>
+                  
+                </ul>
+              </div>
+            
+              <div style="padding-bottom:10px">
+                <a class="pullright" href="../category/como-hacer-10.000-euros-en-un-dia-con-un-blog.html">None</a>
+                <div class="foo"><span class="triangle"></span></div>
+                <ul>
+                  
+                  <span><a href="../como-hacer-10.000-euros-en-un-dia-con-un-blog.html">Cómo hacer 10.000 euros en un día con un blog</a></span>
+                  
+                  <span><a href="../como-resolver-tus-problemas-como-alejandro-magno.html">Cómo resolver tus problemas como Alejandro Magno</a></span>
                   
                 </ul>
               </div>
@@ -999,7 +1112,6 @@ function slugify(text) {
 
 <script>
   $(document).ready(function(){
-    console.log("hey");
       new jQueryCollapse($(".categories"), {
         query: '.foo'
       });
@@ -1014,9 +1126,10 @@ function slugify(text) {
           <div class="fab" id="close"> </div>
 
       </div>
-
   </body>
+
 <script>
+
 $(".fab").on("click", function(){
   console.log("clicked");
   $(this).toggleClass("clicked");

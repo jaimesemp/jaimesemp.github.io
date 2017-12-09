@@ -16,12 +16,29 @@
 <script src="static/js/collapse.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon.ico%3Fv=3">
+<link rel="apple-touch-icon" sizes="57x57" href="static/images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="static/images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="static/images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="static/images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="static/images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="static/images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="static/images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="static/images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="static/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="static/images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:8004/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
 <style>
 
-@font-face {
-  font-family: "james";
-  src: url(static/LiberationSans-Regular.ttf);
-}
 
     body {
     }
@@ -48,7 +65,15 @@
     }
     .site-container {
       background-color: #fff;
-      background-color: #bbb;
+      background-color: #060606;
+    }
+    .site-container h1,
+    .site-container h2,
+    .site-container h3 {
+      color:#eee;
+    }
+    .site-container h3 {
+      font-size:2.4rem;
     }
     img {
       width:100%
@@ -58,7 +83,7 @@
       text-decoration: underline;
     }
     p {
-      font-family: 'james', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-size: 1.2em;
       font-weight: 400;
@@ -98,7 +123,7 @@
   }  
   h2 {
     font-size:2rem;
-    font-family: 'james', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   h2 span{
     font-weight:100;
@@ -111,7 +136,8 @@
     font-weight: 500 !important;
   }
   .wrapper {
-    background:#bbb;
+    background:#060606;
+    padding-top:25px;
   }
   .high{
     color: #de1b1b;
@@ -125,13 +151,16 @@
     @media only screen and (max-width: 767px) .site-container {
       padding: 20px 5%;
     }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 719px) {
       p {
         font-size:16px;
         font-weight: light;
       }
       h1{
        font-size: 3.2rem;
+      }
+      .site-container h3 {
+          font-size: 2rem;
       }
     }
 
@@ -162,27 +191,47 @@
 
   <body>
 
+<div class="" style="float:right;z-index:999;position:fixed;float:right;background:black;width:100%;text-align: right;margin-right: 20px;padding-right: 35px;height: 35px;padding-top: 5px;">
+  <span class="float:right">
+    <a href="blog.html" style="padding-left:30px;text-decoration:none">
+        <p style="display:inline; color:#de1b1b;font-family: Roboto;  font-weight:500;">
+            Ir al blog
+        </p>
+    </a>
+  </span>
+  <span class="float:right">
+    <a href="about-mejorhombre.html" style="padding-left:30px;text-decoration:none">
+        <p style="display:inline;color:#de1b1b;font-family: Roboto;  font-weight:500;">
+            ¿Quién cojones soy yo?
+        </p>
+    </a>
+  </span>
+</div>
+
     <div class="wrapper">
+
+
       <div class="container site-container">
 
-          <div class="row" style="padding-top:2rem;">
-            <div class="col-md-5" style="padding-top:40px">
+
+          <div class="row">
+            <div class="col-md-5" style="">
               <div style="text-align:center">
 
               <h1 class="">¿Hasta dónde quieres llegar antes de morir?</h1>
 
-              <h3 style="padding-top:20px">
+              <h3 style="margin: 25px 0 20px 0;">
                   ¿<b>Muerto</b> en vida por la <b>Rutina</b>? 
-              </h3>
-              <h3>
-                Hora de <b>Trabajar Duro</b>, hacer <b>Pasta</b>
-                y ser quién <b>Siempre</b> quisiste ser. 
-              </h3>
-              <h3>
-                <b>Estoy juntando a la banda</b><br/>  Hora de echarle cojones y sembrar tu nuevo futuro.
+                  <div style="font-size:2rem">
+                    <br/>Estoy juntando a la banda. A los <b>rebeldes</b> que buscan vivir una vida <b>intensa</b> y sin límites.<br/> 
+                  </div></br>
+                  <span>
+                    <b>¿Tienes lo que hay que tener?<br/></b>
+                    <span style="font-size:16px; font-weight:bolder; color:#de1b1b; text-transform: uppercase;">Hora de forjar tu propio héroe</span>
+                  </span>
               </h3>
 
-                    <form style="max-width:500px; margin: auto" class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/" method="post">
+                    <form style="max-width: 360px; margin: auto; margin-top: 0px;" class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/" method="post">
                       <input type="hidden" name="groups[]" id="groups-1" value="1"></label>
                       <input style="width:100%" type="text" placeholder="Tu nombre" name="name" id="email" value=""></dd>
                       <input style="width:100%;" type="text" placeholder="Tu mejor email" name="email" id="email" value=""></dd>
@@ -198,12 +247,13 @@
  <dd id="confirmationUrl-element">
  <input type="hidden" name="confirmationUrl" value="http://mejorhombre.com/bienvenido" id="confirmationUrl"></dd>
                   </form>
-
+                  <h6 style="color:#ccc">
+                    Sin mierdas. Sólo artículos 100% de mis entrañas
+                  </h6>
               </div>
-
             </div>
             <div class="col-md-7" style="">
-              <img src="static/images/final8.png" alt="">
+              <img style="padding-top:20px" src="static/images/finalRetina.jpg" alt="">
             </div>
           </div>
           <!-- <div class="fab"></div> -->
@@ -213,7 +263,7 @@
 
     <div class="container" style="margin:0; width:100%">
 
-          <div class="row" style="padding:6px 0px 15px 0px;background-color:#000">
+          <div class="row" style="background-color:#000">
             <div class="col-md-12" style="">
               <div style="text-align:center">
               <h1 style="color:#ccc;font-size:28px;font-weight:800">
@@ -267,7 +317,7 @@
 
           </div>
 
-          <div class="row" style="padding: 30px 0 40px 0; width:90%; margin: auto;background:#f3f3f4">
+          <div class="row" style="padding: 10px 0 40px 0; width:90%; margin: auto;background:#f3f3f4">
 
             <div class="col-md-12" style="text-align:center; padding-bottom:20px">
               <h1 style="color:#ccc; background: #111; padding:15px 0 15px 0">Favoritos </h1>
@@ -315,25 +365,33 @@
             </div>
             <div class="col-md-6">
               <h1 style="color:#ccc;  padding:0px 0 15px 0">¿Qué haces <br/> cuando todo falla?</h1>
-              <h3 style="padding-bottom:20px">La respuesta... en el vídeo:</h3>
+              <h3 style="padding-bottom:20px; color:#ccc">La respuesta... en el vídeo:</h3>
               <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/219307679" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
             </div>
           </div>
 
-          <div class="row" style="text-align:center; background:#000; color:#fff; padding-bottom:70px;">
+          <div class="row" style="text-align:center; background:#000; color:#fff; padding:20px 0 90px 0;">
             <div class="col-md-3">
             </div>
-            <div class="col-md-2">
-              <h5 class="" style="font-family: Roboto;color:#ddd; font-weight:100;">
-                <a href="blog.html" style=""> IR AL BLOG </a>
-              </h5>
+            <div class="col-md-3" style="margin-top:12px">
+              <a href="blog.html" style="color:#000">
+                <div class="rocksubmit button-primary" style="background-color:#de1b1b;padding:1px;border-radius:2px;">
+                  <h5 class="" style="font-family: Roboto; font-weight:100;">
+                    <b> IR AL BLOG</b>
+                  </h5>
+                </div>
+              </a>
             </div>
-            <div class="col-md-4">
-              <h5 class="" style=" font-family: Roboto;  font-weight:100;">
-                <a href="about-mejorhombre.html" style=""> ¿QUIÉN COJONES SOY YO?  </a>
-              </h5>
+            <div class="col-md-3" style="margin-top:12px">
+              <a href="about-mejorhombre.html" style="color:#000">
+                <div class="rocksubmit button-primary" style="background-color:#de1b1b;padding:1px;border-radius:2px;">
+                  <h5 class="" style=" font-family: Roboto;  font-weight:100;">
+                      <b> ¿QUIÉN COJONES SOY YO?  </b>
+                  </h5>
+                </div>
+              </a>
             </div>
           </div>
           <div class="row" style="background-color:#de1b1b;  padding:10px 0 0px 0; text-align:center">

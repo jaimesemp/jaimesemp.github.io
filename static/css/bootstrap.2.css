@@ -52,9 +52,6 @@ audio:not([controls]) {
 template {
   display: none;
 }
-a {
-  background-color: transparent;
-}
 a:active,
 a:hover {
   outline: 0;
@@ -213,7 +210,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "james", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -229,7 +226,7 @@ textarea {
 }
 a {
   color: #de1b1b;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
@@ -312,8 +309,8 @@ h6,
 .h6 {
   font-family: 'Montserrat';
   font-weight: 300;
-  line-height: 1.2;
-  color: inherit;
+  line-height: 1.4;
+  color: #111;
 }
 h1 {
   font-weight: 700;
@@ -352,8 +349,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 h1 small,
 .h1 small,
@@ -415,9 +412,6 @@ h5,
 h6,
 .h6 {
   font-size: 12px;
-}
-p {
-  margin: 0 0 10px;
 }
 .lead {
   margin-bottom: 20px;
@@ -1408,6 +1402,8 @@ address {
 /*        CUSTOM JSV      */
 /**************************/
 
+
+
   h1 {
     letter-spacing: -.1rem !important;
   }
@@ -1424,9 +1420,10 @@ address {
     color: #222;
     background: url('../images/lines.png') bottom repeat-x;
   }  
-  p {
-    font-family: 'james', sans-serif;
+  p, li{
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
+    margin: 20px 0 10px 0;
     font-size: 20px;
     font-size: 1.4em;
     font-weight: 400;
@@ -1444,9 +1441,12 @@ input[type="submit"]{
     border: 1px solid #D1D1D1;
     border-radius: 4px;
     outline-color: #1EAEDB;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 1.6rem;
+}
+input[type="submit"]{
+    font-family: 'Montserrat';
 }
 input[type="submit"]{
     font-weight: 500;
@@ -1471,7 +1471,7 @@ input[type="submit"]:hover{
 /*    RELATED POSTS        /
 /**************************/
 .relatedposts ul { list-style: none; padding:0; margin:0; }  
-.relatedposts ul li { float: left; margin: 0.375em; width: 206px; text-align: center; }
+.relatedposts ul li { float: left; margin: 0.375em; width: 206px; text-align: center; list-style-image: none; }
     @media screen and (max-width: 480px) {
       .relatedposts ul li { float: none; margin: 0.375em auto}
     }
@@ -1483,11 +1483,14 @@ input[type="submit"]:hover{
 .relatedthumb a:hover h6{ color: #333 ; }
 .relatedthumb a h6{ color: #de1b1b ; margin-bottom: 0;}
 .relatedposts img:hover {-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); border-color: #bbb; }
-.relatedposts{ clear: both; overflow: auto; padding: 40px 0 40px 0}
+.relatedposts{ clear: both; overflow: auto; padding: 0px 0 20px 0}
 .relatedthumb {
   position: relative;
   overflow: hidden;
   height: 200px;
+}
+.myred {
+  color: #de1b1b;
 }
 .relatedthumb h6{
   font-size: 14px;
@@ -1519,3 +1522,45 @@ input[type="submit"]:hover{
       color:black;
       width: 100%;
     }
+
+/***** BREAK POINTS *********/
+    .cover-img {
+      height: 360px;
+    }
+  @media (max-width: 719px) {
+    p, li{
+      margin: 20px 0 10px 0;
+      font-size: 1.2em;
+    }
+    .site-container {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .cover-img {
+      width: 100%;
+      height: auto !important;
+    }
+  }
+  ul {
+    padding-left:inherit;
+  }
+
+  li{
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAYAAABmBXS+AAAAOUlEQVQoU2P8ZcTwn+0cAyMDHsAIUgSSx6cQrghmEDbFGIqwKcapCFkxeSbhdRNB3xEMJ3yBCJMDAMSHGwtctQZBAAAAAElFTkSuQmCC");
+  }
+
+  .entry_wrapper p {
+    margin-top: 4px;
+  }
+  .menu_outer_class h1 {
+    margin-top:15px;
+  }
+
+.myshadow {
+    -webkit-box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
+    -moz-box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
+    box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
+}
+.postTitleWithAuthor h1 {
+  margin-top:0;
+}

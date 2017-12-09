@@ -5,29 +5,78 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Mishell | Post</title>
 <!-- Google Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
 
 <!-- CSS Reset -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
 
-<!-- Milligram CSS minified -->
 <link rel="stylesheet" href="../static/css/bootstrap.2.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
-<script src="../static/js/jquery.sticky.js"></script>
+<!--<script src="/static/js/jquery.sticky.js"></script>-->
 <script src="../static/js/collapse.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
+<!--social plugin -->
+<link rel="stylesheet" href="../static/js/social/stylesheets/arthref.css">
+<!--notification bar-->
+<link rel="stylesheet" href="../static/js/notification-bar/css/jquery.peekabar.css">
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicons/favicon.ico%3Fv=3">
+<link rel="apple-touch-icon" sizes="57x57" href="../static/images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../static/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:8004/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- social metatags -->
+<!-- Place this data between the <head> tags of your website -->
+<title>MejorHombre | El blog del hombre del mañana</title>
+<meta name="description" content="Como hacer dinero con un blog. Fitness. Sexo y relaciones. Motivación. Lifestyle" />
+
+<!-- Twitter Card data -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@mejorhombre_com">
+<meta name="twitter:title" content="Cómo Vencer La Ansiedad Sexual">
+<meta name="twitter:description" content="Recuerdo aquella sensación de tener a una diosa encima. 
+Estar nervioso y con mucha ansiedad. Penetrarla y correrme a los pocos segundos.
+Con el tiempo, logré hacerlo mucho mejor, tanto que me acabó diciendo &quot;eres el tío con el que más he disfrutado en la cama&quot;.
+Ah ...">
+<meta name="twitter:creator" content="@mejorhombre_com">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="/static/images/posts/sexyGirlBed_opt.jpg">
+
+
+<!-- Open Graph data -->
+
+<meta property="og:title" content="Cómo Vencer La Ansiedad Sexual" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="request.env.web2py_original_uri[1:]" />
+<meta property="og:image" content="/static/images/posts/sexyGirlBed_opt.jpg" />
+<meta property="og:description" content="Recuerdo aquella sensación de tener a una diosa encima. 
+Estar nervioso y con mucha ansiedad. Penetrarla y correrme a los pocos segundos.
+Con el tiempo, logré hacerlo mucho mejor, tanto que me acabó diciendo &quot;eres el tío con el que más he disfrutado en la cama&quot;.
+Ah ..." /> 
+<meta property="og:site_name" content="Mejor Hombre" />
+
+
+
 <style>
-
-@font-face {
-  font-family: "james";
-  src: url(../static/LiberationSans-Regular.ttf);
-}
-
     body {
       margin: 0px;
     }
@@ -57,15 +106,6 @@
     a {
       color: #de1b1b;
       text-decoration: underline;
-    }
-    p {
-      font-family: 'james', sans-serif;
-      font-style: normal;
-      font-size:20px;
-      font-size: 1.2em;
-      font-weight: 400;
-      color: #111;
-      line-height: 1.625;
     }
     body{
       color: black;
@@ -228,7 +268,7 @@
       color:white;
     }
     .subtitle{
-      font-size:14px;
+      font-size:17px;
       color: #ddd;
       font-weight: 600;
     }
@@ -243,7 +283,7 @@
     .menubuttonswrapper a{
       color:white;
       text-decoration: none;
-      padding: 13px 14px 12px 14px;
+      padding: 13px 14px 9px 14px;
     }
     .menubuttonswrapper li{
       list-style:none;
@@ -269,14 +309,17 @@
     .menubuttonswrapper {
         margin-top: -55px;
     }
-    @media only screen and (max-width: 360px)
+    @media only screen and (max-width: 719px)
     .menubuttonswrapper {
         margin-top: 0;
-        font-size: 14px;
+        font-size: 16px;
     }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 719px) {
       h1.logotitle{
-        font-size:24px;
+        font-size:32px;
+      }
+      .subtitle{
+        font-size:16px;
       }
     }
     .menu_outer_class{
@@ -299,8 +342,8 @@
     }
 </style>
 
-        <div class="menu_outer_class" style="">
-          <a href="../index.html">
+        <div class="menu_outer_class" style="padding:9px 0 20px 0;">
+          <a href="../index.html" style="text-decoration:none;">
             <h1 class="logotitle">Mejor<span>Hombre<span></h1>
           </a>
           <div class="subtitle">¿Hasta dónde quieres llegar antes de morir?</div>
@@ -316,9 +359,9 @@
                   Blog
                 </a>
               </li>
-              <li style="color: #de1b1b !important; font-weight: bolder;">
+              <li style="color: #de1b1b !important;">
               
-                <a href="../about-mejorhombre.html" style="text-decoration:underline; font-weight: bolder;">
+                <a href="../about-mejorhombre.html">
               
                 ¿Nuevo? Click Aquí
                 </a>
@@ -346,13 +389,6 @@
               
 
 <style>
-
-    .cover-img{
-      width:100%;
-      height:360px;
-    }
-    
-    
 
 .video-responsive {
 position: relative;
@@ -388,6 +424,10 @@ position: absolute;
 	width: 100% !important;
 	height: 100% !important;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 800 ;
+}
 
 </style>
 
@@ -397,160 +437,133 @@ position: absolute;
                   Cómo Vencer La Ansiedad Sexual
                 </h1>
                 
-                  <p>03 de Mayo de 2017, por Jaime RockAndRoll</p>
-                
               </div>
 
               <img class="border-image cover-img" src="../static/images/posts/sexyGirlBed_opt.jpg" alt="">
 
               <br/><br/>
 
-              <p>Recuerdo aquella sensación de tener a una diosa encima. Estar nervioso y con mucha ansiedad. Penetrarla y correrme a los pocos segundos.</p>
+              <p>Recuerdo aquella sensación de tener a una diosa encima. </p>
+<p>Estar nervioso y con mucha ansiedad. Penetrarla y correrme a los pocos segundos.</p>
 <p>Con el tiempo, logré hacerlo mucho mejor, tanto que me acabó diciendo "eres el tío con el que más he disfrutado en la cama".</p>
 <p>Ahora tengo a otra diosa, con la que echamos polvos largos en los que se corre como una perra.</p>
-<p>¿Que ocurrió de un caso a otro?... sigue leyendo...</p>
-<p>La&nbsp;ansiedad sexual es el estrés al enfrentarse a una nueva relación sexual.</p>
+<p><strong>¿Que ocurrió de un caso a otro?... sigue leyendo...</strong></p>
+<p>La ansiedad sexual es el estrés al enfrentarse a una nueva relación sexual.</p>
 <p>Detrás de ella hay temores tipo "no ser lo suficientemente bueno", o a repetir alguna mala experiencia anterior (si alguna vez has tenido problemas, has sufrido algún gatillazo o similar, siempre tendrás el temor de que te vuelva a ocurrir).</p>
-<p>"El sexo es vida", dicen los vendedores de condones. Toda la razón.</p>
-<p>Así que es un tema que siempre nos preocupa a los tíos, no te cuento nada nuevo.</p>
+<p>"El sexo es vida", dicen los vendedores de condones. Estoy de acuerdo.</p>
+<p>Es un tema que siempre nos preocupa a los tíos, no te cuento nada nuevo.</p>
 <p>Se manifiesta en dos síntomas principales, perdida de erección y/o eyaculación precoz.</p>
-<p>Venga, alto y claro. A mi me ha pasado, me ha ocurrido. Sobre todo cuando me acostaba con una chica nueva. </p>
-<p>Es algo bastante más común de lo que parece y sobre lo que poca gente habla, pero hoy tienes suerte, tu amigo Jaime, te trae la solución.  </p>
-<h2> Un poco de mi historia </h2>
-
+<p>Venga, alto y claro. </p>
+<p>A mi me ha pasado, me ha ocurrido. Sobre todo cuando me acostaba con una chica nueva. </p>
+<p>Es algo bastante más común de lo que parece y sobre lo que poca gente habla, pero hoy tienes suerte, tito Jaime, te trae la solución.  </p>
+<h2>Un poco de mi historia.</h2>
 <p>Realmente no se de dónde vienen mis bloqueos en este sentido, como ya digo, normalmente me ocurría cuando la chica era nueva, o cuando 'pensaba' que no le tenía 'cogido el truco' a ella todavía. </p>
 <p>Recuerdo que con mi primera novia seria me ocurrió (sin embargo no antes, cuando perdí la virginidad me salió 'bien'). </p>
 <p>Las ganas de querer complacerla, sobre todo la primera vez, el querer que sea perfecto, la presión que uno se pone... etc, al final son inevitablemente contraproducentes.</p>
 <p>No siempre me ha pasado, pero cuando pasa, jode.</p>
-<p>Con la chica que más me ha gustado nunca me ocurrió. Después de una primera noche más o menos buena, no sé si es que me 'enchoché' o qué, pero tuve una serie de bloqueos con ella en ese sentido.</p>
-<p>Estaba un poco mosqueado/preocupado/cabreado, la chica que más te gusta, y no puedes follártela bien. Jode, no? Sí amigos, sufrí gatillazos y eyaculación precoz. </p>
-<p>Pero quiero darte esperanzas en este aspecto, ya que si también te ha ocurrido, fue esa misma chica que me acabo diciendo: "eres el tío con el que más he disfrutado en la cama". </p>
+<p>Con la chica que más me ha gustado nunca me ocurrió. </p>
+<p>Después de una primera noche más o menos buena, no sé si es que me 'enchoché' o qué, pero tuve una serie de bloqueos con ella en ese sentido.</p>
+<p>Estaba un poco mosqueado/preocupado/cabreado, la chica que más te gusta, y no puedes follártela bien. Jode, ¿no? </p>
+<p>Sí amigos, sufrí gatillazos y eyaculación precoz. </p>
+<p>Pero quiero darte esperanzas en este aspecto, si también te ha ocurrido. </p>
+<p>Fue esa misma chica que me acabo diciendo: "eres el tío con el que más he disfrutado en la cama". </p>
 <p>(Sí, me pongo una medallita, no todo van a ser historias malas o qué :P )</p>
-<p>Y con eso se refería a, desde cuando la ponía mirando a cuenca, le azotaba el culo, le tiraba del pelo y la follaba 'como una guarra', hasta cuando la cogía entre mis brazos, le susurraba su nombre al oído y trataba de hacerle amor como ningún otro. </p>
+<p>Y con eso se refería a, desde cuando la ponía mirando a cuenca, le azotaba el culo, le tiraba del pelo y la follaba 'como una guarra', hasta cuando la cogía entre mis brazos, le susurraba su nombre al oído y le <a href="como-hacer-el-amor-realmente-bien-a-una-mujer.html" target="_blank"> hacía el amor como ningún otro </a></p>
 <p>Parece que, en parte, lo conseguí.</p>
-<p>Así que, estés en el punto en el que estés, si te está ocurriendo con una chica que te gusta, no te preocupes, hay esperanza.</p>
-<p>Con esta chica, superé el bloqueo este de ansiedad sexual de una sóla manera: con tiempo y conociéndonos más. Al final acabas cogiendo confianza y sintiéndote mejor y más seguro.</p>
+<p>Así que, estés en el punto en el que estés, si te está ocurriendo con una chica que te gusta, no te preocupes.</p>
+<p>En cierta manera, es normal que pase el principio.</p>
+<p>Y ellas también lo saben. Que los primeros polvos no son los mejores.</p>
+<p>Con esta chica, superé el bloqueo este de ansiedad sexual de una sóla manera: con tiempo y conociéndonos más. </p>
+<p>Al final acabas cogiendo confianza y sintiéndote mejor y más seguro.</p>
 <h2>Un truco de Jodorowsky</h2>
-
 <p>Antes de darte 'mi solución', déjame contarte un método que puedes probar para vencer la eyaculación precoz.</p>
 <p>El truco es de un señor llamado <a href="https://es.wikipedia.org/wiki/Alejandro_Jodorowsky" target="_blank">Alejandro Jodorowsky</a></p>
 <p>Un tipo que parece estar como una cabra pero tiene algunas cosas interesantes.</p>
 <p>Básicamente es poner un cronómetro a la hora de ponerte a darle a la mandanga. </p>
-<p>Coges a la tía y le dices "mira, he leído una frikada para poder follarte durante más rato y tratar 'mi problemilla' ". Evidentemente, tiene que ser una tía con la que tengas cierta confianza.</p>
+<p>Coges a la tía y le dices "mira, he leído una frikada para poder follarte durante más rato y tratar 'mi problemilla' ". </p>
+<p>Evidentemente, tiene que ser una tía con la que tengas cierta confianza.</p>
 <p>Así que en el momento en el que la metas, cronometras. Hasta que te corras y paras. </p>
-<p>Descansas después para la siguiente vez, o si quieres, deja pasar un día. Y la siguiente vez que la vuelvas a meter, le das al crono de nuevo.</p>
+<p>Descansas para la siguiente vez, o si quieres, deja pasar un día. </p>
+<p>Y la siguiente vez que la vuelvas a meter, le das al crono de nuevo.</p>
 <p>Esta vez con un objetivo claro: correrte en MENOS tiempo, o sea batir tu propio récord de eyaculador precoz. </p>
-<p>Suena contraintuitivo, ¿verdad? Pero funciona. Increíblemente, eché un polvo 'normal' (ole, sí señor!) y duré un tiempo más que aceptable (sí, no tanto como las horas y horas que aguantas tú, eh cabrón :P).</p>
-<p>Pruébalo si quieres. Es un rollo de psicología inversa. Normalmente cuando algo va mal nos solemos repetir una y otra vez "vamos, levanta, levanta!!" o cosas así, el hecho de buscar lo contrario (correrte pronto) hace que te relajes y elimina esa autopresión.</p>
+<p>Suena contraintuitivo, ¿verdad? </p>
+<p>Pero funciona. </p>
+<p>Increíblemente, eché un polvo 'normal' (ole, sí señor!) y duré un tiempo más que aceptable (sí, no tanto como las horas y horas que aguantas tú, eh cabrón :P).</p>
+<p>Pruébalo. </p>
+<p>Es un rollo de psicología inversa. </p>
+<p>Normalmente cuando algo va mal nos solemos repetir una y otra vez "vamos, levanta, levanta!!" o cosas así, el hecho de buscar lo contrario (correrte pronto) hace que te relajes y elimina esa autopresión.</p>
 <h2>Cómo superar la ansiedad sexual sin esfuerzo</h2>
 
 <p>Bien, pero aquí mi solución para ti, amigo. El truco sencillo, el atajo que funciona y sin rollos.</p>
 <p>¿Cómo superar esta ansiedad y dejar atrás cualquier gatillazo y/o eyaculación precoz?</p>
 <p><b>USANDO DROGAS</b></p>
-<p>Y sí, aquí hablo de la pastillita azul o preferentemente de su hermana menor: cialis. También he leído que las 'Power Tabs' que venden en sexshops funcionan bien, pero personalmente no las he probado.</p>
+<p>Y sí, aquí hablo de la pastillita azul o preferentemente de su hermana menor: cialis. </p>
+<p>También he leído que las 'Power Tabs' que venden en sexshops funcionan bien, pero personalmente no las he probado.</p>
 <p>Yo he probado el cialis. Una vez. Y antes de que me digas "vete a la mierda, vaya pufo de solución", déjame contarte la historia</p>
-<p>El caso es que cayó en mis redes una nueva chica. Sexual dónde las hubiese. Estuvimos hablando tres o cuatro días antes de hacerlo por primera vez. Ella me hablaba de su última relación sexual: 3 horas sin parar, en el mismo polvo.</p>
-<p>Me van los retos, la verdad. Y sé que puedo llegar a jugar en la Champions, si me sale bien, si conozco a la chica, tengo confianza... etc. </p>
+<p>El caso es que cayó en mis redes una nueva chica. </p>
+<p>Sexual dónde las hubiese. Estuvimos hablando tres o cuatro días antes de hacerlo por primera vez. </p>
+<p>Ella me hablaba de su última relación sexual: 3 horas sin parar, en el mismo polvo.</p>
+<p>Me van los retos, la verdad. </p>
+<p>Y sé que puedo llegar a jugar en la Champions, si me sale bien, si conozco a la chica, tengo confianza... etc. </p>
 <p>Pero ostia, ¿3 horas? Estaba acojonado, amigo. </p>
 <p>Bueno, yo no me arrugo, y la cosa era meterla en mi cama, luego ya veríamos cómo este eyaculador precoz ocasional la podría retener :)</p>
-<p>Yo ya le decía medio en broma, medio en serio, que conmigo no esperase más de minuto y medio (no olvides nunca, nunca, nunca el sentido del humor en el sexo) y pensaba a ver como podía resolver la papeleta y darle a esa chica, cuya manera de ser y también, llamadme superficial, sus tetazas, me encantaban.</p>
-<p>Así que lo comenté con los amigos, en el grupo de watsap. Ostia mira esta tía, que quiere que le dé duro, que con su último follamigo estuvo haciéndolo durante 3 horas... etc.</p>
-<p>Y mi amigo 'Pepe' salió al rescate. El ha tenido problemas de erecciones debido a que tiene hipertensión (ahora me consta que no, luego te hablaré un poco más de él) y tenía pastillitas mágicas, Cialis. Me las ofreció en plan "oye si quieres darle caña, yo tengo pastillas de estas de cuando las usaba, pásate por casa y te doy algunas".</p>
-<p>De puta madre. Cogí 4, me recomendó tomar una o dos. Tomé dos para cuando vino esta chica por casa (le quería dar bien). Fue un fin de semana muy bueno. El domingo estaba reventado eso sí. Gastamos 8 condones entre el sabado y el domingo además de algún orgasmo adicional.</p>
-<p>Esa mierda era buena y funcionaba. Me daba confianza, y sin sentirme Nacho Vidal, me encontraba 'en forma' ¿Pero que iba a pasar el próximo fin de semana que quedásemos?</p>
-<p>Bueno aún tenía otras dos pastillas para el próximo finde. Lo intentaría 'normal' y si veía que tenía problemas, me escabulliría al baño para tomármelas en un momento.</p>
+<p>Yo ya le decía medio en broma, medio en serio, que conmigo no esperase más de minuto y medio (<strong>no olvides nunca, nunca, nunca el sentido del humor en el sexo</strong>) y pensaba a ver como podía resolver la papeleta y darle a esa chica, cuya manera de ser y también (llamádme superficial) sus tetazas, me encantaban.</p>
+<p>Así que lo comenté con los amigos, en el grupo de watsap. </p>
+<p>Ostia mira esta tía, que quiere que le dé duro, que con su último follamigo estuvo haciéndolo durante 3 horas... etc.</p>
+<p>Y mi amigo 'Pepe' salió al rescate. </p>
+<p>El ha tenido problemas de erecciones debido a que tiene hipertensión (ahora me consta que no, algún día te hablaré un poco más de él) y tenía pastillitas mágicas, Cialis. </p>
+<p>Me las ofreció en plan "oye si quieres darle caña, yo tengo pastillas de estas de cuando las usaba, pásate por casa y te doy algunas".</p>
+<p>De puta madre. </p>
+<p>Cogí 4, me recomendó tomar una o dos. </p>
+<p>Tomé dos para cuando vino esta chica por casa (le quería dar bien). </p>
+<p>Fue un fin de semana muy bueno. </p>
+<p>El domingo estaba reventado. </p>
+<p>Gastamos 8 condones entre el sabado y el domingo, además de algún orgasmo adicional.</p>
+<p>Esa mierda era buena y funcionaba. Me daba confianza, y sin sentirme Nacho Vidal, me encontraba 'en forma' </p>
+<p>¿Pero que iba a pasar el próximo fin de semana que quedásemos?</p>
+<p>Bueno aún tenía otras dos pastillas para el próximo finde. </p>
+<p>Lo intentaría 'normal' y si veía que tenía problemas, me escabulliría al baño para tomármelas en un momento.</p>
 <p><b>No las volví a necesitar</b></p>
-<p>Ese siguiente fin de semana conseguí repetir la proeza anterior. Esta vez sin doparme absolutamente nada. También tengo que darle méritos a aquella chica: era un lujo, muy sexual, cariñosa y me hacía todo lo que le ordenaba y como yo quería. Era genial.</p>
+<p>Ese siguiente fin de semana conseguí repetir la proeza anterior. </p>
+<p>Esta vez sin doparme absolutamente nada. También tengo que darle méritos a aquella chica: era un lujo, muy sexual, cariñosa y me hacía todo lo que le ordenaba y como yo quería. </p>
+<p>Era genial.</p>
 <h2>Recopilando</h2>
 
 <p>Sí, te digo que uses pastillas. Una ayuda externa para esos momentos en que conoces una nueva chica y quieres engancharla bien.</p>
 <p>Encontrarás otros consejos por ahí, como "haz meditación", "habla con tu pareja", "respira y relajate", "date tiempo, todo está en tu cabeza".. etc.</p>
 <p>Bullshit. Cuanto tú lo que quieres es arreglar 'cuanto antes' ese problema.</p>
-<p>Lo peor es que pensarás que hay algún problema en ti. Que hay algo que tienes que 'arreglar' antes de estar con una chica. Cuando en el fondo no te ocurre nada, simplemente es algo de presión que tú mismo te pones en esas situaciones. </p>
+<p>Lo peor es que pensarás que hay algún problema en ti. Que hay algo que tienes que 'arreglar' antes de estar con una chica. </p>
+<p>Cuando en el fondo no te ocurre nada, simplemente es algo de presión que tú mismo te pones en esas situaciones. </p>
 <p>No pasa nada. Eres humano y le ocurre a muchos tíos. Te han vendido el falso mito del macho alfa semental que tiene que andar con la polla dura en todo instante.</p>
-<p>Usa una ayuda externa para esos momentos. Y pasado ese 'primer finde', deja de usarlas para el próximo encuentro.</p>
-<p>Cógela entre tus brazos y disfruta de su cuerpo. Bésala, acariciala y hazle el amor como ningún otro chico. Nótate conectado a ella. Respira con ella mientras la penetras. Susúrrale al oído. Y verás que, todo es mucho más sencillo de lo que imaginas.</p>
+<p>Usa una ayuda externa para el primer encuentro. </p>
+<p>Dejas el pabellón alto. </p>
+<p>Y pasado ese 'primer finde', deja de usarlas para el próximo encuentro.</p>
+<p>Cógela entre tus brazos y disfruta de su cuerpo. Bésala, acariciala y hazle el amor como ningún otro chico. Nótate conectado a ella. <a href="como-hacer-el-amor-realmente-bien-a-una-mujer.html" target="blank"> Respira con ella mientras la penetras </a>. </p>
+<p>Susúrrale al oído. </p>
+<p>Y verás que, todo es mucho más sencillo de lo que imaginas.</p>
 <p>Una vez que ya hayas 'roto' ese primer momento de presión, todo será mucho más fácil. </p>
-<p>Y si por un casual te vuelve a ocurrir y ella dice algo como 'el otro día no te pasaba eso, lo hiciste muy bien', cuéntaselo. Dile que querías pasarlo bien con ella, hacerla disfrutar y que tenías miedo de defraudarla. Le gustará y te ayudará con el 'tema' (no lo quiero calificar como 'problema').</p>
+<p>Y si por un casual te vuelve a ocurrir y ella dice algo como 'el otro día no te pasaba eso, lo hiciste muy bien', cuéntaselo. </p>
+<p>Dile que querías pasarlo bien con ella, hacerla disfrutar y que tenías miedo de defraudarla. Le gustará y te ayudará con el 'tema' (no lo quiero calificar como 'problema').</p>
 <p>Mostrar vulnerabilidad es sexy, es un rasgo alfa y a las chicas les gusta. En serio. Te ayudará más de lo que piensas. Normalmente cualquier chica se volcará más en complacerte y ayudarte.</p>
 <p>Por si te vuelve a ocurrir (aunque no debería después de todo lo que te he comentado), no te preocupes, date tiempo y sobre todo, utiliza el humor.</p>
 <p>Recuerdo  una vez después de una "mala actuación" que le dije a la chica:"mañana no vas a poder andar después de toda la caña que te he dado, eh". Las chicas siempre aprecian que a pesar de todo, conserves el sentido del humor.</p>
-<p>Ella será un reflejo de lo que seas tú: si tú te vienes abajo y te frustras, a ella también le entrará mal rollo. Si te muestras como un tipo seguro de si mismo, como si no pasara nada, y si además lo tratas con humor (y si es con una huida hacia delante como el comentario que te pongo, mejor) no tiene porque haber ningún maldito drama.</p>
-<h2>¿Qué paso con la chica?</h2>
+<p>Ella será un reflejo de lo que seas tú: si tú te vienes abajo y te frustras, a ella también le entrará mal rollo. </p>
+<p>Si te muestras como un tipo seguro de si mismo, como si no pasara nada, y si además lo tratas con humor (y si es con una huida hacia delante como el comentario que te pongo, mejor) no tiene porque haber ningún maldito drama.</p>
+<h2>¿Qué pasó con la chica?</h2>
 
-<p>Para mostrarte que hay luz más allá del túnel, que hay esperanza y que el futuro bueno es de los que se atreven y lo conquistan te contaré algo.</p>
-<p>Este miércoles estuve con la chica esta. Nos despertamos a las 2 de la mañana, sin sueño los dos y nos pusimos a ver una serie. No nos duró ni 5 minutos. Echamos un polvo de unos 45 minutos. </p>
-<p>Perdió la cuenta de las veces que se corrió. </p>
-<p>Si yo lo conseguí, tú también. No tengas miedo. No hay nada malo, ni tienes ningún problema. </p>
-<p>A darle caña.</p>
-
-              <style>
-</style>
-
-              <div class="relatedposts">
-                <h4>Quizá también te interese</h4>
-                  <div style="margin:auto">
-                    <ul>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../motivacion/que-hacer-cuando-estas-deprimido.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/deprimido2.jpg" alt="">
-                            <h6> Qué Hacer Cuando Estás Deprimido </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lagranmentira.jpg" alt="">
-                            <h6> La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../superpoderes/como-vencer-cualquier-miedo.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/bestiaMiedo_opt.jpg" alt="">
-                            <h6> Cómo vencer cualquier miedo </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/chicaPlaya.jpg" alt="">
-                            <h6> ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto. </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/Spartans-Rain.jpg" alt="">
-                            <h6> Guía Definitiva Sobre Duchas Frías </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/jamesBondLenguajeCorporal.jpg" alt="">
-                            <h6> Lenguaje Corporal Alfa - Aumenta Tu Testosterona </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                    </ul>
-                  </div>
-              </div>
-
-
+<p>Ya no me veo con ella, pero le sigo guardando mucho cariño. Fue una chica que me cuidó, me mimó y me colmó de sexo y caricias durante unos meses. </p>
+<p>Y además, me recogía la casa y me dejaba notas bonitas que leía al volver del trabajo.</p>
+<p>Si oyes hablar de mi propio Wordpress (Mishell), tiene ese nombre por esta chica: me estaba lamiendo el cuello cuando se me ocurrió la idea.</p>
+<p>Pero lo que quería contarte para despedirme, es esto.</p>
+<p>Echamos muchos polvos, jugamos a la sumisa y a Mr Grey, y lo pasamos muy bien. </p>
+<p>Teníamos muy buena química sexual.</p>
+<p>Recuerdo con orgullo, estar follándomela durante una hora. 60 minutos de reloj.</p>
+<p>A cuatro patas llegando al final.</p>
+<p>Hubo un momento, en que ella, la insaciable multiorgásmica latina, me dijo reventada "ya no puedo más" y se retiró hacia adelante.</p>
+<p>Yo, la volví a penetrar, la cogí por las muñecas para que no se escapase (te recuerdo que la tenía a 4 patas), y le dije con mi voz de chico malo:</p>
+<p><strong>"Ven aquí. Todavía no hemos acabado".</strong></p>
+<p>No tengas miedo. No hay nada malo, ni tienes ningún problema. </p>
+<p>Quítate presión. Paciencia. La química sexual irá surgiendo. Palabra.</p>
 
               <div>
               <style>
@@ -560,7 +573,8 @@ position: absolute;
       border: 1px solid #ccc;
       background-color: #111;
       color:white;
-      margin-bottom:40px;
+      margin-bottom:30px;
+      margin-top:20px;
     }
     .optinwrapper2 p{
       font-size:18px;
@@ -600,15 +614,15 @@ position: absolute;
 
               <div class="anotherwrapper2" style="">
                 <div class="thesticky2">
-                <div class="optinwrapper2">
+                <div class="optinwrapper2 myshadow">
 
-                  <h2 style="font-size:24px; max-width:100%;">
+                  <h2 style="color:#eee;font-size:24px; margin-top:0px; max-width:100%;">
                     ¿Cómo quieres pasar por este planeta?
                   </h2>
 
                   <div class="widthlimiter2">
                         <p style="font-size:17px;text-align:center; font-weight:500; color:#d7d7d7">
-                          <B>ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                          <b class="myred">ES HORA DE HACER ALGO CON TU VIDA. </b><BR/>
                           Mantente motivado, concentrado, y vive como nunca.
                         </p>
 
@@ -635,6 +649,74 @@ position: absolute;
 
 
               </div>
+
+              <style>
+</style>
+
+              <div class="relatedposts">
+                <h4>Quizá también te interese</h4>
+                  <div style="margin:auto">
+                    <ul>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/empezarblog.jpg" alt="">
+                            <h6> Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/chicaPlaya.jpg" alt="">
+                            <h6> ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto. </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="como-superar-una-ruptura.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lonley_opt.jpg" alt="">
+                            <h6> Cómo Superar Una Ruptura </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/mananasMilagrosas.jpg" alt="">
+                            <h6> ¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5 </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/Spartans-Rain.jpg" alt="">
+                            <h6> Guía Definitiva Sobre Duchas Frías </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
+                            <h6> Mata A La Bestia O Muere Intentándolo </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                    </ul>
+                  </div>
+              </div>
+
+
 
               
                 <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
@@ -784,10 +866,39 @@ function slugify(text) {
 }
 </script>
 
+                
+<script asyn src="../static/js/notification-bar/js/jquery.peekabar.min.js"></script>
+<script asyn src="../static/js/social/javascripts/socialShare.js"></script>
+
+<script>
+
+	$(document).ready(function () {
+    window.setTimeout(loadNotificationBar, 200);
+	});
+
+function loadNotificationBar() {
+
+    var bar = new $.peekABar({
+        position: 'bottom',
+        backgroundColor: '#0e0e0e'
+    });
+    bar.show({
+      html: '<span style="color:#f7f7f7;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H</span>',
+    });
+
+		$('.peek-a-bar').socialShare({
+			social: 'facebook,twitter,google',
+			blur: false
+		});
+
+    a = $(".arthrefSocialShare .centered").html();
+    $(".arthrefSocialShare .centered").html("<p style='color:black'>Gana karma!</p>" + a);
+}
+</script>
+
+
+
               
-
-
-
 
 
 
@@ -848,15 +959,15 @@ function slugify(text) {
 
               <div class="anotherwrapper" style="">
                 <div class="thesticky">
-                <div class="optinwrapper">
+                <div class="optinwrapper myshadow">
 
-                  <h2 style="font-size:24px; max-width:100%; font-weight:800; line-height:32px; padding-bottom:15px">
+                  <h2 style="color:#eee; font-size:24px; max-width:100%; font-weight:800; margin-top:0;line-height:32px; padding-bottom:15px">
                     ¿Cómo quieres pasar por este planeta?
                   </h2>
 
                   <div class="widthlimiter">
-                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:james; color:#d7d7d7">
-                        <B>ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Roboto; color:#d7d7d7">
+                        <B class="myred">ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
                           Únete a la banda, mantente motivado y concentrado y vive como nunca.
                         </p>
 
@@ -915,6 +1026,7 @@ function slugify(text) {
     }
     .categories  ul span{
       display: block;
+      margin-top: 6px;
     }
     .categories  ul a{
     }
@@ -926,7 +1038,8 @@ function slugify(text) {
     .foo {
       display: inline-block;
       float:left;
-      padding: 8px;
+      padding-top: 4px;
+      padding-right: 2px;
     }
     .pullright{
     }
@@ -971,8 +1084,6 @@ function slugify(text) {
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../blogging/como-abrir-un-blog.html">Como abrir un blog</a></span>
-                  
                   <span><a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
                   
                 </ul>
@@ -983,11 +1094,25 @@ function slugify(text) {
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
+                  <span><a href="como-hacer-el-amor-realmente-bien-a-una-mujer.html">Cómo hacer el amor, REALMENTE BIEN, a una mujer</a></span>
+                  
                   <span><a href="¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
                   
                   <span><a href="como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></span>
                   
                   <span><a href="como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></span>
+                  
+                </ul>
+              </div>
+            
+              <div style="padding-bottom:10px">
+                <a class="pullright" href="../category/como-hacer-10.000-euros-en-un-dia-con-un-blog.html">None</a>
+                <div class="foo"><span class="triangle"></span></div>
+                <ul>
+                  
+                  <span><a href="../como-hacer-10.000-euros-en-un-dia-con-un-blog.html">Cómo hacer 10.000 euros en un día con un blog</a></span>
+                  
+                  <span><a href="../como-resolver-tus-problemas-como-alejandro-magno.html">Cómo resolver tus problemas como Alejandro Magno</a></span>
                   
                 </ul>
               </div>
@@ -1018,7 +1143,6 @@ function slugify(text) {
 
 <script>
   $(document).ready(function(){
-    console.log("hey");
       new jQueryCollapse($(".categories"), {
         query: '.foo'
       });
@@ -1033,9 +1157,10 @@ function slugify(text) {
           <div class="fab" id="close"> </div>
 
       </div>
-
   </body>
+
 <script>
+
 $(".fab").on("click", function(){
   console.log("clicked");
   $(this).toggleClass("clicked");

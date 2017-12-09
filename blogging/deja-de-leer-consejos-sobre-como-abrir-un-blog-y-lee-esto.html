@@ -5,29 +5,78 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Mishell | Post</title>
 <!-- Google Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
 
 <!-- CSS Reset -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
 
-<!-- Milligram CSS minified -->
 <link rel="stylesheet" href="../static/css/bootstrap.2.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
-<script src="../static/js/jquery.sticky.js"></script>
+<!--<script src="/static/js/jquery.sticky.js"></script>-->
 <script src="../static/js/collapse.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
+<!--social plugin -->
+<link rel="stylesheet" href="../static/js/social/stylesheets/arthref.css">
+<!--notification bar-->
+<link rel="stylesheet" href="../static/js/notification-bar/css/jquery.peekabar.css">
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicons/favicon.ico%3Fv=3">
+<link rel="apple-touch-icon" sizes="57x57" href="../static/images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../static/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:8004/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- social metatags -->
+<!-- Place this data between the <head> tags of your website -->
+<title>MejorHombre | El blog del hombre del mañana</title>
+<meta name="description" content="Como hacer dinero con un blog. Fitness. Sexo y relaciones. Motivación. Lifestyle" />
+
+<!-- Twitter Card data -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@mejorhombre_com">
+<meta name="twitter:title" content="Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto">
+<meta name="twitter:description" content="Malditos bloggers.  
+Diciéndote cómo montar tu blog. Hablándote de wordpress, plugins, y vendiéndote el sueño de cómo seguir tu pasión y conseguir tu puta libertad. 
+Y se olvidan de empezar contándote lo más importante.
+Aquí te dejo los 3 pilares básicos por  ...">
+<meta name="twitter:creator" content="@mejorhombre_com">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="/static/images/posts/empezarblog.jpg">
+
+
+<!-- Open Graph data -->
+
+<meta property="og:title" content="Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="request.env.web2py_original_uri[1:]" />
+<meta property="og:image" content="/static/images/posts/empezarblog.jpg" />
+<meta property="og:description" content="Malditos bloggers.  
+Diciéndote cómo montar tu blog. Hablándote de wordpress, plugins, y vendiéndote el sueño de cómo seguir tu pasión y conseguir tu puta libertad. 
+Y se olvidan de empezar contándote lo más importante.
+Aquí te dejo los 3 pilares básicos por  ..." /> 
+<meta property="og:site_name" content="Mejor Hombre" />
+
+
+
 <style>
-
-@font-face {
-  font-family: "james";
-  src: url(../static/LiberationSans-Regular.ttf);
-}
-
     body {
       margin: 0px;
     }
@@ -57,15 +106,6 @@
     a {
       color: #de1b1b;
       text-decoration: underline;
-    }
-    p {
-      font-family: 'james', sans-serif;
-      font-style: normal;
-      font-size:20px;
-      font-size: 1.2em;
-      font-weight: 400;
-      color: #111;
-      line-height: 1.625;
     }
     body{
       color: black;
@@ -228,7 +268,7 @@
       color:white;
     }
     .subtitle{
-      font-size:14px;
+      font-size:17px;
       color: #ddd;
       font-weight: 600;
     }
@@ -243,7 +283,7 @@
     .menubuttonswrapper a{
       color:white;
       text-decoration: none;
-      padding: 13px 14px 12px 14px;
+      padding: 13px 14px 9px 14px;
     }
     .menubuttonswrapper li{
       list-style:none;
@@ -269,14 +309,17 @@
     .menubuttonswrapper {
         margin-top: -55px;
     }
-    @media only screen and (max-width: 360px)
+    @media only screen and (max-width: 719px)
     .menubuttonswrapper {
         margin-top: 0;
-        font-size: 14px;
+        font-size: 16px;
     }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 719px) {
       h1.logotitle{
-        font-size:24px;
+        font-size:32px;
+      }
+      .subtitle{
+        font-size:16px;
       }
     }
     .menu_outer_class{
@@ -299,8 +342,8 @@
     }
 </style>
 
-        <div class="menu_outer_class" style="">
-          <a href="../index.html">
+        <div class="menu_outer_class" style="padding:9px 0 20px 0;">
+          <a href="../index.html" style="text-decoration:none;">
             <h1 class="logotitle">Mejor<span>Hombre<span></h1>
           </a>
           <div class="subtitle">¿Hasta dónde quieres llegar antes de morir?</div>
@@ -316,9 +359,9 @@
                   Blog
                 </a>
               </li>
-              <li style="color: #de1b1b !important; font-weight: bolder;">
+              <li style="color: #de1b1b !important;">
               
-                <a href="../about-mejorhombre.html" style="text-decoration:underline; font-weight: bolder;">
+                <a href="../about-mejorhombre.html">
               
                 ¿Nuevo? Click Aquí
                 </a>
@@ -346,13 +389,6 @@
               
 
 <style>
-
-    .cover-img{
-      width:100%;
-      height:360px;
-    }
-    
-    
 
 .video-responsive {
 position: relative;
@@ -388,6 +424,10 @@ position: absolute;
 	width: 100% !important;
 	height: 100% !important;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 800 ;
+}
 
 </style>
 
@@ -397,138 +437,99 @@ position: absolute;
                   Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto
                 </h1>
                 
-                  <p>26 de Abril de 2017, por Jaime RockAndRoll</p>
-                
               </div>
 
               <img class="border-image cover-img" src="../static/images/posts/empezarblog.jpg" alt="">
 
               <br/><br/>
 
-              <p>Malditos bloggers. Diciéndote cómo montar tu blog. Hablándote de wordpress, plugins, y vendiéndote el sueño de cómo conseguir tu libertad. Cómo seguir tu pasión</p>
+              <p>Malditos bloggers.  </p>
+<p>Diciéndote cómo montar tu blog. Hablándote de wordpress, plugins, y vendiéndote el sueño de cómo seguir tu pasión y conseguir tu puta libertad. </p>
 <p>Y se olvidan de empezar contándote lo más importante.</p>
-<p><a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html" target="_blank">aqui</a></p>
 <p>Aquí te dejo los 3 pilares básicos por los que deberías de empezar a la hora de montar tu propio blog.</p>
-<p>Lo primero es que aclares tus engranajes internos, tu motivación e incluso tu estrategia interna. La filosofía interior que te mueve a lanzarte a algo tan jodido (parece fácil, eh?) antes de lanzarte a la aventura de montar un blog</p>
+<p>Lo primero es que aclares tus engranajes internos, tu motivación y tu estrategia interna.  </p>
+<p>La filosofía interior que te mueve a lanzarte a algo tan jodido (parece fácil, eh?) antes de lanzarte a la aventura de montar un blog.  </p>
 <p>Todo lo demás, son temas técnicos que puedes encontrar en cualquier blog. Pero un blog es mucho más que aspectos técnicos.</p>
-<p>Un blog es todo psicología y emoción. Tanto internas (que te motiva, por qué lo haces... etc) como externas (las emociones que transmitirá tu blog y tus palabras).</p>
-<p>Sobre todo, no olvides nunca el punto 2.
-<h2>Punto 1. Demanda. Validación</h2>
-El punto más jodidamente importante. Antes de comprar un dominio, antes de escribir una maldita palabra.</p>
+<p><strong>Un blog es todo psicología y emoción.  </strong></p>
+<p>Tanto internas (que te motiva, por qué lo haces... etc) como externas (las emociones que transmitirá tu blog y tus palabras).</p>
+<h2>1.- Demanda. Validación</h2>
+
+<p>El punto <strong>más jodidamente importante</strong>. </p>
+<p>Antes de comprar un dominio, antes de escribir una maldita palabra.</p>
 <p>¿Estás seguro de que tienes demanda para tu blog? ¿Estás seguro de que hay gente buscando lo que ofreces?</p>
-<p>Si la respuesta no es un claro sí y sí, tira tu idea a la basura, o al menos intenta validarla antes de lanzarte a la piscina (escribiré un post sobre como validar una idea de negocio próximamente).</p>
+<p>Si la respuesta no es un claro sí y sí, tira tu idea a la basura, o al menos intenta validarla antes de lanzarte a la piscina (tengo pendiente escribir un día algo sobre validación de ideas).</p>
 <p>Puede que te apasione hablar sobre la reproducción del ornitorrinco, pero si solo hay cuatro gatos en el mundo interesados en ella, ni se te ocurra abrir un blog sobre el tema.</p>
-<p>Mejorhombre.com es un blog sobre motivación y mejora personal. Hay miles de blogs, libros y demás material sobre ello. Hay una industria tras todo ello, eso prueba que ya hay un público, una demanda.</p>
+<p>Mejorhombre.com es un blog sobre motivación y mejora personal.  </p>
+<p>Hay miles de blogs, libros y demás material sobre ello. Hay una industria tras todo ello, eso prueba que ya hay un público, una demanda.</p>
 <p>Otra cosa es si un blog como este puede tener cabida en un mercado tan saturado (y a veces denostado). Para eso, lee el punto 2.</p>
-<p>Además, en el mundo anglosajón empieza a haber una tendencia creciente de blogs orientados a tíos exclusivamente. Normalmente las tendencias en EEUU acaban llegando y replicándose en el mundo hispano a los pocos años. Aprende a detectar dichas tendencias y aprovecharlas para ti.</p>
-<p>Así que mi idea de blog, de momento, está validada, tiene demanda.
-<h2>Punto 2. Tu voz. ¿Cómo vas a divertirte? ¿Cómo vas a ser único?</h2>
-Abrir un blog es fácil y rápido. Y ahí acaba lo fácil. Mantener un blog con un mínimo de calidad es duro, duro de cojones.</p>
-<p>Hay una cantidad de trabajo en las tripas de cualquier blog, que el lector medio ignora. Plugins, diseño, mantenimiento, escribir periódicamente... etc. Repito: es duro y no es para todos.</p>
-<p>Así que más vale que te diviertas con él. ¿Y cómo lo vas a hacer?</p>
+<p>Además, en el mundo anglosajón empieza a haber una tendencia creciente de blogs orientados a tíos exclusivamente.  </p>
+<p>Normalmente las tendencias en EEUU acaban llegando y replicándose en el mundo hispano a los pocos años.  </p>
+<blockquote>
+<p>Aprende a detectar dichas tendencias y aprovecharlas para ti.</p>
+</blockquote>
+<p>Así que mi idea de blog, de momento, está validada, tiene demanda.</p>
+<h2>2-. Tu voz. ¿Cómo vas a divertirte? ¿Cómo vas a ser único?</h2>
+
+<p>Abrir un blog es fácil y rápido.  </p>
+<p>Y ahí acaba lo fácil.   </p>
+<p>Mantener un blog con un mínimo de calidad es duro, duro de cojones.</p>
+<p>Hay una cantidad de trabajo en las tripas de cualquier blog, que el lector medio ignora. Plugins, diseño, mantenimiento, escribir periódicamente... etc. </p>
+<p>Repito: es duro y no es para todos.</p>
+<p>Así que más vale que te diviertas con él.  </p>
+<p>¿Y cómo lo vas a hacer?</p>
 <p><b>EXPRESÁNDOTE</b></p>
 <p>Te haré una pregunta... <b>¿quién eres tú?</b></p>
-<p>Piensa en tu historia personal, en tus experiencias, en lo que arde dentro de ti. En tus miedos, tus fantasmas, tus fortalezas... Piensa en todo el conjunto de fotos e historias que llevas en tu interior.</p>
-<p>Ahora coge todo eso, y empapa tu blog de ello. Exprésate como nunca. Utilizalo para montar tu propio show.</p>
+<p>Piensa en tu historia personal, en tus experiencias, en lo que arde dentro de ti.  </p>
+<p>En tus miedos, tus fantasmas, tus fortalezas... Piensa en todo el conjunto de fotos e historias que llevas en tu interior.</p>
+<h3>Ahora coge todo eso, y empapa tu blog de ello.</h3>
+<h3>Exprésate como nunca. Utilizalo para montar tu propio show.</h3>
 <p>¿Cuáles son las mejores canciones que se escriben?</p>
 <p>Aquellas en las que el cantante consigue plasmar algo personal en ellas, algo real de sus experiencias vitales. Esas que van cargadas de autenticidad.</p>
 <p>Tu blog va a ser eso mismo, un reflejo de ti, una expresión de tu interior, tu escenario principal.</p>
-<p>Los seres humanos siempre hemos querido expresarnos. Gritar un "yo estoy aquí".</p>
-<p>Encontrando esa voz tuya propia, ese toque que nadie más que tú puede darle a tu blog (sea el tema que trates en él) conseguirás dos cosas:
+<p>Los seres humanos siempre hemos querido expresarnos. </p>
+<p>Gritar un "yo estoy aquí".</p>
+<p>Encontrando esa voz tuya propia, ese toque que nadie más que tú puede darle a tu blog (sea el tema que trates en él) conseguirás dos cosas:</p>
 <ul>
     <li>Divertirte.</li>
-    <li>Crear posts auténticos y únicos.</li>
+    <li>Crear posts auténticos y jodidamente únicos.</li>
 </ul>
-Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. Es tu patio de recreo y tu escenario. Úsalo a tu favor.</p>
-<p>La gente al final, no sigue a blogs, sigue a personas. Sigue a personas porque les gustan las historias que cuentan y como las cuentan.</p>
+
+<p><strong>Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. Es tu patio de recreo y tu escenario. Úsalo a tu favor.</strong></p>
+<p>La gente al final, no sigue a blogs, sigue a personas. </p>
+<p>Sigue a personas porque les gustan las historias que cuentan y como las cuentan.</p>
 <p>Solo tu puedes contar tus propias historias. Be real. Be different.</p>
 <p>Inspirate de quién quieras. Pero no copies a nadie. Solo tú puedes ser tú.</p>
-<p>Yo soy Jaime. El pequeño gran inadaptado. El misfit. Con mi punto de perdedor, flipado, peliculero y friki. Y uso todo ello en cada post. Es más, mejorhombre es el sitio de mejora personal para gente que se sienta igual. Para toda esa gente que este bloqueada, sintiéndose distinto o no tratándose todo lo bien que podrían y decirles en un susurro "despertad, otro mundo es posible".</p>
-<p>Todo ello hace además que mi blog sea único, personal y que tenga sentido. Hay muchos blogs y sitios de desarrollo personal, cargados de blablabla y de "haz esto y esto otro". Pero no hay ninguno como el mío. Punto.</p>
-<p>Este punto de distinción, de contarte todo a través de tu manera de ver el mundo, tus experiencias y desde lo más profundo de tus tripas es lo que te dará la autenticidad. Busca esa voz propia que le de sentido a todo.</p>
+<p>Yo soy Jaime. El pequeño gran inadaptado. El misfit. Con mi punto de perdedor, flipado, peliculero y freak. </p>
+<p>Y uso todo ello en cada post. </p>
+<p>Es más, mejorhombre es el sitio de mejora personal para gente que se sienta igual. </p>
+<p>Para toda esa gente que esté bloqueada, sintiéndose distinto, o no tratándose todo lo bien que podrían y decirles en un susurro:</p>
+<p><strong>"Despertad, otro mundo es posible".</strong></p>
+<p>Todo ello hace además que mi blog sea único, personal y que tenga sentido. </p>
+<p>Hay muchos blogs y sitios de desarrollo personal, cargados de blablabla y de "haz esto y esto otro". </p>
+<p>Pero no hay ninguno como el mío. Punto.</p>
+<p>Este punto de distinción, de contar todo a través de tu manera de ver el mundo, tus experiencias y desde lo más profundo de tus tripas es lo que te dará la autenticidad.  </p>
+<p>Busca esa voz propia que le de sentido a todo.</p>
 <h2>3.- Céntrate en ayudar. Construye algo único de lo que puedas estar orgulloso.</h2>
 
 <p>Tu blog no va a ser sólo un blog. Va a ser un sitio del que vivir, dónde ganar dinero, va a ser tu negocio digital.</p>
 <p>Pero antes de todo eso, sienta esta idea base y grápate esta frase: tu blog es para ayudar a gente.</p>
-<p>Tu blog estará centrado en ayudar y en mejorar la vida de las personas. En proporcionar valor a sus vidas. Tanto en los artículos gratuitos como en los productos y servicios que vendas o promociones, tu finalidad será esa: aportar valor a sus vidas.</p>
-<p>Mejorhombre.com es mi legado. Es el sitio de autotransformación que quiero construir para cualquier pequeño misfit como yo. Es el sitio dónde uno aprende a tratarse realmente bien, a divertirse con la vida, a trabajar duro y a convertirse en su propio rockstar.</p>
-<p>Es un sitio dónde puedes mejorar varias áreas de tu vida. Dónde acabamos hablando de lo que significa ser hombre y estar en este planeta. Y de como crearnos una vida mejor y un mundo mejor. Sí, ambicioso y flipado. Pero no te pillaré de sorpresa ¿no?</p>
-<p>Ese es el sitio que estoy construyendo. Un sitio único tanto en contenidos como en diseño.</p>
-<p>Tu blog también debería ser único. Diferente. Deberías verlo cada día y sentirte orgulloso de él. Deberías pensar en él como tu legado, como tu obra de arte.</p>
-<p>El diseño de tu blog debería ser muy importante. Invierte en él todo lo que puedas y si puedes darle un toque distinto a lo habitual mejor que mejor.</p>
-<p>El diseño de mejorhombre.com no es algo que suelas ver por ahí. Ya llama la atención (por algo te quedaste, ¿no?), ya tiene un toque diferente a todo lo que sueles encontrar por ahí.</p>
-<p>El tener un diseño guapo tendrá otro efecto colateral: trabajarás más a gusto. Parece una chorrada pero es así. No es lo mismo el efecto de publicar un nuevo post si tu sitio tiene un look pésimo a que si tiene un diseño que lo parte.</p>
-<p>Un look cool te hará tener más ganas de pulsar en publicar ver como queda el último post. Te creará más conciencia de "estar construyendo algo".</p>
+<p>Tu blog estará centrado en ayudar y en mejorar la vida de las personas. En proporcionar valor a sus vidas. </p>
+<p>Tanto en los artículos gratuitos como en los productos y servicios que vendas o promociones, tu finalidad será esa: aportar valor a sus vidas.</p>
+<p>Mejorhombre.com es mi legado. </p>
+<p>Es el sitio de autotransformación que quiero construir para cualquier pequeño misfit como yo. </p>
+<p>Es el sitio dónde uno aprende a tratarse realmente bien, a divertirse con la vida, a trabajar duro y a convertirse en su propio rockstar.</p>
+<p>Es un sitio dónde puedes mejorar varias áreas de tu vida. </p>
+<p>Dónde acabamos hablando de lo que significa ser hombre y estar en este planeta. </p>
+<p>Y de como crearnos una vida mejor y un mundo mejor. </p>
+<p>Sí, ambicioso y flipado. Pero no te pillaré de sorpresa ¿no?</p>
+<p>Ese es el sitio que estoy construyendo. Un sitio único tanto en contenidos como en actitud.</p>
+<p>Tu blog también debería ser único.<br />
+Diferente.<br />
+Deberías verlo cada día y sentirte orgulloso de él. </p>
+<p>Deberías pensar en él como tu legado, como tu obra de arte.</p>
 <p>Construye algo. Deja un legado. Ayuda a la gente. Y cambia tu vida.</p>
-<p>Te toca. Échale cojones.</p>
-
-              <style>
-</style>
-
-              <div class="relatedposts">
-                <h4>Quizá también te interese</h4>
-                  <div style="margin:auto">
-                    <ul>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="como-abrir-un-blog.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/empezarblog.jpg" alt="">
-                            <h6> Como abrir un blog </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
-                            <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/Spartans-Rain.jpg" alt="">
-                            <h6> Guía Definitiva Sobre Duchas Frías </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../superpoderes/como-vencer-cualquier-miedo.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/bestiaMiedo_opt.jpg" alt="">
-                            <h6> Cómo vencer cualquier miedo </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/mananasMilagrosas.jpg" alt="">
-                            <h6> ¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5 </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../sex-and-girls/como-superar-una-ruptura.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lonley_opt.jpg" alt="">
-                            <h6> Cómo Superar Una Ruptura </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                    </ul>
-                  </div>
-              </div>
-
-
+<p><br></p>
+<p><strong>Te toca. Échale cojones.</strong></p>
 
               <div>
               <style>
@@ -538,7 +539,8 @@ Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. E
       border: 1px solid #ccc;
       background-color: #111;
       color:white;
-      margin-bottom:40px;
+      margin-bottom:30px;
+      margin-top:20px;
     }
     .optinwrapper2 p{
       font-size:18px;
@@ -578,15 +580,15 @@ Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. E
 
               <div class="anotherwrapper2" style="">
                 <div class="thesticky2">
-                <div class="optinwrapper2">
+                <div class="optinwrapper2 myshadow">
 
-                  <h2 style="font-size:24px; max-width:100%;">
+                  <h2 style="color:#eee;font-size:24px; margin-top:0px; max-width:100%;">
                     ¿Cómo quieres pasar por este planeta?
                   </h2>
 
                   <div class="widthlimiter2">
                         <p style="font-size:17px;text-align:center; font-weight:500; color:#d7d7d7">
-                          <B>ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                          <b class="myred">ES HORA DE HACER ALGO CON TU VIDA. </b><BR/>
                           Mantente motivado, concentrado, y vive como nunca.
                         </p>
 
@@ -613,6 +615,74 @@ Tu blog no es tu blog. Tu blog es una parte de ti. Una extensión de ti mismo. E
 
 
               </div>
+
+              <style>
+</style>
+
+              <div class="relatedposts">
+                <h4>Quizá también te interese</h4>
+                  <div style="margin:auto">
+                    <ul>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/Spartans-Rain.jpg" alt="">
+                            <h6> Guía Definitiva Sobre Duchas Frías </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/empezarblog.jpg" alt="">
+                            <h6> Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../como-resolver-tus-problemas-como-alejandro-magno.html">
+                            <img class="related-post-thumbnail" src="http://localhost:8004/static/images/posts/thumbnails/" alt="">
+                            <h6> Cómo resolver tus problemas como Alejandro Magno </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../superpoderes/¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/mananasMilagrosas.jpg" alt="">
+                            <h6> ¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5 </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../sex-and-girls/como-superar-una-ruptura.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lonley_opt.jpg" alt="">
+                            <h6> Cómo Superar Una Ruptura </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lagranmentira.jpg" alt="">
+                            <h6> La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                    </ul>
+                  </div>
+              </div>
+
+
 
               
                 <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
@@ -762,10 +832,39 @@ function slugify(text) {
 }
 </script>
 
+                
+<script asyn src="../static/js/notification-bar/js/jquery.peekabar.min.js"></script>
+<script asyn src="../static/js/social/javascripts/socialShare.js"></script>
+
+<script>
+
+	$(document).ready(function () {
+    window.setTimeout(loadNotificationBar, 200);
+	});
+
+function loadNotificationBar() {
+
+    var bar = new $.peekABar({
+        position: 'bottom',
+        backgroundColor: '#0e0e0e'
+    });
+    bar.show({
+      html: '<span style="color:#f7f7f7;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H</span>',
+    });
+
+		$('.peek-a-bar').socialShare({
+			social: 'facebook,twitter,google',
+			blur: false
+		});
+
+    a = $(".arthrefSocialShare .centered").html();
+    $(".arthrefSocialShare .centered").html("<p style='color:black'>Gana karma!</p>" + a);
+}
+</script>
+
+
+
               
-
-
-
 
 
 
@@ -826,15 +925,15 @@ function slugify(text) {
 
               <div class="anotherwrapper" style="">
                 <div class="thesticky">
-                <div class="optinwrapper">
+                <div class="optinwrapper myshadow">
 
-                  <h2 style="font-size:24px; max-width:100%; font-weight:800; line-height:32px; padding-bottom:15px">
+                  <h2 style="color:#eee; font-size:24px; max-width:100%; font-weight:800; margin-top:0;line-height:32px; padding-bottom:15px">
                     ¿Cómo quieres pasar por este planeta?
                   </h2>
 
                   <div class="widthlimiter">
-                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:james; color:#d7d7d7">
-                        <B>ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Roboto; color:#d7d7d7">
+                        <B class="myred">ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
                           Únete a la banda, mantente motivado y concentrado y vive como nunca.
                         </p>
 
@@ -893,6 +992,7 @@ function slugify(text) {
     }
     .categories  ul span{
       display: block;
+      margin-top: 6px;
     }
     .categories  ul a{
     }
@@ -904,7 +1004,8 @@ function slugify(text) {
     .foo {
       display: inline-block;
       float:left;
-      padding: 8px;
+      padding-top: 4px;
+      padding-right: 2px;
     }
     .pullright{
     }
@@ -949,8 +1050,6 @@ function slugify(text) {
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="como-abrir-un-blog.html">Como abrir un blog</a></span>
-                  
                   <span><a href="deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
                   
                 </ul>
@@ -961,11 +1060,25 @@ function slugify(text) {
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
+                  <span><a href="../sex-and-girls/como-hacer-el-amor-realmente-bien-a-una-mujer.html">Cómo hacer el amor, REALMENTE BIEN, a una mujer</a></span>
+                  
                   <span><a href="../sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
                   
                   <span><a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></span>
                   
                   <span><a href="../sex-and-girls/como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></span>
+                  
+                </ul>
+              </div>
+            
+              <div style="padding-bottom:10px">
+                <a class="pullright" href="../category/como-hacer-10.000-euros-en-un-dia-con-un-blog.html">None</a>
+                <div class="foo"><span class="triangle"></span></div>
+                <ul>
+                  
+                  <span><a href="../como-hacer-10.000-euros-en-un-dia-con-un-blog.html">Cómo hacer 10.000 euros en un día con un blog</a></span>
+                  
+                  <span><a href="../como-resolver-tus-problemas-como-alejandro-magno.html">Cómo resolver tus problemas como Alejandro Magno</a></span>
                   
                 </ul>
               </div>
@@ -996,7 +1109,6 @@ function slugify(text) {
 
 <script>
   $(document).ready(function(){
-    console.log("hey");
       new jQueryCollapse($(".categories"), {
         query: '.foo'
       });
@@ -1011,9 +1123,10 @@ function slugify(text) {
           <div class="fab" id="close"> </div>
 
       </div>
-
   </body>
+
 <script>
+
 $(".fab").on("click", function(){
   console.log("clicked");
   $(this).toggleClass("clicked");
