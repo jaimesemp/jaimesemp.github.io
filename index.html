@@ -4,14 +4,64 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Mishell | Post</title>
+    <title>Mejorhombre.com | El blog del hombre del mañana</title>
 <!-- Google Fonts -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,700">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+
 
 <link rel="stylesheet" href="static/css/bootstrap.2.css">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114033865-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114033865-1');
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+      google.charts.load('current', {'packages':['gauge']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Motivación', 80],
+          ['Locura', 55],
+        ]);
+
+        var options = {
+          width: 300, height: 120,
+          redFrom: 90, redTo: 100,
+          yellowFrom:75, yellowTo: 90,
+          minorTicks: 5
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+        setInterval(function() {
+          data.setValue(0, 1, 40 + Math.round(60 * Math.random()));
+          chart.draw(data, options);
+        }, 13000);
+        setInterval(function() {
+          data.setValue(1, 1, 40 + Math.round(60 * Math.random()));
+          chart.draw(data, options);
+        }, 5000);
+        setInterval(function() {
+          data.setValue(2, 1, 60 + Math.round(20 * Math.random()));
+          chart.draw(data, options);
+        }, 26000);
+      }
+    </script>
+
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon.ico%3Fv=3">
@@ -43,6 +93,15 @@
       float: left;
     }
 
+    h5.calltoaction{
+      font-family: 'Roboto Slab';
+      font-weight: 100;
+      color: white;
+      margin-top: 15px;
+      text-decoration: underline;
+      margin-bottom: 15px;
+    }
+
     .relatedthumb  img{
       max-height:163px;
       max-height:150px;
@@ -69,9 +128,6 @@
     .site-container h3 {
       color:#eee;
     }
-    .site-container h3 {
-      font-size:2.4rem;
-    }
     img {
       width:100%
     }
@@ -80,7 +136,7 @@
       text-decoration: underline;
     }
     p {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Slab', sans-serif;
       font-style: normal;
       font-size: 1.2em;
       font-weight: 400;
@@ -92,7 +148,7 @@
     }
 
  h1{
-   font-size: 4rem;
+   font-size: 4.5rem;
    color: #111;
    font-family: Montserrat, Arial;
  }
@@ -107,8 +163,8 @@
     font-weight: bold;
  }  
  h3 { 
-    font-size: 2.6rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', sans-serif;
  }  
  h4{ 
     text-transform: uppercase; 
@@ -120,7 +176,7 @@
   }  
   h2 {
     font-size:2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
   }
   h2 span{
     font-weight:100;
@@ -161,6 +217,21 @@
       }
     }
 
+  .col-main-me{
+    padding-top:40px;
+  }
+@media screen and (min-width: 1000px) {
+  .col-main-me{
+    padding:50px;
+    padding-bottom:0px;
+  }
+}
+.col-main-text{
+  padding:40px;
+  padding-top:10px;
+  padding-bottom:0px;
+}
+
 .fab {
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
   display: block;
@@ -183,7 +254,30 @@
   transform: scale(15) !important;
   transition: bottom .2s, right .2s, transform .2s;
 }
+li {
+  display:table;
+  font-family: Montserrat;
+  font-weight: 800;
+}
+.fact-points li a, .target-points li a{
+  text-decoration:underline;
+}
+.target-points li {
+  color:#f9f9f9;
+}
 
+.black-row{
+  margin-left:-15px; 
+  margin-right:-15px; 
+  padding: 10px 0 40px 0;
+  background:#111; 
+  color:red;
+}
+
+.optinform input {
+  max-width:300px;
+  display: inline;
+}
 
 
 </style>
@@ -191,17 +285,17 @@
 
   <body>
 
-<div class="menubar" style="float:right;z-index:999;position:fixed;float:right;background:black;width:100%;text-align: right;margin-right: 20px;padding-right: 35px;height: 35px;padding-top: 5px;">
+<div class="menubar" style="float:right;z-index:999;position:fixed;float:right;background:black;width:100%;text-align: right;padding-right: 35px;height: 35px;padding-top: 5px;">
   <span class="float:right">
     <a href="blog.html" style="padding-left:30px;text-decoration:none">
-        <p style="display:inline; color:#de1b1b;font-family: Roboto;  font-weight:500;">
+        <p style="display:inline; color:#f9f9f9;font-family: 'Roboto Slab';  font-weight:500;">
             Ir al blog
         </p>
     </a>
   </span>
   <span class="float:right">
-    <a href="about-mejorhombre.html" style="padding-left:30px;text-decoration:none">
-        <p style="display:inline;color:#de1b1b;font-family: Roboto;  font-weight:500;">
+    <a href="about-mejorhombre.html" style="padding-left:18px;text-decoration:none">
+        <p style="display:inline;color:#f9f9f9;font-family: 'Roboto Slab';  font-weight:500;">
             ¿Quién cojones soy yo?
         </p>
     </a>
@@ -215,23 +309,26 @@
 
 
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-main-text">
               <div class="epic-text" style="text-align:center">
 
-              <h1>¿Hasta dónde quieres llegar antes de morir?</h1>
+                <h1>¿Cuándo vas a empezar a <span style="font-weight:600;color:#de1b1b">Rugir?</span></h1>
 
-              <h3 style="margin: 25px 0 20px 0;">
-                  ¿<b>Muerto</b> en vida por la <b>Rutina</b>? 
-                  <div style="font-size:2rem">
-                    <br/>Estoy juntando a la banda. A los <b>rebeldes</b> que buscan vivir una vida <b>intensa</b> y sin límites.<br/> 
-                  </div></br>
-                  <span>
-                    <b>¿Tienes lo que hay que tener?<br/></b>
-                    <span style="font-size:16px; font-weight:bolder; color:#de1b1b; text-transform: uppercase;">Hora de forjar tu propio héroe</span>
-                  </span>
+              <h3 style="margin: 15px 0 10px 0; line-height:1.7">
+                Este es <span style="font-weight:600; color:#de1b1b">EL BLOG</span> sobre motivación, dinero, sexo, chicas, propósito, fitness y lifestyle<br/>
+                <br/>
+                No mires atrás, no te avergüences<br/>
+                Y corre a por  <span style="color:#de1b1b; font-weight:600">tu destino</span>
+                <!--El blog que tu jefe, tu novia y tu madre no querrían que leyeses.-->
+                  <!--<div style="font-size:2rem">-->
+                    <!--<br/>Estoy juntando a la banda. A los <b>rebeldes</b> que buscan vivir una vida <b>intensa</b> y sin límites.<br/> -->
+                  <!--</div></br>-->
+                  <!--<span>-->
+                    <!--¿Tienes lo que hay que tener?<br/>-->
+                  <!--</span>-->
               </h3>
 
-                    <form style="max-width: 360px; margin: auto; margin-top: 0px;" class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/" method="post">
+                    <form style="max-width: 360px; margin: auto; margin-top: 20px;" class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/" method="post">
                       <input type="hidden" name="groups[]" id="groups-1" value="1"></label>
                       <input style="width:100%" type="text" placeholder="Tu nombre" name="name" id="email" value=""></dd>
                       <input style="width:100%;" type="text" placeholder="Tu mejor email" name="email" id="email" value=""></dd>
@@ -252,8 +349,8 @@
                   </h6>
               </div>
             </div>
-            <div class="col-md-7" style="">
-              <img class="heroimg" style="padding-top:20px" src="static/images/finalRetina.jpg" alt="">
+            <div class="col-md-7 col-main-me" style="">
+              <img class="heroimg" style="padding-top:28px" src="static/images/finalRetina2.png" alt="">
             </div>
           </div>
           <!-- <div class="fab"></div> -->
@@ -273,133 +370,339 @@
             </div>
           </div>
 
-          <div class="row last-articles" style="padding: 70px 0px 0px 10px; background:#f3f3f4">
+          <div class="row last-articles" style="padding: 60px 0px 160px 10px; background:#f3f3f4">
+            <div class="col-md-6 col-md-offset-3" style="text-align:left;">
+              <h1 style="color:#222; text-align:center">¿Qué es MejorHombre?</h1>
+              <h3 style="margin-top:0;text-align:center;color:#444">Te lo cuento <span style="color:#de1b1b">épicamente</span> en 2 minutos</h3>
 
-            <div class="col-md-12" style="text-align:center;">
-              <h1 style="color:#777"> Últimos artículos </h1>
-              <br/>
-            </div>
-          </div>
-          <div class="row relatedposts" style="padding: 30px 0 40px 10px; width:90%; margin: auto;background:#f3f3f4">
-
-            <div class="col-md-3">
-              <div class="relatedthumb">
-                  <a href="motivacion/mata-a-la-bestia-o-muere-intentandolo.html">
-                    <img class="related-post-thumbnail" src="static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
-                    <h6> Mata A La Bestia O Muere Intentándolo </h6>
-                  </a>
-              </div>
-            </div>
-            <div class="col-md-3">
-                <div class="relatedthumb">
-                  <a href="fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
-                    <img class="related-post-thumbnail" src="static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
-                    <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
-                  </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-              <div class="relatedthumb">
-                  <a href="motivacion/mata-a-la-bestia-o-muere-intentandolo.html">
-                    <img class="related-post-thumbnail" src="static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
-                    <h6> Mata A La Bestia O Muere Intentándolo </h6>
-                  </a>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="relatedthumb">
-                <a href="blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">
-                  <img class="related-post-thumbnail" src="static/images/posts/thumbnails/empezarblog.jpg" alt="">
-                  <h6> Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto </h6>
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="row" style="padding: 10px 0 40px 0; width:90%; margin: auto;background:#f3f3f4">
-
-            <div class="col-md-12 favorites" style="text-align:center; padding-bottom:20px">
-              <h1 style="color:#ccc; background: #111; padding:15px 0 15px 0">Favoritos </h1>
-              <br/>
-            </div>
-          </div>
-          <div class="row relatedposts" style="padding: 10px 10px 50px 10px; margin:auto; width:90%;  background:#f3f3f4">
-
-            <div class="col-md-3">
-              <div class="relatedthumb">
-                <a href="sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">
-                  <img class="related-post-thumbnail" src="static/images/posts/thumbnails/chicaPlaya.jpg" alt="">
-                  <h6> ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto. </h6>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3">
-                <div class="relatedthumb">
-                  <a href="fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
-                    <img class="related-post-thumbnail" src="static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
-                    <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
-                  </a>
-                </div>
-            </div>
-            <div class="col-md-3">
-              <div class="relatedthumb">
-                <a href="motivacion/que-hacer-cuando-estas-deprimido.html">
-                  <img class="related-post-thumbnail" src="static/images/posts/thumbnails/deprimido2.jpg" alt="">
-                  <h6> Qué Hacer Cuando Estás Deprimido </h6>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="relatedthumb">
-                  <a href="motivacion/mata-a-la-bestia-o-muere-intentandolo.html">
-                    <img class="related-post-thumbnail" src="static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
-                    <h6> Mata A La Bestia O Muere Intentándolo </h6>
-                  </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row epicvideo" style="text-align:center;  padding:80px 0 40px 0; background:#000; color:#fff">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-6">
-              <h1 style="color:#ccc;  padding:0px 0 15px 0">¿Qué haces <br/> cuando todo falla?</h1>
-              <h3 style="padding-bottom:20px; color:#ccc">La respuesta... en el vídeo:</h3>
               <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/219307679" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4DUX2aEI5xY?rel=0&amp;showinfo=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
             </div>
           </div>
-
-          <div class="row calltoactionbuttons" style="text-align:center; background:#000; color:#fff; padding:20px 0 90px 0;">
+          <div class="row epicvideo" style="margin-top:70px;text-align:center;  padding:80px 0 120px 0; background:#000; color:#fff">
             <div class="col-md-3">
             </div>
-            <div class="col-md-3" style="margin-top:12px">
-              <a href="blog.html" style="color:#000">
-                <div class="rocksubmit button-primary" style="background-color:#de1b1b;padding:1px;border-radius:2px;">
-                  <h5 class="" style="font-family: Roboto; font-weight:100;">
-                    <b> IR AL BLOG</b>
-                  </h5>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-3" style="margin-top:12px">
-              <a href="about-mejorhombre.html" style="color:#000">
-                <div class="rocksubmit button-primary" style="background-color:#de1b1b;padding:1px;border-radius:2px;">
-                  <h5 class="" style=" font-family: Roboto;  font-weight:100;">
-                      <b> ¿QUIÉN COJONES SOY YO?  </b>
-                  </h5>
-                </div>
-              </a>
+            <div class="col-md-6">
+              <h1 style="color:#ccc;  padding:0px 0 15px 0">Reto Monetiza en 3 Meses</h1>
+              <h3 style="margin-top:0;text-align:center;color:#aaa">¿Se puede hacer <span style="color:#de1b1b"> rentable </span>un blog en <span style="color:#de1b1b"> 3 meses</span>?</h3>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6Cm4e4_x2X0?rel=0&amp;showinfo=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
             </div>
           </div>
-          <div class="row" style="background-color:#de1b1b;  padding:10px 0 0px 0; text-align:center">
-              <h1 class="epicbottom" style="color:black;font-size:18px;font-weight:800; margin:0 0 10px 0; letter-spacing: 3px !important;">
+
+
+<div class="row" style="padding:60px 0">
+<script src="static/js/jquery.countdown.min.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+
+<style>
+
+.main-example {
+  margin: 0 auto;
+  width: 355px;
+  text-align:center;
+}
+.main-example .countdown-container {
+  height: 130px;
+}
+.main-example .time {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  height: 95px;
+  width: 65px;
+
+  -webkit-perspective: 479px;
+  -moz-perspective: 479px;
+  -ms-perspective: 479px;
+  -o-perspective: 479px;
+  perspective: 479px;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.main-example .count {
+  background: #202020;
+  color: #f8f8f8;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 2.4em;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  top: 0;
+  width: 100%;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transform-style: flat;
+  -moz-transform-style: flat;
+  -ms-transform-style: flat;
+  -o-transform-style: flat;
+  transform-style: flat;
+}
+.main-example .count.top {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-radius: 5px 5px 0 0;
+  height: 50%;
+
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.main-example .count.bottom {
+  background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0 0 5px 5px;
+  line-height: 0;
+  height: 50%;
+  top: 50%;
+
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+.main-example .count.next {
+}
+.main-example .label {
+  font-size: normal;
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  top: 95px;
+  width: 100%;
+}
+/* Animation start */
+.main-example .count.curr.top {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  z-index: 3;
+}
+.main-example .count.next.bottom {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  z-index: 2;
+}
+/* Animation end */
+.main-example .flip .count.curr.top {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.main-example .flip .count.next.bottom {
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+@media screen and (max-width: 48em) {
+  .main-example {
+    width: 100%;
+  }
+  .main-example .countdown-container {
+    height: 100px;
+  }
+  .main-example .time {
+      height: 70px;
+
+      width: 48px;
+  }
+  .main-example .count {
+    font-size: 1.5em;
+    line-height: 67px;
+  }
+  .main-example .label {
+    font-size: 0.8em;
+    top: 72px;
+  }
+}
+
+
+</style>
+
+<a href="reto.html" style="text-decoration:none">
+<div class="main-example">
+  <p style="margin-top:15px; text-decoration:underline">
+  Deadline para Monetizar blog <br/>(1 de Junio de 2018)
+  </p>
+  <div class="countdown-container" id="main-example"></div>
+</div>
+</a>
+          
+<script type="text/template" id="main-example-template">
+<div class="time <%= label %>">
+  <span class="count curr top"><%= curr %></span>
+  <span class="count next top"><%= next %></span>
+  <span class="count next bottom"><%= next %></span>
+  <span class="count curr bottom"><%= curr %></span>
+  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+</div>
+</script>
+<script type="text/javascript">
+  $(window).on('load', function() {
+    var labels = ['Semanas', 'Días', 'Horas', 'Minutos', 'Segundos'],
+      nextYear = (new Date().getFullYear()) + '/06/01',
+      template = _.template($('#main-example-template').html()),
+      currDate = '00:00:00:00:00',
+      nextDate = '00:00:00:00:00',
+      parser = /([0-9]{2})/gi,
+      $example = $('#main-example');
+    // Parse countdown string to an object
+    function strfobj(str) {
+      var parsed = str.match(parser),
+        obj = {};
+      labels.forEach(function(label, i) {
+        obj[label] = parsed[i]
+      });
+      return obj;
+    }
+    // Return the time components that diffs
+    function diff(obj1, obj2) {
+      var diff = [];
+      labels.forEach(function(key) {
+        if (obj1[key] !== obj2[key]) {
+          diff.push(key);
+        }
+      });
+      return diff;
+    }
+    // Build the layout
+    var initData = strfobj(currDate);
+    labels.forEach(function(label, i) {
+      $example.append(template({
+        curr: initData[label],
+        next: initData[label],
+        label: label
+      }));
+    });
+    // Starts the countdown
+    $example.countdown(nextYear, function(event) {
+      var newDate = event.strftime('%w:%d:%H:%M:%S'),
+        data;
+      if (newDate !== nextDate) {
+        currDate = nextDate;
+        nextDate = newDate;
+        // Setup the data
+        data = {
+          'curr': strfobj(currDate),
+          'next': strfobj(nextDate)
+        };
+        // Apply the new values to each node that changed
+        diff(data.curr, data.next).forEach(function(label) {
+          var selector = '.%s'.replace(/%s/, label),
+              $node = $example.find(selector);
+          // Update the node
+          $node.removeClass('flip');
+          $node.find('.curr').text(data.curr[label]);
+          $node.find('.next').text(data.next[label]);
+          // Wait for a repaint to then flip
+          _.delay(function($node) {
+            $node.addClass('flip');
+          }, 50, $node);
+        });
+      }
+    });
+  });
+</script>
+
+</div>
+
+          <div class="row black-row" style="padding: 0px 0px 30px 0px;">
+
+            <div class="col-md-6 col-md-offset-3" style="text-align:center;color:#ccc">
+              <h1 style="color:#f7f7f7">Apúntate a la banda</h1>
+            </div>
+          </div>
+
+
+          <div class="row calltoactionbuttons" style="text-align:center;  padding:50px 0 120px 0;">
+            <div class="col-md-6 col-md-offset-3" style="margin-top:12px">
+              <p style="font-size:20px;">
+              Recibe los artículos <b>más auténticos</b> sobre hacer dinero en internet, sexo, chicas, fitness, lifestyle y vivir una vida con propósito y motivación.
+
+                    <form style="margin: auto; margin-top: 0px;" class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/" method="post">
+                      <input type="hidden" name="groups[]" id="groups-1" value="1"></label>
+                      <input style="max-width:295px" type="text" placeholder="Tu nombre" name="name" id="email" value=""></dd>
+                      <input style="max-width:295px" type="text" placeholder="Tu mejor email" name="email" id="email" value=""></dd>
+                      <input class="rocksubmit" style="background-color:#111; color:#f7f7f7; display:block; margin: auto" type="submit" name="submit" id="submit" value="APÚNTAME A LA BANDA">
+                      </dd>
+                      <dt id="successUrl-label"> </dt>
+ <dd id="successUrl-element">
+ <input type="hidden" name="successUrl" value="http://mejorhombre.com/revisa-tu-correo" id="successUrl"></dd>
+ <dt id="errorUrl-label"> </dt>
+ <dd id="errorUrl-element">
+ <input type="hidden" name="errorUrl" value="http://mejorhombre.com/ops_suscription" id="errorUrl"></dd>
+ <dt id="confirmationUrl-label"> </dt>
+ <dd id="confirmationUrl-element">
+ <input type="hidden" name="confirmationUrl" value="http://mejorhombre.com/bienvenido" id="confirmationUrl"></dd>
+                  </form>
+
+              </p>
+            </div>
+          </div>
+          <div class="row" style="background-color:#060606;  padding:10px 0 0px 0; text-align:center">
+              <h1 class="epicbottom" style="color:#de1b1b;font-size:18px;font-weight:800; margin:0 0 10px 0; letter-spacing: 3px !important;">
                 <SPAN>VIVE AL </SPAN>MÁXIMO<SPAN>, MUERE</SPAN> VACÍO</SPAN>
               </h1>
           </div>
     </div>
+
 
   </body>
 

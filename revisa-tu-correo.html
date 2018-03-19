@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <!-- Google Fonts -->
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
+<!--<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,800" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">-->
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen" rel="stylesheet">-->
+
+
+
+
+
 
 <!-- CSS Reset -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
@@ -17,7 +27,11 @@
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
 <!--<script src="/static/js/jquery.sticky.js"></script>-->
 <script asyn src="/static/js/collapse.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+
+<script src="/static/js/jquery.countdown.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+
 
 <!--social plugin -->
 <link rel="stylesheet" href="/static/js/social/stylesheets/arthref.css">
@@ -50,31 +64,56 @@
 
 <!-- Twitter Card data -->
 
+
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@mejorhombre_com">
 <meta name="twitter:title" content="Estás a un paso...">
 <meta name="twitter:description" content="Sí, sé que las confirmaciones éstas son un puto coñazo.
 Pero ya casi estás, estás a punto de formar parte de la banda.
 Te acabo de enviar un correo para que confirmes tu suscripción.
-Revisa tu email, y en breve, podremos empezar a construir algo grande juntos.
-Te ...">
+Revisa tu email. Te espero al otro lado.
+Un abrazo.
+
+Jaime
+ ...">
 <meta name="twitter:creator" content="@mejorhombre_com">
 <!-- Twitter Summary card images must be at least 120x120px -->
-<meta name="twitter:image" content="/static/images/posts/">
+<meta name="twitter:image" content="/static/images/posts/None">
 
 
 <!-- Open Graph data -->
 
 <meta property="og:title" content="Estás a un paso..." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="request.env.web2py_original_uri[1:]" />
-<meta property="og:image" content="/static/images/posts/" />
+<meta property="og:url" content="revisa-tu-correo" />
+<!--<meta property="og:url" content="http://localhost:8004/mishell/default/post_engine">-->
+<meta property="og:image" content="/static/images/posts/None" />
 <meta property="og:description" content="Sí, sé que las confirmaciones éstas son un puto coñazo.
 Pero ya casi estás, estás a punto de formar parte de la banda.
 Te acabo de enviar un correo para que confirmes tu suscripción.
-Revisa tu email, y en breve, podremos empezar a construir algo grande juntos.
-Te ..." /> 
+Revisa tu email. Te espero al otro lado.
+Un abrazo.
+
+Jaime
+ ..." /> 
 <meta property="og:site_name" content="Mejor Hombre" />
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114033865-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114033865-1');
+</script>
+
+
+
 
 
 
@@ -260,7 +299,7 @@ Te ..." />
 <style>
     .logotitle{
       margin-bottom:0;
-      padding-top: 2%;
+      padding-top: 8px;
       font-family: 'Montserrat';
       color:#de1b1b;
       text-transform: uppercase;
@@ -271,10 +310,8 @@ Te ..." />
     }
     .subtitle{
       font-size:17px;
-      color: #ddd;
-      font-weight: 600;
-    }
-    .menu_outer_class{
+      color: #eee;
+      font-weight: 300;
     }
     .menubuttonswrapper a:hover {
       background-color:#de1b1b;
@@ -283,9 +320,10 @@ Te ..." />
       background-color:#de1b1b;
     }
     .menubuttonswrapper a{
-      color:white;
+      color:#fafafa;
+      font-weight:500;
       text-decoration: none;
-      padding: 13px 14px 9px 14px;
+      padding: 10px 14px 11px 14px;
     }
     .menubuttonswrapper li{
       list-style:none;
@@ -294,7 +332,10 @@ Te ..." />
       text-transform: uppercase;
       display: inline-block;
       margin-bottom: 0;
-      line-height: 42px;
+      line-height: 39px;
+      font-size:14px;
+      font-family: Montserrat;
+      margin: 0;
     }
     .menubuttonswrapper {
       background-color: transparent;
@@ -305,7 +346,7 @@ Te ..." />
       padding-bottom: 0px !important;
     }
     h1.logotitle{
-      font-size:5rem;
+      font-size:7rem;
     }
     @media only screen and (max-width: 980px)
     .menubuttonswrapper {
@@ -316,6 +357,13 @@ Te ..." />
         margin-top: 0;
         font-size: 16px;
     }
+    .menu_outer_class{
+      position: static;
+      text-align: center;
+      width:100%;
+      height:185px;
+      background:#222; 
+    }
     @media only screen and (max-width: 719px) {
       h1.logotitle{
         font-size:32px;
@@ -323,19 +371,17 @@ Te ..." />
       .subtitle{
         font-size:16px;
       }
-    }
-    .menu_outer_class{
-      position: static;
-      text-align: center;
-      width:100%;
-      height:180px;
-      background:black; 
+      .menu_outer_class{
+        position: static;
+        text-align: center;
+        width:100%;
+        height: 170px;
+      }
     }
     .menu{
       text-align:center;
     }
     .postTitleWithAuthor > h1 {
-      margin-bottom:0px;
     }
     .postTitleWithAuthor > p {
       color:#777;
@@ -344,7 +390,7 @@ Te ..." />
     }
 </style>
 
-        <div class="menu_outer_class" style="padding:9px 0 20px 0;">
+        <div class="menu_outer_class">
           <a href="/" style="text-decoration:none;">
             <h1 class="logotitle">Mejor<span>Hombre<span></h1>
           </a>
@@ -370,16 +416,30 @@ Te ..." />
               </li>
               <li>
               
+                <a href="/reto">
+              
+                Monetizo en 3 meses
+                </a>
+              </li>
+              <li>
+              
+                <a href="/archivo">
+              
+                Categorías
+                </a>
+              </li>
+              <li>
+              
                 <a href="/contacto">
               
                 Contacto
                 </a>
               </li>
-              <li>
-                <a href="#">
-                Recursos aprobados
-                </a>
-              </li>
+              <!--<li>-->
+                <!--<a href="#">-->
+                <!--Recursos aprobados-->
+                <!--</a>-->
+              <!--</li>-->
             </ul>
           </div>
         </div>
@@ -430,6 +490,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat';
   font-weight: 800 ;
 }
+    .postTitleWithAuthor > p {
+      color:#777;
+      font-size: 14px;
+      margin-bottom:20px;
+      margin-top: 0;
+    }
 
 </style>
 
@@ -441,15 +507,14 @@ h1, h2, h3, h4, h5, h6 {
                 
               </div>
 
-              <img class="border-image cover-img" src="/static/images/posts/" alt="">
+              
 
-              <br/><br/>
+              <br/>
 
-              <p>Sí, sé que las confirmaciones éstas son un puto coñazo.</p>
-<p>Pero ya casi estás, estás a punto de formar parte de la banda.</p>
-<p>Te acabo de enviar un correo para que confirmes tu suscripción.</p>
-<h2>Revisa tu email, y en breve, podremos empezar a construir algo grande juntos.</h2>
-<h3>Te espero al otro lado con un vídeo personal para ti.</h3>
+              <p>Sí, sé que las confirmaciones éstas son un puto coñazo.<br />
+Pero ya casi estás, estás a punto de formar parte de la banda.<br />
+Te acabo de enviar un correo para que confirmes tu suscripción.</p>
+<h3>Revisa tu email. Te espero al otro lado.</h3>
 <p>Un abrazo.</p>
 <blockquote>
 <p>Jaime</p>
@@ -461,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
       text-align:center;
       padding:20px;
       border: 1px solid #ccc;
-      background-color: #111;
+      background-color: #222;
       color:white;
       margin-bottom:30px;
       margin-top:20px;
@@ -474,6 +539,7 @@ h1, h2, h3, h4, h5, h6 {
       width:100%;
       margin: auto;
       margin-right: 0px;
+      margin-top:80px;
     }
     .anotherwrapper2 h2{
       text-transform: uppercase;
@@ -489,9 +555,9 @@ h1, h2, h3, h4, h5, h6 {
       margin: auto;
     }
     input.rocksubmit.button-primary{
+      border-top: 3px #de1b1b solid;
       background-color:#de1b1b;
       border-color:#de1b1b;
-      color:white;
     }
     .widthlimiter2 {
       width: 90%;
@@ -500,20 +566,23 @@ h1, h2, h3, h4, h5, h6 {
     .thesticky2 h4{
       padding-top:30px;
     }
+    .myred {
+      font-family: Montserrat;
+      color: #de1b1b;
+    }
 </style>
 
               <div class="anotherwrapper2" style="">
                 <div class="thesticky2">
                 <div class="optinwrapper2 myshadow">
 
-                  <h2 style="color:#eee;font-size:24px; margin-top:0px; max-width:100%;">
-                    ¿Cómo quieres pasar por este planeta?
+                  <h2 style="color:#eee;font-size:24px; margin-bottom:0px; margin-top:0px; max-width:100%;">
+                    ¿Te ha gustado el post?
                   </h2>
 
                   <div class="widthlimiter2">
-                        <p style="font-size:17px;text-align:center; font-weight:500; color:#d7d7d7">
-                          <b class="myred">ES HORA DE HACER ALGO CON TU VIDA. </b><BR/>
-                          Mantente motivado, concentrado, y vive como nunca.
+                        <p style="font-size:17px;text-align:center; margin-top:10px; font-weight:500; color:#d7d7d7">
+                        Recibe los artículos más auténticos que escribo para ti y <span style="font-weight:bold; color: #de1b1b">empieza a mover el culo</span>
                         </p>
 
                     <form class="optinform2"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/ue0pj0hhqj" method="post">
@@ -550,45 +619,36 @@ h1, h2, h3, h4, h5, h6 {
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="/blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto">
-                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/empezarblog.jpg" alt="">
-                            <h6> Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto </h6>
+                          <a href="/motivacion/que-hacer-cuando-estas-deprimido">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/deprimido2.jpg" alt="">
+                            <h6> Qué Hacer Cuando Estás Deprimido </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="/superpoderes/lenguaje-corporal-alfa---aumenta-tu-testosterona">
-                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/jamesBondLenguajeCorporal.jpg" alt="">
-                            <h6> Lenguaje Corporal Alfa - Aumenta Tu Testosterona </h6>
+                          <a href="/blogging/entrevista-a-dean-romero">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/dean-romero.jpg" alt="">
+                            <h6> Entrevista a Dean Romero </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="/sex-and-girls/como-vencer-la-ansiedad-sexual">
-                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/sexyGirlBed_opt.jpg" alt="">
-                            <h6> Cómo Vencer La Ansiedad Sexual </h6>
+                          <a href="/superpoderes/¿hasta-los-cojones-de-todo?-cambia-tu-vida-levantandote-a-las-5">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/mananasMilagrosas.jpg" alt="">
+                            <h6> ¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5 </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="/sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida?-lee-esto.">
-                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/chicaPlaya.jpg" alt="">
-                            <h6> ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto. </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="/motivacion/mata-a-la-bestia-o-muere-intentandolo">
-                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/grizzley_opt.jpg" alt="">
-                            <h6> Mata A La Bestia O Muere Intentándolo </h6>
+                          <a href="/blogging/haciendo-pasta-en-3-meses.-hora-de-matar-a-la-bestia">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/bestia.jpg" alt="">
+                            <h6> Haciendo Pasta en 3 meses (Hora de Matar a la Bestia) </h6>
                           </a>
                         </div>
                       </li>
@@ -598,6 +658,15 @@ h1, h2, h3, h4, h5, h6 {
                           <a href="/superpoderes/como-vencer-cualquier-miedo">
                             <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/bestiaMiedo_opt.jpg" alt="">
                             <h6> Cómo vencer cualquier miedo </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="/superpoderes/como-hablar-claro-directo-y-relajado">
+                            <img class="related-post-thumbnail" src="/static/images/posts/thumbnails/lionroaring.jpg" alt="">
+                            <h6> Cómo Hablar Claro Directo Y Relajado </h6>
                           </a>
                         </div>
                       </li>
@@ -615,13 +684,282 @@ h1, h2, h3, h4, h5, h6 {
 
             </div>
             <div class="col-md-4" style="">
+              <h4>Mi desafío</h4>
+              <script src="/static/js/jquery.countdown.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+
+<style>
+
+.main-example {
+  margin: 0 auto;
+  width: 355px;
+  text-align:center;
+}
+.main-example .countdown-container {
+  height: 130px;
+}
+.main-example .time {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  height: 95px;
+  width: 65px;
+
+  -webkit-perspective: 479px;
+  -moz-perspective: 479px;
+  -ms-perspective: 479px;
+  -o-perspective: 479px;
+  perspective: 479px;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.main-example .count {
+  background: #202020;
+  color: #f8f8f8;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 2.4em;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  top: 0;
+  width: 100%;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transform-style: flat;
+  -moz-transform-style: flat;
+  -ms-transform-style: flat;
+  -o-transform-style: flat;
+  transform-style: flat;
+}
+.main-example .count.top {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-radius: 5px 5px 0 0;
+  height: 50%;
+
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.main-example .count.bottom {
+  background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0 0 5px 5px;
+  line-height: 0;
+  height: 50%;
+  top: 50%;
+
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+.main-example .count.next {
+}
+.main-example .label {
+  font-size: normal;
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  top: 95px;
+  width: 100%;
+}
+/* Animation start */
+.main-example .count.curr.top {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  z-index: 3;
+}
+.main-example .count.next.bottom {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  z-index: 2;
+}
+/* Animation end */
+.main-example .flip .count.curr.top {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.main-example .flip .count.next.bottom {
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+@media screen and (max-width: 48em) {
+  .main-example {
+    width: 100%;
+  }
+  .main-example .countdown-container {
+    height: 100px;
+  }
+  .main-example .time {
+      height: 70px;
+
+      width: 48px;
+  }
+  .main-example .count {
+    font-size: 1.5em;
+    line-height: 67px;
+  }
+  .main-example .label {
+    font-size: 0.8em;
+    top: 72px;
+  }
+}
+
+
+</style>
+
+<a href="/reto" style="text-decoration:none">
+<div class="main-example">
+  <p style="margin-top:15px; text-decoration:underline">
+  Deadline para Monetizar blog <br/>(1 de Junio de 2018)
+  </p>
+  <div class="countdown-container" id="main-example"></div>
+</div>
+</a>
+          
+<script type="text/template" id="main-example-template">
+<div class="time <%= label %>">
+  <span class="count curr top"><%= curr %></span>
+  <span class="count next top"><%= next %></span>
+  <span class="count next bottom"><%= next %></span>
+  <span class="count curr bottom"><%= curr %></span>
+  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+</div>
+</script>
+<script type="text/javascript">
+  $(window).on('load', function() {
+    var labels = ['Semanas', 'Días', 'Horas', 'Minutos', 'Segundos'],
+      nextYear = (new Date().getFullYear()) + '/06/01',
+      template = _.template($('#main-example-template').html()),
+      currDate = '00:00:00:00:00',
+      nextDate = '00:00:00:00:00',
+      parser = /([0-9]{2})/gi,
+      $example = $('#main-example');
+    // Parse countdown string to an object
+    function strfobj(str) {
+      var parsed = str.match(parser),
+        obj = {};
+      labels.forEach(function(label, i) {
+        obj[label] = parsed[i]
+      });
+      return obj;
+    }
+    // Return the time components that diffs
+    function diff(obj1, obj2) {
+      var diff = [];
+      labels.forEach(function(key) {
+        if (obj1[key] !== obj2[key]) {
+          diff.push(key);
+        }
+      });
+      return diff;
+    }
+    // Build the layout
+    var initData = strfobj(currDate);
+    labels.forEach(function(label, i) {
+      $example.append(template({
+        curr: initData[label],
+        next: initData[label],
+        label: label
+      }));
+    });
+    // Starts the countdown
+    $example.countdown(nextYear, function(event) {
+      var newDate = event.strftime('%w:%d:%H:%M:%S'),
+        data;
+      if (newDate !== nextDate) {
+        currDate = nextDate;
+        nextDate = newDate;
+        // Setup the data
+        data = {
+          'curr': strfobj(currDate),
+          'next': strfobj(nextDate)
+        };
+        // Apply the new values to each node that changed
+        diff(data.curr, data.next).forEach(function(label) {
+          var selector = '.%s'.replace(/%s/, label),
+              $node = $example.find(selector);
+          // Update the node
+          $node.removeClass('flip');
+          $node.find('.curr').text(data.curr[label]);
+          $node.find('.next').text(data.next[label]);
+          // Wait for a repaint to then flip
+          _.delay(function($node) {
+            $node.addClass('flip');
+          }, 50, $node);
+        });
+      }
+    });
+  });
+</script>
+
+              <br/>
               <style>
     .optinwrapper{
       text-align:center;
       padding:20px;
       padding-bottom: 40px;
       border: 1px solid #ccc;
-      background-color: #111;
+      background-color: #222;
       color:white;
     }
     @media screen and (max-width: 991px) {
@@ -655,7 +993,6 @@ h1, h2, h3, h4, h5, h6 {
     input.rocksubmit.button-primary{
       background-color:#de1b1b;
       border-color:#de1b1b;
-      color:white;
     }
     .widthlimiter {
       width: 100%;
@@ -676,9 +1013,11 @@ h1, h2, h3, h4, h5, h6 {
                   </h2>
 
                   <div class="widthlimiter">
-                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Roboto; color:#d7d7d7">
-                        <B class="myred">ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Lato; color:#d7d7d7">
+                        <b class="myred">ES HORA DE HACER ALGO CON TU VIDA </b><br/>
+                        <span style="font-family:'Lato'">
                           Únete a la banda, mantente motivado y concentrado y vive como nunca.
+                        </span>
                         </p>
 
                     <form class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/ue0pj0hhqj" method="post">
@@ -766,6 +1105,10 @@ h1, h2, h3, h4, h5, h6 {
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
+                  <span><a href="/life/resumen-de-la-quedada-blogger3cero-y-vivirdetupasion">Resumen de la quedada Blogger3cero y Vivirdetupasion</a></span>
+                  
+                  <span><a href="/life/el-dia-que-deje-mi-trabajo-con-solo-6000-euros-en-mi-cuenta">El Día Que Dejé Mi Trabajo Con Sólo 6000 € En Mi Cuenta</a></span>
+                  
                   <span><a href="/life/como-resolver-tus-problemas-como-alejandro-magno">Cómo resolver tus problemas como Alejandro Magno</a></span>
                   
                   <span><a href="/life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></span>
@@ -788,6 +1131,8 @@ h1, h2, h3, h4, h5, h6 {
                   
                   <span><a href="/superpoderes/guia-definitiva-sobre-duchas-frias">Guía Definitiva Sobre Duchas Frías</a></span>
                   
+                  <span><a href="/superpoderes/ducharse-con-agua-fria:-3-falsos-mitos-y-3-beneficios-reales">Ducharse con Agua Fría: 3 Falsos Mitos y 3 Beneficios Reales</a></span>
+                  
                 </ul>
               </div>
             
@@ -795,6 +1140,12 @@ h1, h2, h3, h4, h5, h6 {
                 <a class="pullright" href="/category/blogging">Blogging Y Negocios Digitales</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
+                  
+                  <span><a href="/blogging/haciendo-pasta-en-3-meses.-hora-de-matar-a-la-bestia">Haciendo Pasta en 3 meses (Hora de Matar a la Bestia)</a></span>
+                  
+                  <span><a href="/blogging/mishell">Mishell</a></span>
+                  
+                  <span><a href="/blogging/entrevista-a-dean-romero">Entrevista a Dean Romero</a></span>
                   
                   <span><a href="/blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
                   
@@ -805,6 +1156,10 @@ h1, h2, h3, h4, h5, h6 {
                 <a class="pullright" href="/category/sex-and-girls">Sex And Girls</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
+                  
+                  <span><a href="/sex-and-girls/como-hacer-squirting-a-una-mujer">Cómo hacer squirting a una mujer</a></span>
+                  
+                  <span><a href="/sex-and-girls/como-hackear-tu-cerebro-para-obtener-lo-que-es-tuyo">Cómo hackear tu cerebro para obtener lo que es tuyo</a></span>
                   
                   <span><a href="/sex-and-girls/como-hacer-el-amor-realmente-bien-a-una-mujer">Cómo hacer el amor, REALMENTE BIEN, a una mujer</a></span>
                   
@@ -818,13 +1173,11 @@ h1, h2, h3, h4, h5, h6 {
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="/category/mishell">None</a>
+                <a class="pullright" href="/category/podcast">Podcasts</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="/mishell">Mishell</a></span>
-                  
-                  <span><a href="/entrevista-a-dean-romero">Entrevista a Dean Romero</a></span>
+                  <span><a href="/podcast/un-trozo-de-mi-alma.-por-que-escribo-como-escribo">Un trozo de mi alma. Por qué escribo como escribo</a></span>
                   
                 </ul>
               </div>
@@ -833,6 +1186,10 @@ h1, h2, h3, h4, h5, h6 {
                 <a class="pullright" href="/category/motivacion">Motivación</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
+                  
+                  <span><a href="/motivacion/la-mujer-de-63-anos-que-levanto-un-coche-(y-lo-que-le-ocurrio-luego)">La mujer de 63 años que levantó un coche (y lo que le ocurrió luego)</a></span>
+                  
+                  <span><a href="/motivacion/un-mensaje-para-vosotros-perdedores">Un mensaje para vosotros, Perdedores</a></span>
                   
                   <span><a href="/motivacion/mata-a-la-bestia-o-muere-intentandolo">Mata A La Bestia O Muere Intentándolo</a></span>
                   
@@ -869,6 +1226,7 @@ h1, h2, h3, h4, h5, h6 {
           <div class="fab" id="close"> </div>
 
       </div>
+<script id="dsq-count-scr" src="//http-mejorhombre-com.disqus.com/count.js" async></script>
   </body>
 
 <script>

@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <!-- Google Fonts -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic">
+<!--<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,800" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">-->
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen" rel="stylesheet">-->
+
+
+
+
+
 
 <!-- CSS Reset -->
 <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
@@ -17,7 +27,11 @@
 <!--<script src="/static/js/sticky-kit.min.js"></script>-->
 <!--<script src="/static/js/jquery.sticky.js"></script>-->
 <script asyn src="../static/js/collapse.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="http://cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+
 
 <!--social plugin -->
 <link rel="stylesheet" href="../static/js/social/stylesheets/arthref.css">
@@ -50,6 +64,7 @@
 
 <!-- Twitter Card data -->
 
+
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@mejorhombre_com">
 <meta name="twitter:title" content="¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.">
@@ -67,7 +82,8 @@ Hubieses querido hablar con ella, preguntarle que ta ...">
 
 <meta property="og:title" content="¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="request.env.web2py_original_uri[1:]" />
+<meta property="og:url" content="sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida?-lee-esto." />
+<!--<meta property="og:url" content="http://localhost:8004/mishell/default/post_engine?-lee-esto.=">-->
 <meta property="og:image" content="/static/images/posts/chicaPlaya.jpg" />
 <meta property="og:description" content="Allí estaba yo.
 En ese centro comercial repleto de gente.
@@ -75,6 +91,23 @@ Y ella. Bonita y adorable. Promocionando algún estúpido producto del centro.
 Si hubieses estado allí, y la hubieras visto, tú también hubieses querido. 
 Hubieses querido hablar con ella, preguntarle que ta ..." /> 
 <meta property="og:site_name" content="Mejor Hombre" />
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114033865-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114033865-1');
+</script>
+
+
+
 
 
 
@@ -260,7 +293,7 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
 <style>
     .logotitle{
       margin-bottom:0;
-      padding-top: 2%;
+      padding-top: 8px;
       font-family: 'Montserrat';
       color:#de1b1b;
       text-transform: uppercase;
@@ -271,10 +304,8 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
     }
     .subtitle{
       font-size:17px;
-      color: #ddd;
-      font-weight: 600;
-    }
-    .menu_outer_class{
+      color: #eee;
+      font-weight: 300;
     }
     .menubuttonswrapper a:hover {
       background-color:#de1b1b;
@@ -283,9 +314,10 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
       background-color:#de1b1b;
     }
     .menubuttonswrapper a{
-      color:white;
+      color:#fafafa;
+      font-weight:500;
       text-decoration: none;
-      padding: 13px 14px 9px 14px;
+      padding: 10px 14px 11px 14px;
     }
     .menubuttonswrapper li{
       list-style:none;
@@ -294,7 +326,10 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
       text-transform: uppercase;
       display: inline-block;
       margin-bottom: 0;
-      line-height: 42px;
+      line-height: 39px;
+      font-size:14px;
+      font-family: Montserrat;
+      margin: 0;
     }
     .menubuttonswrapper {
       background-color: transparent;
@@ -305,7 +340,7 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
       padding-bottom: 0px !important;
     }
     h1.logotitle{
-      font-size:5rem;
+      font-size:7rem;
     }
     @media only screen and (max-width: 980px)
     .menubuttonswrapper {
@@ -316,6 +351,13 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
         margin-top: 0;
         font-size: 16px;
     }
+    .menu_outer_class{
+      position: static;
+      text-align: center;
+      width:100%;
+      height:185px;
+      background:#222; 
+    }
     @media only screen and (max-width: 719px) {
       h1.logotitle{
         font-size:32px;
@@ -323,19 +365,17 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
       .subtitle{
         font-size:16px;
       }
-    }
-    .menu_outer_class{
-      position: static;
-      text-align: center;
-      width:100%;
-      height:180px;
-      background:black; 
+      .menu_outer_class{
+        position: static;
+        text-align: center;
+        width:100%;
+        height: 170px;
+      }
     }
     .menu{
       text-align:center;
     }
     .postTitleWithAuthor > h1 {
-      margin-bottom:0px;
     }
     .postTitleWithAuthor > p {
       color:#777;
@@ -344,7 +384,7 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
     }
 </style>
 
-        <div class="menu_outer_class" style="padding:9px 0 20px 0;">
+        <div class="menu_outer_class">
           <a href="../index.html" style="text-decoration:none;">
             <h1 class="logotitle">Mejor<span>Hombre<span></h1>
           </a>
@@ -370,16 +410,30 @@ Hubieses querido hablar con ella, preguntarle que ta ..." />
               </li>
               <li>
               
+                <a href="../reto.html">
+              
+                Monetizo en 3 meses
+                </a>
+              </li>
+              <li>
+              
+                <a href="../archivo.html">
+              
+                Categorías
+                </a>
+              </li>
+              <li>
+              
                 <a href="../contacto.html">
               
                 Contacto
                 </a>
               </li>
-              <li>
-                <a href="¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html#">
-                Recursos aprobados
-                </a>
-              </li>
+              <!--<li>-->
+                <!--<a href="#">-->
+                <!--Recursos aprobados-->
+                <!--</a>-->
+              <!--</li>-->
             </ul>
           </div>
         </div>
@@ -430,6 +484,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat';
   font-weight: 800 ;
 }
+    .postTitleWithAuthor > p {
+      color:#777;
+      font-size: 14px;
+      margin-bottom:20px;
+      margin-top: 0;
+    }
 
 </style>
 
@@ -441,9 +501,11 @@ h1, h2, h3, h4, h5, h6 {
                 
               </div>
 
-              <img class="border-image cover-img" src="../static/images/posts/chicaPlaya.jpg" alt="">
+              
+                <img class="border-image cover-img" src="../static/images/posts/chicaPlaya.jpg" alt="">
+              
 
-              <br/><br/>
+              <br/>
 
               <p>Allí estaba yo.</p>
 <p>En ese centro comercial repleto de gente.</p>
@@ -508,7 +570,7 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
       text-align:center;
       padding:20px;
       border: 1px solid #ccc;
-      background-color: #111;
+      background-color: #222;
       color:white;
       margin-bottom:30px;
       margin-top:20px;
@@ -521,6 +583,7 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
       width:100%;
       margin: auto;
       margin-right: 0px;
+      margin-top:80px;
     }
     .anotherwrapper2 h2{
       text-transform: uppercase;
@@ -536,9 +599,9 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
       margin: auto;
     }
     input.rocksubmit.button-primary{
+      border-top: 3px #de1b1b solid;
       background-color:#de1b1b;
       border-color:#de1b1b;
-      color:white;
     }
     .widthlimiter2 {
       width: 90%;
@@ -547,20 +610,23 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
     .thesticky2 h4{
       padding-top:30px;
     }
+    .myred {
+      font-family: Montserrat;
+      color: #de1b1b;
+    }
 </style>
 
               <div class="anotherwrapper2" style="">
                 <div class="thesticky2">
                 <div class="optinwrapper2 myshadow">
 
-                  <h2 style="color:#eee;font-size:24px; margin-top:0px; max-width:100%;">
-                    ¿Cómo quieres pasar por este planeta?
+                  <h2 style="color:#eee;font-size:24px; margin-bottom:0px; margin-top:0px; max-width:100%;">
+                    ¿Te ha gustado el post?
                   </h2>
 
                   <div class="widthlimiter2">
-                        <p style="font-size:17px;text-align:center; font-weight:500; color:#d7d7d7">
-                          <b class="myred">ES HORA DE HACER ALGO CON TU VIDA. </b><BR/>
-                          Mantente motivado, concentrado, y vive como nunca.
+                        <p style="font-size:17px;text-align:center; margin-top:10px; font-weight:500; color:#d7d7d7">
+                        Recibe los artículos más auténticos que escribo para ti y <span style="font-weight:bold; color: #de1b1b">empieza a mover el culo</span>
                         </p>
 
                     <form class="optinform2"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/ue0pj0hhqj" method="post">
@@ -597,54 +663,54 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/chicaPlaya.jpg" alt="">
-                            <h6> ¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto. </h6>
+                          <a href="../life/resumen-de-la-quedada-blogger3cero-y-vivirdetupasion.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/quedada.jpg" alt="">
+                            <h6> Resumen de la quedada Blogger3cero y Vivirdetupasion </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/planet-fitness-deadlift.jpg" alt="">
-                            <h6> ¿Deprimido? Hora De Levantar Pesas </h6>
+                          <a href="../life/el-dia-que-deje-mi-trabajo-con-solo-6000-euros-en-mi-cuenta.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/eldiaquedejemitrabajo.jpg" alt="">
+                            <h6> El Día Que Dejé Mi Trabajo Con Sólo 6000 € En Mi Cuenta </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../life/como-resolver-tus-problemas-como-alejandro-magno.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/alejandromagno.jpg" alt="">
-                            <h6> Cómo resolver tus problemas como Alejandro Magno </h6>
+                          <a href="../superpoderes/como-hablar-claro-directo-y-relajado.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lionroaring.jpg" alt="">
+                            <h6> Cómo Hablar Claro Directo Y Relajado </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="como-vencer-la-ansiedad-sexual.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/sexyGirlBed_opt.jpg" alt="">
-                            <h6> Cómo Vencer La Ansiedad Sexual </h6>
+                          <a href="como-superar-una-ruptura.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lonley_opt.jpg" alt="">
+                            <h6> Cómo Superar Una Ruptura </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../entrevista-a-dean-romero.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/dean-romero.jpg" alt="">
-                            <h6> Entrevista a Dean Romero </h6>
+                          <a href="../blogging/mishell.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/mhBigSubtitle.png" alt="">
+                            <h6> Mishell </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../motivacion/que-hacer-cuando-estas-deprimido.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/deprimido2.jpg" alt="">
-                            <h6> Qué Hacer Cuando Estás Deprimido </h6>
+                          <a href="../superpoderes/ducharse-con-agua-fria:-3-falsos-mitos-y-3-beneficios-reales.html">
+                            <img class="related-post-thumbnail" src="http://localhost:8004/static/images/posts/thumbnails/wolverine.jpg" alt="">
+                            <h6> Ducharse con Agua Fría: 3 Falsos Mitos y 3 Beneficios Reales </h6>
                           </a>
                         </div>
                       </li>
@@ -656,10 +722,7 @@ Fallas el 100% de los disparos que no haces (Neil Strauss)
 
 
               
-                <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
-
+                
 <style>
 .header_wrapper_comment, .header_wrapper_comment > div{
   float:left;
@@ -702,106 +765,27 @@ label, legend {
 </style>
 
 
-<h4>Deja un comentario</h4>
-
-  <form id="comment">
-    <label for="message">Mensaje</label>
-    <textarea id="message"></textarea>
-
-    <label for="name">Nombre</label>
-    <input type="text" id="nombre">
-
-    <label for="myemail">Email</label>
-    <input type="text" id="myemail"><br/>
-
-    <input type="submit" style="background-color: #222; color:white" value="Enviar comentario">
-  </form>
-
-  <br>
-
-<h4 id="comments_title" style="display:none">Comentarios</h4>
-<div class="comments"></div>
-
-
+<div id="disqus_thread"></div>
 <script>
 
-
-jQuery(function() {
-
-    var ref = new Firebase("https://mishell-comments.firebaseio.com/comments");
-    var refemails = new Firebase("https://mishell-comments.firebaseio.com/emails");
-
-    postRef = ref.child(slugify(window.location.pathname));
-    postRefemails = refemails.child(slugify(window.location.pathname));
-
-
-    console.log(postRef);
-
-    postRef.on("child_added", function(snapshot) {
-      $('#comments_title').show();
-      var newPost = snapshot.val();
-      $(".comments").prepend(
-        '<div class="comment">' +
-          '<div class="header_wrapper_comment">' + 
-            '<img width="54" height="60" class="pull-left author_thumb" src="http://www.gravatar.com/avatar/' + newPost.md5Email + '?s=100&d=retro">' +
-            '<div class="author_comment">' + 
-              '<p>' + newPost.nombre + '</p>' +
-              '<h6 class="date_comment">' + buildDate(moment(newPost.postedAt))+ '</h6>' +
-            '</div>' +
-          '</div>' +
-         '<p style="white-space: pre-wrap;">' + newPost.message  + '</p>'+ 
-        '</div>');
-    });
-
-
-
-    $("#comment").submit(function() {
-
-      console.log($("#name").val());
-
-      var id = postRef.push();
-      var nowMoment = moment(new Date());
-      var readableDate = moment().format("D/MM/YY hh:mm");
-
-      id.set( {
-            nombre: $("#nombre").val(),
-            message: $("#message").val(),
-            md5Email: md5($("#myemail").val()),
-            readableDate : readableDate,
-            postedAt: Firebase.ServerValue.TIMESTAMP,
-      });
-
-      var id2 = postRefemails.push();
-
-      id2.set({
-            nombre: $("#nombre").val(),
-            message: $("#message").val(),
-            postedAt: Firebase.ServerValue.TIMESTAMP,
-            readableDate : readableDate,
-            myemail: $("#myemail").val()
-      });
-     
-      $("input[type=text], textarea").val("");
-      return false;
-
-    });
-
-    function buildDate(momentDate) {
-      var day = momentDate.date(); var month = getReadableMonth(momentDate.month()); var year = momentDate.year();
-      var alas = momentDate.format("hh:mm");
-      return day + " de " + month + ", " + year + ", a las " + alas;
-    }
-
-    function getReadableMonth(monthNumber){
-        if (monthNumber == 0) return "Enero"; if (monthNumber == 1) return "Febrero"; if (monthNumber == 2) return "Marzo"; if (monthNumber == 3) return "Abril"; if (monthNumber == 4) return "Mayo"; if (monthNumber == 5) return "Junio"; if (monthNumber == 6) return "Julio"; if (monthNumber == 7) return "Agosto"; if (monthNumber == 8) return "Septiembre"; if (monthNumber == 9) return "Octubre"; if (monthNumber == 10) return "Noviembre"; if (monthNumber == 11) return "Deciembre";
-    }
-});
-
-function slugify(text) {
-  return text.toString().toLowerCase().trim()
-    .replace(/&/g, '-and-').replace(/[\s\W-]+/g, '-').replace(/[^a-zA-Z0-9-_]+/g,'');
-}
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://http-mejorhombre-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
 
                 
 <script asyn src="../static/js/notification-bar/js/jquery.peekabar.min.js"></script>
@@ -820,7 +804,7 @@ function loadNotificationBar() {
         backgroundColor: '#0e0e0e'
     });
     bar.show({
-      html: '<span style="color:#f7f7f7;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H</span>',
+      html: '<span style="color:#f7f7f7;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H <span class="bullet"></span> ',
     });
 
 		$('.peek-a-bar').socialShare({
@@ -842,13 +826,282 @@ function loadNotificationBar() {
 
             </div>
             <div class="col-md-4" style="">
+              <h4>Mi desafío</h4>
+              <script src="../static/js/jquery.countdown.min.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+
+<style>
+
+.main-example {
+  margin: 0 auto;
+  width: 355px;
+  text-align:center;
+}
+.main-example .countdown-container {
+  height: 130px;
+}
+.main-example .time {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  height: 95px;
+  width: 65px;
+
+  -webkit-perspective: 479px;
+  -moz-perspective: 479px;
+  -ms-perspective: 479px;
+  -o-perspective: 479px;
+  perspective: 479px;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.main-example .count {
+  background: #202020;
+  color: #f8f8f8;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 2.4em;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  top: 0;
+  width: 100%;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transform-style: flat;
+  -moz-transform-style: flat;
+  -ms-transform-style: flat;
+  -o-transform-style: flat;
+  transform-style: flat;
+}
+.main-example .count.top {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-radius: 5px 5px 0 0;
+  height: 50%;
+
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.main-example .count.bottom {
+  background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0 0 5px 5px;
+  line-height: 0;
+  height: 50%;
+  top: 50%;
+
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+.main-example .count.next {
+}
+.main-example .label {
+  font-size: normal;
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  top: 95px;
+  width: 100%;
+}
+/* Animation start */
+.main-example .count.curr.top {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  z-index: 3;
+}
+.main-example .count.next.bottom {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  z-index: 2;
+}
+/* Animation end */
+.main-example .flip .count.curr.top {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.main-example .flip .count.next.bottom {
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+@media screen and (max-width: 48em) {
+  .main-example {
+    width: 100%;
+  }
+  .main-example .countdown-container {
+    height: 100px;
+  }
+  .main-example .time {
+      height: 70px;
+
+      width: 48px;
+  }
+  .main-example .count {
+    font-size: 1.5em;
+    line-height: 67px;
+  }
+  .main-example .label {
+    font-size: 0.8em;
+    top: 72px;
+  }
+}
+
+
+</style>
+
+<a href="../reto.html" style="text-decoration:none">
+<div class="main-example">
+  <p style="margin-top:15px; text-decoration:underline">
+  Deadline para Monetizar blog <br/>(1 de Junio de 2018)
+  </p>
+  <div class="countdown-container" id="main-example"></div>
+</div>
+</a>
+          
+<script type="text/template" id="main-example-template">
+<div class="time <%= label %>">
+  <span class="count curr top"><%= curr %></span>
+  <span class="count next top"><%= next %></span>
+  <span class="count next bottom"><%= next %></span>
+  <span class="count curr bottom"><%= curr %></span>
+  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+</div>
+</script>
+<script type="text/javascript">
+  $(window).on('load', function() {
+    var labels = ['Semanas', 'Días', 'Horas', 'Minutos', 'Segundos'],
+      nextYear = (new Date().getFullYear()) + '/06/01',
+      template = _.template($('#main-example-template').html()),
+      currDate = '00:00:00:00:00',
+      nextDate = '00:00:00:00:00',
+      parser = /([0-9]{2})/gi,
+      $example = $('#main-example');
+    // Parse countdown string to an object
+    function strfobj(str) {
+      var parsed = str.match(parser),
+        obj = {};
+      labels.forEach(function(label, i) {
+        obj[label] = parsed[i]
+      });
+      return obj;
+    }
+    // Return the time components that diffs
+    function diff(obj1, obj2) {
+      var diff = [];
+      labels.forEach(function(key) {
+        if (obj1[key] !== obj2[key]) {
+          diff.push(key);
+        }
+      });
+      return diff;
+    }
+    // Build the layout
+    var initData = strfobj(currDate);
+    labels.forEach(function(label, i) {
+      $example.append(template({
+        curr: initData[label],
+        next: initData[label],
+        label: label
+      }));
+    });
+    // Starts the countdown
+    $example.countdown(nextYear, function(event) {
+      var newDate = event.strftime('%w:%d:%H:%M:%S'),
+        data;
+      if (newDate !== nextDate) {
+        currDate = nextDate;
+        nextDate = newDate;
+        // Setup the data
+        data = {
+          'curr': strfobj(currDate),
+          'next': strfobj(nextDate)
+        };
+        // Apply the new values to each node that changed
+        diff(data.curr, data.next).forEach(function(label) {
+          var selector = '.%s'.replace(/%s/, label),
+              $node = $example.find(selector);
+          // Update the node
+          $node.removeClass('flip');
+          $node.find('.curr').text(data.curr[label]);
+          $node.find('.next').text(data.next[label]);
+          // Wait for a repaint to then flip
+          _.delay(function($node) {
+            $node.addClass('flip');
+          }, 50, $node);
+        });
+      }
+    });
+  });
+</script>
+
+              <br/>
               <style>
     .optinwrapper{
       text-align:center;
       padding:20px;
       padding-bottom: 40px;
       border: 1px solid #ccc;
-      background-color: #111;
+      background-color: #222;
       color:white;
     }
     @media screen and (max-width: 991px) {
@@ -882,7 +1135,6 @@ function loadNotificationBar() {
     input.rocksubmit.button-primary{
       background-color:#de1b1b;
       border-color:#de1b1b;
-      color:white;
     }
     .widthlimiter {
       width: 100%;
@@ -903,9 +1155,11 @@ function loadNotificationBar() {
                   </h2>
 
                   <div class="widthlimiter">
-                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Roboto; color:#d7d7d7">
-                        <B class="myred">ES HORA DE HACER ALGO CON TU VIDA. </B><BR/>
+                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Lato; color:#d7d7d7">
+                        <b class="myred">ES HORA DE HACER ALGO CON TU VIDA </b><br/>
+                        <span style="font-family:'Lato'">
                           Únete a la banda, mantente motivado y concentrado y vive como nunca.
+                        </span>
                         </p>
 
                     <form class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/ue0pj0hhqj" method="post">
@@ -993,6 +1247,10 @@ function loadNotificationBar() {
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
+                  <span><a href="../life/resumen-de-la-quedada-blogger3cero-y-vivirdetupasion.html">Resumen de la quedada Blogger3cero y Vivirdetupasion</a></span>
+                  
+                  <span><a href="../life/el-dia-que-deje-mi-trabajo-con-solo-6000-euros-en-mi-cuenta.html">El Día Que Dejé Mi Trabajo Con Sólo 6000 € En Mi Cuenta</a></span>
+                  
                   <span><a href="../life/como-resolver-tus-problemas-como-alejandro-magno.html">Cómo resolver tus problemas como Alejandro Magno</a></span>
                   
                   <span><a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></span>
@@ -1015,6 +1273,8 @@ function loadNotificationBar() {
                   
                   <span><a href="../superpoderes/guia-definitiva-sobre-duchas-frias.html">Guía Definitiva Sobre Duchas Frías</a></span>
                   
+                  <span><a href="../superpoderes/ducharse-con-agua-fria:-3-falsos-mitos-y-3-beneficios-reales.html">Ducharse con Agua Fría: 3 Falsos Mitos y 3 Beneficios Reales</a></span>
+                  
                 </ul>
               </div>
             
@@ -1022,6 +1282,12 @@ function loadNotificationBar() {
                 <a class="pullright" href="../category/blogging.html">Blogging Y Negocios Digitales</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
+                  
+                  <span><a href="../blogging/haciendo-pasta-en-3-meses.-hora-de-matar-a-la-bestia.html">Haciendo Pasta en 3 meses (Hora de Matar a la Bestia)</a></span>
+                  
+                  <span><a href="../blogging/mishell.html">Mishell</a></span>
+                  
+                  <span><a href="../blogging/entrevista-a-dean-romero.html">Entrevista a Dean Romero</a></span>
                   
                   <span><a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
                   
@@ -1032,6 +1298,10 @@ function loadNotificationBar() {
                 <a class="pullright" href="../category/sex-and-girls.html">Sex And Girls</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
+                  
+                  <span><a href="como-hacer-squirting-a-una-mujer.html">Cómo hacer squirting a una mujer</a></span>
+                  
+                  <span><a href="como-hackear-tu-cerebro-para-obtener-lo-que-es-tuyo.html">Cómo hackear tu cerebro para obtener lo que es tuyo</a></span>
                   
                   <span><a href="como-hacer-el-amor-realmente-bien-a-una-mujer.html">Cómo hacer el amor, REALMENTE BIEN, a una mujer</a></span>
                   
@@ -1045,13 +1315,11 @@ function loadNotificationBar() {
               </div>
             
               <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/mishell.html">None</a>
+                <a class="pullright" href="../category/podcast.html">Podcasts</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
                   
-                  <span><a href="../mishell.html">Mishell</a></span>
-                  
-                  <span><a href="../entrevista-a-dean-romero.html">Entrevista a Dean Romero</a></span>
+                  <span><a href="../podcast/un-trozo-de-mi-alma.-por-que-escribo-como-escribo.html">Un trozo de mi alma. Por qué escribo como escribo</a></span>
                   
                 </ul>
               </div>
@@ -1060,6 +1328,10 @@ function loadNotificationBar() {
                 <a class="pullright" href="../category/motivacion.html">Motivación</a>
                 <div class="foo"><span class="triangle"></span></div>
                 <ul>
+                  
+                  <span><a href="../motivacion/la-mujer-de-63-anos-que-levanto-un-coche-(y-lo-que-le-ocurrio-luego).html">La mujer de 63 años que levantó un coche (y lo que le ocurrió luego)</a></span>
+                  
+                  <span><a href="../motivacion/un-mensaje-para-vosotros-perdedores.html">Un mensaje para vosotros, Perdedores</a></span>
                   
                   <span><a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">Mata A La Bestia O Muere Intentándolo</a></span>
                   
@@ -1096,6 +1368,7 @@ function loadNotificationBar() {
           <div class="fab" id="close"> </div>
 
       </div>
+<script id="dsq-count-scr" src="http://http-mejorhombre-com.disqus.com/count.js" async></script>
   </body>
 
 <script>
