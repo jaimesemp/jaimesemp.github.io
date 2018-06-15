@@ -211,7 +211,7 @@ html {
 }
 body {
   /*font-family: "Libre Baskerville", Helvetica, Arial, sans-serif;*/
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: 'Robot Slab', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -226,7 +226,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #de1b1b;
+  color: #ff5555;
   text-decoration: underline;
 }
 a:hover,
@@ -308,13 +308,13 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Montserrat';
+  font-family: 'Oswald';
   font-weight: 300;
   line-height: 1.4;
-  color: #111;
+  color: #222;
 }
 h1 {
-  font-weight: 800;
+  /*font-weight: 800;*/
 }
 h1 small,
 h2 small,
@@ -392,11 +392,11 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 30px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
 h3,
 .h3 {
@@ -462,7 +462,7 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #de1b1b;
+  color: #ff5555;
 }
 a.text-primary:hover,
 a.text-primary:focus {
@@ -498,7 +498,7 @@ a.text-danger:focus {
 }
 .bg-primary {
   color: #fff;
-  background-color: #de1b1b;
+  background-color: #ff5555;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
@@ -1409,7 +1409,7 @@ address {
     letter-spacing: -.1rem !important;
   }
   h2 {
-    font-weight: 800;
+    /*font-weight: 800;*/
     padding-top: 1.6rem;
     padding-bottom: 1rem;
   }
@@ -1422,13 +1422,13 @@ address {
     background: url('../images/lines.png') bottom repeat-x;
   }  
   p, li{
-    font-family: 'Lato', sans-serif;
     font-style: normal;
     margin: 40px 0 20px 0;
-    font-size: 19px;
-    font-weight: 400;
-    color: #040404;
-    line-height: 1.9;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.8;
+    font-family: 'Roboto Slab',Helvetica,Arial,Lucida,sans-serif;
   }
   li{
     margin: 20px 0 20px 0;
@@ -1444,17 +1444,17 @@ input[type="submit"]{
     border: 1px solid #D1D1D1;
     border-radius: 4px;
     outline-color: #1EAEDB;
-    font-family: 'Lato';
+    font-family: 'Oswald';
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 input[type="submit"]{
-    font-family: 'Montserrat';
+    font-family: 'Oswald';
 }
 input[type="submit"]{
     font-weight: 500;
     text-transform: uppercase;
-    padding: 10px 30px;
+    /*padding: 10px 30px;*/
 }
 input[type="submit"].button-primary:hover, 
 input[type="submit"]:hover{
@@ -1474,29 +1474,29 @@ input[type="submit"]:hover{
 /*    RELATED POSTS        /
 /**************************/
 .relatedposts ul { list-style: none; padding:0; margin:0; }  
-.relatedposts ul li { float: left; margin: 0.375em; width: 206px; text-align: center; list-style-image: none; }
+.relatedposts ul li { float: left; margin: 0.375em; width: 216px; text-align: center; list-style-image: none; }
     @media screen and (max-width: 480px) {
       .relatedposts ul li { float: none; margin: 0.375em auto}
     }
-.related-post-thumbnail {                           width: 206px; height:140px;}
+.related-post-thumbnail {                           width: 216px; height:140px;}
 .relatedposts a { font-weight: normal; color: #000; text-decoration: none; -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; transition: all ease 0.3s;}
 .relatedposts img { 
   border: 1px solid #DDD; background: #F8F8F8; padding: 1px; margin-bottom: 5px; 
   -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; transition: all ease 0.3s; }      
 .relatedthumb a:hover h6{ color: #333 ; }
-.relatedthumb a h6{ color: #de1b1b ; margin-bottom: 0;}
+.relatedthumb a h6{ color: #ff5555 ; margin-bottom: 0;}
 .relatedposts img:hover {-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); border-color: #bbb; }
 .relatedposts{ clear: both; overflow: auto; padding: 0px 0 20px 0}
 .relatedthumb {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 220px;
 }
 .myred {
-  color: #de1b1b;
+  color: #ff5555;
 }
 .relatedthumb h6{
-  font-size: 14px;
+  font-size: 16px;
   font-weight:500;
   margin-top:0;
 }
@@ -1520,43 +1520,29 @@ input[type="submit"]:hover{
 }
 
     input.rocksubmit.button-primary{
-      background-color:#de1b1b;
-      border-color:#de1b1b;
+      background-color:#ff5555;
+      border-color:#ff5555;
       color:black;
       width: 100%;
     }
 
-/***** BREAK POINTS *********/
+  .menu_outer_class h1 {
+    margin-top:0px;
+  }
     .cover-img {
-      height: 360px;
+      /*height: 360px;*/
       margin: auto;
       display: block;
-      max-width: 100%;
+      max-width: 1000px;
     }
-  @media (max-width: 719px) {
-    p, li{
-      margin: 30px 0 20px 0;
-      font-size: 17px;
-    }
-    li{
-      margin: 20px 0 20px 0;
-    }
-    .site-container {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
-    .cover-img {
-      width: 100%;
-      height: auto !important;
-    }
-  }
+
   ul {
     padding-left:inherit;
   }
 
   li{
     list-style-image: url("../images/bullet.png");
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .bullet{
     background: url(../images/bullet.png);
@@ -1569,9 +1555,6 @@ input[type="submit"]:hover{
 
   .entry_wrapper p {
     margin-top: 4px;
-  }
-  .menu_outer_class h1 {
-    margin-top:15px;
   }
 
 .myshadow {
@@ -1590,6 +1573,18 @@ input[type="submit"]:hover{
   -webkit-box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
   -moz-box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
   box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
+  font-weight:bold;
+}
+.nomargin {
+  padding: 15px;
+  color: #f9f9f9;
+  background-color: #1b1b1b;
+  margin-bottom: 30px;
+  margin-left: -1000px;
+  margin-right: -1000px;
+  padding-left: 1000px;
+  padding-right: 1000px;
+  font-weight:bold;
 }
 .highlight b {
   color:#ff6464;
@@ -1602,7 +1597,7 @@ input[type="submit"]:hover{
 }
 
 .mybutton {
-  background: #de1b1b;
+  background: #ff5555;
   color: #111;
   padding: 14px;
   font-size:16px;
@@ -1610,12 +1605,19 @@ input[type="submit"]:hover{
   text-transform: uppercase;
   border-radius: 3px;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: 'Oswald';
 }
 a.mybutton:hover, a.mybutton:focus{
   text-decoration: none;
   background: #1EAEDB;
   color: #111;
+}
+.postTitleWithAuthor > h1 a {
+  color: #222;
+  text-decoration:none;
+}
+.postTitleWithAuthor > h1 a:hover {
+  color: #ff5555;
 }
 
 a, button, input:focus, input[type="button"], input[type="reset"], input[type="submit"], textarea:focus, .button {
@@ -1624,4 +1626,52 @@ a, button, input:focus, input[type="button"], input[type="reset"], input[type="s
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+
+.site-container {
+  /*background-color: #f8f8f8;*/
+  max-width: 1150px;
+  overflow: hidden;
+  padding: 3%;
+  padding-top: 35px;
+  margin-top:0;
+}
+
+/***** BREAK POINTS *********/
+  @media (max-width: 719px) {
+    p, li{
+      margin: 30px 0 20px 0;
+      font-size: 17px;
+    }
+    .menu_outer_class h1 {
+      margin-top:15px;
+    }
+    li{
+      margin: 20px 0 20px 0;
+    }
+    .site-container {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .cover-img {
+      width: 100%;
+      height: auto !important;
+    }
+    h1{
+      font-size: 26px;
+    }
+    h2{
+      font-size: 22px;
+    }
+  }
+/***** END BREAK POINTS *********/
+
+h5 {
+  font-family: 'Roboto Slab';
+  font-size:2.3em;
+  line-height:1.5;
+  margin-top: 1.9em;
+  margin-bottom: 1.9em;
+  margin-left: 20px;
+  margin-right: 20px;
 }

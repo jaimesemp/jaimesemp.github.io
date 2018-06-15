@@ -8,14 +8,21 @@
 <!-- Google Fonts -->
 <!--<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">-->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,800" rel="stylesheet">
-<!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Ultra|Unica+One|Volkhov" rel="stylesheet">
+<link rel="stylesheet" id="monochrome-fonts-css" href="http://fonts.googleapis.com/css?family=Muli%3A200%2C300%2C300i%2C400%2C400i%2C600%2C600i%7COpen+Sans+Condensed%3A300&amp;ver=1.0.0" type="text/css" media="all">
+<!-- de https://new.jackmcdade.com/articles/why-dungeons-and-dragons -->
 
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen" rel="stylesheet">-->
-
-
-
-
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen" rel="stylesheet">
 
 
 <!-- CSS Reset -->
@@ -52,10 +59,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="../static/images/favicons/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicons/favicon-16x16.png">
-<link rel="manifest" href="http://localhost:8004/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
 
 <!-- social metatags -->
 <!-- Place this data between the <head> tags of your website -->
@@ -69,8 +72,7 @@
 <meta name="twitter:site" content="@mejorhombre_com">
 <meta name="twitter:title" content="Ducharse con Agua Fría: 3 Falsos Mitos y 3 Beneficios Reales">
 <meta name="twitter:description" content="LLevo duchándome con agua fría habitualmente algo más de dos años.
-He tenido meses de ducharme todos los días con agua fría, otras veces las he alternado con la ducha caliente, pero es un hábito que he mantenido con más o menos frecuencia desde entonces.
-Tras in ...">
+He tenido meses de ducharme todos los días con agua fría, otras veces las he alternado con la duc ...">
 <meta name="twitter:creator" content="@mejorhombre_com">
 <!-- Twitter Summary card images must be at least 120x120px -->
 <meta name="twitter:image" content="/static/images/posts/wolverine.jpg">
@@ -84,8 +86,7 @@ Tras in ...">
 <!--<meta property="og:url" content="http://localhost:8004/mishell/default/post_engine">-->
 <meta property="og:image" content="/static/images/posts/wolverine.jpg" />
 <meta property="og:description" content="LLevo duchándome con agua fría habitualmente algo más de dos años.
-He tenido meses de ducharme todos los días con agua fría, otras veces las he alternado con la ducha caliente, pero es un hábito que he mantenido con más o menos frecuencia desde entonces.
-Tras in ..." /> 
+He tenido meses de ducharme todos los días con agua fría, otras veces las he alternado con la duc ..." /> 
 <meta property="og:site_name" content="Mejor Hombre" />
 
 
@@ -115,23 +116,16 @@ Tras in ..." />
       float: left;
     }
     body{
-      background-color: black;
-      background: url(../static/images/roaring3.jpg);
       background-attachment: fixed;
       background-size: cover;
+      background-color: white;
+      /*background: url(/static/images/roaring3.jpg);*/
     }
     .contentContainer{
       padding: 20px;
       margin-top: 50px;
       margin-bottom: 40px;
       background-color:white;
-    }
-    .site-container {
-      background-color: #fff;
-      margin: 32px auto;
-      max-width: 1150px;
-      overflow: hidden;
-      padding: 3%;
     }
     /*
     a {
@@ -150,14 +144,14 @@ Tras in ..." />
    h1{
      font-size: 4.2rem;
      color: #111;
-     font-family: Montserrat, Arial;
+     font-family: 'Roboto Slab', Arial;
    }
    h1,h2{
      font-weight:700;
      padding: 0px 0 0px 0;
    }
    h2, h3 { 
-     font-family: Montserrat;
+     font-family: 'Roboto Slab';
       margin:0 0 20px 0; 
       padding:20px 0 20px 0; 
       font-size: 26px;
@@ -275,22 +269,26 @@ Tras in ..." />
   margin-top: 85%;
 }
 
+    .optinform input{
+      height: 35px;
+      width: 100%;
+      max-width:255px;
+      border-radius:2px;
+      color: #111;
+    }
+
             
 </style>
     
 </head>
 
   <body>
-
-      <div class="container site-container">
-
           
 
 <style>
     .logotitle{
       margin-bottom:0;
       padding-top: 8px;
-      font-family: 'Montserrat';
       color:#de1b1b;
       text-transform: uppercase;
     }
@@ -304,33 +302,40 @@ Tras in ..." />
       font-weight: 300;
     }
     .menubuttonswrapper a:hover {
-      background-color:#de1b1b;
+      /*background-color:#de1b1b;*/
+      color:#888;
     }
     .menubuttonswrapper .active {
-      background-color:#de1b1b;
+      background-color:white;
+    }
+    .active {
+      color:#888 !important;
     }
     .menubuttonswrapper a{
-      color:#fafafa;
+      color:#111;
       font-weight:500;
       text-decoration: none;
-      padding: 10px 14px 11px 14px;
+      padding: 16px 14px 2px 10px;
+    }
+    .menubuttonswrapper ul{
+      padding: 0 20px 0 20px;
     }
     .menubuttonswrapper li{
       list-style:none;
       color:white;
       cursor: pointer;
-      text-transform: uppercase;
       display: inline-block;
       margin-bottom: 0;
-      line-height: 39px;
-      font-size:14px;
-      font-family: Montserrat;
+      font-size:18px;
+      text-transform: uppercase;
       margin: 0;
+      padding-bottom:0;
+      font-family: 'Oswald';
     }
     .menubuttonswrapper {
       background-color: transparent;
-      margin-top: -40px;
-      background: black;
+      font-family: 'Oswald';
+      background: white;
       font-size: 15px;
       margin-bottom: 0px !important;
       padding-bottom: 0px !important;
@@ -338,14 +343,31 @@ Tras in ..." />
     h1.logotitle{
       font-size:7rem;
     }
-    @media only screen and (max-width: 980px)
     .menubuttonswrapper {
-        margin-top: -55px;
+      font-size: 16px;
+      line-height: 72px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
     }
-    @media only screen and (max-width: 719px)
-    .menubuttonswrapper {
-        margin-top: 0;
-        font-size: 16px;
+    @media only screen and (max-width: 980px) {
+      .menubuttonswrapper {
+      }
+    }
+    @media only screen and (max-width: 719px) {
+      .menubuttonswrapper {
+        line-height: 54px;
+        line-height: 42px;
+        margin-top: 8px;
+        position: absolute;
+      }
     }
     .menu_outer_class{
       position: static;
@@ -354,7 +376,45 @@ Tras in ..." />
       height:185px;
       background:#222; 
     }
+    .my_pic {
+      max-width: 233px; 
+      margin: 30px; 
+      float: right; 
+    }
+    .menu{
+      text-align:center;
+    }
+    .postTitleWithAuthor > h1 {
+    }
+    .postTitleWithAuthor > p {
+      color:#777;
+      font-size: 14px;
+      margin-bottom:0px;
+    }
+    .magic-line {
+      color: white;
+      margin-top: 60px;
+      font-size: 24px;
+      max-width: 490px;
+      text-align:center;
+      font-family: Oswald;
+      font-weight: bold;
+      letter-spacing:1px;
+    }
     @media only screen and (max-width: 719px) {
+      .my_pic {
+        float:none;
+        margin-top:33px;
+      }
+      .magic-line {
+        margin-top:-20px;;
+      }
+      .my_pic_wrapper {
+        text-align:center;
+      }
+      .logo {
+        display:none;
+      }
       h1.logotitle{
         font-size:32px;
       }
@@ -367,48 +427,72 @@ Tras in ..." />
         width:100%;
         height: 170px;
       }
+      .menubuttonswrapper {
+        box-shadow:none;
+      }
     }
-    .menu{
-      text-align:center;
-    }
-    .postTitleWithAuthor > h1 {
-    }
-    .postTitleWithAuthor > p {
-      color:#777;
-      font-size: 14px;
-      margin-bottom:0px;
-    }
-</style>
 
-        <div class="menu_outer_class">
-          <a href="../index.html" style="text-decoration:none;">
-            <h1 class="logotitle">Mejor<span>Hombre<span></h1>
-          </a>
-          <div class="subtitle">¿Hasta dónde quieres llegar antes de morir?</div>
-        </div>
+#rocksubmit2 {
+    color:black;
+    animation:myfirst 6s;
+    background: #ff5555;
+    font-family: Oswald;
+    border:0;
+    font-size:18px;
+    margin-top:30px;
+    -moz-animation:myfirst 6s infinite; /* Firefox */
+    -webkit-animation:myfirst 6s infinite; /* Safari and Chrome */
+    height: 48px;
+    display: block;
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+    margin-top: 22px;
+    border-radius: 3px;
+}
+#rocksubmit2:hover {
+  background: #1EAEDB;
+}
+
+@-moz-keyframes myfirst /* Firefox */ {
+    0% {color:black; font-size:18px}
+    30% {color:black;font-size:19px}
+    70% {color:white;font-size:18px}
+    100% {color:black;font-size:19px}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */ {
+    0% {color:black;font-size:18px}
+    30% {color:black;font-size:18px}
+    70% {color:white;font-size:19px}
+    100% {color:black;font-size:18px}
+}
+
+
+
+
+</style>
 
         <div class="menu">
           <div class="menubuttonswrapper">
-            <ul style="padding:0">
-              <li>
+
+    <span class="logo" style="float: left;padding-left: 30px;width: 30%;font-size: 30px; font-weight: bolder; text-transform: uppercase; font-weight:bold; font-size: 32px;letter-spacing: 0px;">Mejor<span class="hombre" style=" color: #ff5555; font-weight: lighter; ">Hombre</span>
+    </span>
+
+
+            <ul style="padding:0; margin-bottom:0">
+              <li style="color: #de1b1b !important;">
               
-                <a  href="../blog.html">
+                <a href="../index.html">
               
-                  Blog
+                Inicio
                 </a>
               </li>
               <li style="color: #de1b1b !important;">
               
                 <a href="../about-mejorhombre.html">
               
-                ¿Nuevo? Click Aquí
-                </a>
-              </li>
-              <li>
-              
-                <a href="../reto.html">
-              
-                Monetizo en 3 meses
+                Empieza Aquí
                 </a>
               </li>
               <li>
@@ -425,19 +509,49 @@ Tras in ..." />
                 Contacto
                 </a>
               </li>
-              <!--<li>-->
-                <!--<a href="#">-->
-                <!--Recursos aprobados-->
-                <!--</a>-->
-              <!--</li>-->
             </ul>
           </div>
         </div>
 
 
+<div class="container" style=" background: black; width: 100%; margin-top: 72px; padding-top: 0; ">
+          <div class="row">
+            <div class="col-md-5 my_pic_wrapper">
+              <img class="my_pic" src="../static/images/finalRetina2.png" alt="" style="">
+            </div>
+            <div class="col-md-7">
 
-          <div class="row" style="padding-top:4rem;">
-            <div class="col-md-8" style="">
+                <div class="magic-line">
+                  Lifestyle, motivación, sexo, dinero y rock&roll <br/>como no has leído en otro blog.<br/>
+                  <span style="font-weight:lighter;color:#ff5555">¿Te lo vas a perder?</span> 
+                  <a href="../estoy_juntando_a_la_banda.html">
+                    <button id="rocksubmit2" style="width:210px;">
+                      CAMBIEMOS TU FUTURO
+                    </button>
+                  </a>
+                </div>
+
+                  <div class="subtitle-subs" style="color:#ccc; font-family: Oswald">
+                    <!--Reprograma tu mente. <span style="color:#ff5555">Se lo que quieras ser</span>, haz lo que quieras hacer, <span class="myred">y ve allí donde quieras ir.</span>-->
+                    <!--Sin mierdas. Sólo artículos 100% de mis entrañas <span style="color:#ff5555">diseñados para hacerte vibrar</span>-->
+                  </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      <div class="container site-container" style="width:100%; max-width:100%">
+
+
+          <div class="row" style="">
+            <div class="col-md-12">
               
 
 <style>
@@ -476,16 +590,23 @@ position: absolute;
 	width: 100% !important;
 	height: 100% !important;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat';
+h1, h2, h3, h4, h6 {
+  font-family: 'Oswald';
   font-weight: 800 ;
 }
-    .postTitleWithAuthor > p {
-      color:#777;
-      font-size: 14px;
-      margin-bottom:20px;
-      margin-top: 0;
-    }
+.postTitleWithAuthor > p {
+  color:#777;
+  font-size: 14px;
+  margin-bottom:20px;
+  margin-top: 0;
+}
+.postTitleWithAuthor {
+  text-align: center;
+}
+.limit_width {
+  max-width: 700px;
+  margin:auto;
+}
 
 </style>
 
@@ -495,18 +616,26 @@ h1, h2, h3, h4, h5, h6 {
                   Ducharse con Agua Fría: 3 Falsos Mitos y 3 Beneficios Reales
                 </h1>
                 
-                  <p>17 de Marzo de 2014, por Jaime RockAndRoll</p>
+                  <p>22 de Marzo de 2018, por Jaime RockAndRoll</p>
+                
                 
               </div>
 
               
                 <img class="border-image cover-img" src="../static/images/posts/wolverine.jpg" alt="">
               
+              
 
               <br/>
 
-              <p>LLevo duchándome con agua fría habitualmente algo más de dos años.</p>
+              <div class="limit_width">
+
+                <p>LLevo duchándome con agua fría habitualmente algo más de dos años.</p>
 <p>He tenido meses de ducharme todos los días con agua fría, otras veces las he alternado con la ducha caliente, pero es un hábito que he mantenido con más o menos frecuencia desde entonces.</p>
+<p class="highlight">
+WARNING, este es un artículo largo. Si no vas a leerlo entero, no dejes de leer, al menos el final, donde te cuento por qué deberías tomar duchas frías sí o sí, pinchando <a href="./ducharse-con-agua-fria:-3-falsos-mitos-y-3-beneficios-reales.html#epicfinal">aquí</a>
+</p>
+
 <p>Tras investigar un poco más sobre algunos puntos atribuidos a los <strong>beneficios de ducharse con agua fría</strong> he querido hacer una actualización y revisión de este artículo que escribí hace tiempo: <a href="guia-definitiva-sobre-duchas-frias.html" target="_blank">La guía definitiva de las duchas frías</a></p>
 <h2>¿Por qué ducharse con agua fría?</h2>
 <p>¿Quieres una lista de buenos momentos en los que darte una ducha fría?</p>
@@ -519,6 +648,8 @@ h1, h2, h3, h4, h5, h6 {
 <p>Y cada vez que termino, en el momento en el que pongo un pie fuera, me siento lleno de energía, como si mis pelotas pesaran el doble y pudiera comer alambre de espinas. </p>
 <p>Entonces el samurai aulla dentro de mi y me susurra: 'Por esto lo haces, joder, por esto'</p>
 <p>Las duchas frías me permitieron darme un bañito, el 1 de Enero de 2017, en Cascais, Portugal (temperatura del agua <a href="https://seatemperature.info/es/enero/portugal-continental-temperatura-del-agua-del-mar.html" target="_blank">15º</a>. No es un baño en el polo norte pero te lo aseguro: para el común de los mortales esta fría como el culito de un esquimal).</p>
+<p>Aún recuerdo un <strong>verano</strong>, dos años antes, en la misma playa. No conseguí meterme más de un segundo en el mismo agua. </p>
+<p>Al igual que nadie se bañaba más allá de la cintura. No veías a nadie nadando, ni disfrutando del mar. ¿El socorrista? Se metió y salió en medio minuto. Y era verano.</p>
 <p>Aquí el vídeo del momento en que me empecé a bañar en el agua fría del Atlántico. 
 (Sólo se ve la entrada, pero estuve unos tres minutos en el mar, metido hasta el cuello.)</p>
 <div class="embed-responsive embed-responsive-16by9">
@@ -529,9 +660,9 @@ h1, h2, h3, h4, h5, h6 {
 <p>Bien tras esta intro, vamos a desmantelar algunos mitos sobre las duchas frías que he estado investigando. </p>
 <p>Muchas veces se atribuye a las duchas frías superpoderes. La ducha fría no es que te los dé, es que te hace sentirte como si los tuvieras. Y eso es algo bueno, coño, es jodidamente bueno.</p>
 <p>Cada vez que me doy una ducha fría, me encuentro listo para cualquier reto.     </p>
-<p>¿Si me siento capaz de plantar cara a un rinoceronte como no voy a ser capaz de afrontar todo lo que me traiga el día? </p>
+<p>¿Si me siento capaz de derribar un rinoceronte como no voy a ser capaz de afrontar todo lo que me traiga el día? </p>
 <p class="highlight">
-Tú vida va a ser la misma, pero podrás influir sobre <b>como quieres sentirte.</b> <br/> Si sentirte como un Supermán dispuesto a comerse el mundo, o un looser incapaz de salir de su zona de Confort. 
+Tú vida va a ser la misma, pero podrás influir sobre <b>cómo quieres sentirte.</b> <br/> Si sentirte como un Supermán dispuesto a comerse el mundo, o un looser incapaz de salir de su zona de Confort. 
 </p>
 
 <p>Y dicho esto, vamos con los falsos mitos atribuidos a las duchas frías.</p>
@@ -547,65 +678,128 @@ Cuando hace frío se retraen para coger calor (ésta es una de las razones por l
 <p>No hay ningún estudio serio hecho en cuanto a la correlación de duchas frías y la testorena. Hay varios estudios de exposición al frío, pero la mayoría hechos en ratas, y además, dando los resultados contrarios: exposición al frío implica menores niveles de testosterona. </p>
 <p>Todas las fuentes que suelen afirmar que las duchas frías aumentan la testosterona citan un vago artículo del año 1993 del <em>Thrombosis Research Institute</em> de Inglaterra, cuyo artículo original no se puede encontrar. Y lo que es peor: no hay ningún artículo adicional que apoye la correlación entre testosterona y duchas frías.</p>
 <p>Además, una ducha fría puede aumentar tus niveles de cortisol, la hormona del estréss y, oh sorpresa, el enemigo #1 de la testosterona.</p>
-<p>MITO DETECTED</p>
+<p><strong>MITO DETECTED</strong></p>
 <p>Hablaremos un poco más de cortisol y testosterona en los beneficios de la testosterona.</p>
 <h2>Mito 2. Las duchas frías son buenas tras hacer ejercicio.</h2>
-<p>Totalmente falso</p>
-<p><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br></p>
-<p>Links:</p>
-<p>https://the-bodybuilding-blog.com/2016/04/06/12-health-and-fitness-benefits-of-cold-showers/
+<p>Varios peros.</p>
+<p>La ducha fría puede aliviar inflamaciones (por eso se recomienda para futbolistas o duchadores, para reducir las inflamaciones), tendones, etc.</p>
+<p>Pero para construir músculo resulta contraproducente, por ejemplo. Sobre todo si no dejas que te cuerpo se enfríe de manera natural.</p>
+<p>Se hizo un estudio con dos grupos. Unos tomaban duchas frías justo después acabar de hacer ejercicio, y el otro no. Se vió que los que tomaron las duchas frías tuvieron peores ganancias musculares, frente a los que se ducharon con agua caliente o dejaron enfriar su cuerpo de manera natural.</p>
+<p>A la hora de recuperarse, incluso también parece que la exposición al agua fría retrasa la recuperación muscular.</p>
+<p>Yo ya no me ducho con agua fría después de entrenar. Me ducho con agua caliente (que también tiene sus ventajas) y aprovecho para relajarme y disfrutar de una ducha caliente, que también tiene sus placeres.</p>
+<p>Lo malo es que se ha vendido mucho el mito de la ducha fría tras el ejercicio, y como no lleves cuidado con el 'protocolo' puede ser hasta contraproducente.</p>
+<p>Las inmersiones en agua helada lo mismo: se hizo otro estudio y los grupos que no hicieron inmersiones en agua helada tras el ejercicio registraron mayores ganancias de músculo y fuerza.</p>
+<h2>Mito 3. Ayuda a dormir.</h2>
+<p>Este siempre me pareció algo sospechoso.</p>
+<p>Toma una ducha fría.</p>
+<p>El momento en el que sales no es que te sientas en un estado de chill out, nirvana y relajación.</p>
+<p>No. En el momento en el que sales te sientes con ganas de pegarte contra un triceratops, hacer un triatlon y boxear contra Mike Tyson. Todo a la vez.</p>
+<p>Tu cuerpo se pone alerta, tu sangre recorre todo tu cuerpo y justo lo contrario, te sientes despierto.</p>
+<p>Energizado.</p>
+<p>Yo he tomado las duchas frías cuando estaba agotado para poder seguir trabajando un poco más (me he dado cuenta que me ocurre como con el gimnasio: contraintuitivamente ambos me 'aportan' energía en vez de quitármela).</p>
+<p>Si hablamos de ciencia, la ducha fría activa el sistema simpático, libera norepinefrina (también conocida como Noradrenalina) y empieza a activar varios sistemas:</p>
+<ul>
+<li>El corazón late más rápido para que los músculos estén listos para actuar maś rápido y para calentar el cuerpo.</li>
+<li>El hígado y el páncreas empieza a crear maś glucosa para poder enfrentarse a la 'amenaza'. </li>
+<li>Las venas se encogen (vasoconstricción)</li>
+<li>Los músculos incrementan su consumo de glucosa (nuevamente para tener más energía)</li>
+<li>La grasa marrón es activada, para producir más calor.</li>
+</ul>
+<p>Como dice el artículo de donde he sacado esto... ¿De verdad quieres toda esta mierda antes de irte a dormir?</p>
+<p>De este mito, en parte tiene la culpa el amigo Tim Ferris. Mezclaba melatonina y duchas frías antes de dormir. Y claro que dormía bien. Pero por la puta melatonina!</p>
+<p>Por eso, para dormir, mucho mejor un baño de agua caliente. Efecto relajante =&gt; mejor sueño. Punto</p>
+<h2>3 Beneficios reales de la ducha fría.</h2>
+<p>Bueno y tras haberle dado caño a los mitos vamos con los beneficios reales</p>
+<h2>Beneficio 1. Fortalece el sistema inmune</h2>
+<p>El sistema inmune es el que se encarga de proteger tu organismo.</p>
+<p>Es el FBI de tu cuerpo para erradicar amenazas. </p>
+<p>¿Recuerdas cuando te conté que me bañé resfriado y que fui mejorando a lo largo del día? </p>
+<p>Yo sabía que algo así se podía producir, quizá por este punto o por el siguiente. Pero una cosa es clara: una ducha fría activa el organismo. Lo pone en estado de alerta para luchar contra la amenaza en cuestión.</p>
+<p>De cualquier manera, toma este punto con precaución.</p>
+<p>Una ducha fría genera estrés en tu cuerpo. Y tu cuerpo se defenderá hacia ello por norma general.</p>
+<p>Pero no sometas a tu cuerpo a un estrés que no pueda manejar. Si estás muy estressado, muy muy muy hecho polvo, o en alguna situación muy límite, no acabes de machacar a tu cuerpo bajo una ducha fría.</p>
+<p>Un poco de estrés a tu cuerpo le va bien (en eso se basa en el entrenamiento), pero no vayas muy lejos a podrías 'romper motores' (aquí el simil  sería el sobreentrenamiento).</p>
+<p>Y déjame contarte algo más sobre las duchas frías.</p>
+<p>Una vez leí que una ducha fría es una buena manera de calentarse. </p>
+<p>Y es cierto, al salir tu cuerpo esta bombeando sangre para superar el shock térmico.</p>
+<p>Posiblemente nadie me crea, pero paso más frío al salir de una ducha de agua caliente que de una fría.</p>
+<p>Antes de entrar en la ducha puedes sentirte aletargado y con baja energía, pero al salir... al salir eres una bola de fuego.</p>
+<p>Lo cual nos lleva al siguiente punto...</p>
+<h2>Beneficio 2. Activa el sistema simpático</h2>
+<p>Al sistema simpático se le denomina también como el de 'pelear o correr'.</p>
+<p>Muchas veces pienso en nuestros antepasados. En el hombre del peleolítico.</p>
+<p>En cuando salíamos a cazar mamuts, eramos nómadas, y cada día había que hacer lo que fuera necesario para sobrevivir.</p>
+<p>Nuestro cuerpo está diseñado para ese tipo de cosas.</p>
+<p>Ahora pasamos horas y horas delante del ordenador, la persona común no suele hacer mucho ejercicio y somos sedentarios.</p>
+<p>Esa es una de las razones por las que hago pesas. Y no hablo de hacer bíceps. Hablo de ejercicios compuestos y pesados. Sentadillas, peso muerto, dominadas, press de banca...</p>
+<p>Y lo mismo encuentro en las duchas frías.</p>
+<p>La sensación de salir de una totalmente despierto, alerta, y con una energía revitalizada... deberías probar esa mierda alguna vez, amigo.</p>
+<p>Es esta activación del sistema simpático, también por lo que se ha sugerido que las duchas frías pueden ayudar a la depresión.</p>
+<p>Sin entrar a discutir sobre si esto es mito uno, una cosa esta clara. Mejora tu humor.</p>
+<p>Y no sólo eso, si no que te das cuenta de lo poderoso que es tu cuerpo. De las cosas que puedes hacer si te lo propones. Del desconfort que puedes soportar y aún así, seguir adelante.</p>
+<p>De lo importante que es para tu cuerpo, moverse, hacer cosas, exponerse a retos...</p>
+<p>Y eso nos conduce directamente a...</p>
+<p><a name="epicfinal"></a></p>
+<h2>Beneficio 3. El por qué ducharse con agua fría</h2>
+<p>Te daré una lista de motivos, recopilando todo:</p>
+<ul>
+<li>Fortalece tu voluntad</li>
+<li>Incremente tu energía</li>
+<li>Aumenta tu autoestima (joder, que puto tío más duro soy, si puedo aguantar esto, qué no voy a ser capaz de hacer <em>ahí fuera</em>)</li>
+<li>Mejora tu humor (te pone en actitud <em>motherfucker</em>: 'vamos hijos de perra, estoy listo para que vengáis a por mi y destrozaros uno a uno)</li>
+<li>Incremente tu estado de <em>despierto</em> y <em>consciencia</em></li>
+<li>Te impulsa a seguir con los retos del día a día</li>
+</ul>
+<p>Aquí hablamos de mucho más que una ducha fría.</p>
+<p>Hablamos de construir voluntad. Fortaza. Resiliencia.</p>
+<p>Hablamos de ser conscientes de que podemos <strong>cambiar nuestro estado</strong> mediante mecanismos como la ducha fría o una jornada de duro ejercicio.</p>
+<p>Hablamos de superar bloqueos, fracasos y caídas. De levantarse de nuevo.</p>
+<h2>Charla Tedx sobre las duchas frías</h2>
+<p>Está en inglés pero puedes activar los subtítulos (en inglés o usar la traducción de youtube, que no es perfecta pero es algo)</p>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gb0h8ZKvJW4?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<p>El tipo dice algo realmente interesante.</p>
+<p>Quería empezar su propio negocio. Pero él se decía a sí mismo: 'no tengo las habilidades, los contactos, ni el dinero para hacer algo así'.</p>
+<p>Hasta que un amigo de un amigo, un emprendedor de éxito, le dijo: 'todo eso es mentira. <strong>Ya sabes lo que tienes que hacer.</strong> Lo que temes es enfrentarte al desconfort. Dáte duchas frías durante 30 días y todo irá bien'.</p>
+<p class="highlight">
+Es normal. <br/>
+Es fácil. <br/>
+<b>
+Es lo que la mayor parte de la gente hace
+</b>. <br/> Es casi la opción por defecto
+</p>
+
+<p>Y continúa diciendo:</p>
+<p class="highlight">
+Ahora, cada vez que me enfrento a un reto, tomo duchas frías. 
+</p>
+
+<p><em>Cuando dejé mi trabajo, tomé duchas frías</em>
+<em>Cuando corrí mi primer triatlon, tomé duchas frías</em>
+<em>Cuando empecé mi propio negocio, tomé duchas frías</em></p>
+<p><em>¿Si no soy capaz de mantener 5 minutos de desconfort en una ducha fría, como voy a enfrentarme luego al desconfort de algo que luego puede traerme beneficios mucho mayores</em></p>
+<p class="highlight">
+Y eso, amigo, es la vida.
+</p>
+
+<p>Si no estás dispuesto a salirte de la masa, si no estás dispuesto a dejar de tomar las opciones fáciles, si no estás dispuesto a hacer cosas que el resto de la gente normal no hace ¿cómo esperas a lograr algo más allá de lo que <em>la gente normal</em> &nbsp; logra?</p>
+<p class="high">
+Si quieres lograr lo que sólo el 1% de gente consigue, tendrás que estar dispuesto a hacer las cosas que el 99% de gente no hace.
+</p>
+
+<p>Esta es tu vida. Tus decisiones. Tus retos.</p>
+<p>Adelante.<br />
+<strong>Toma duchas frías.</strong> <br />
+Aunque solo sea por si acaso.</p>
+<!--
+<div>
+Links:
+
 http://www.thebroscientist.com/5-real-scientific-benefits-cold-showers/
 http://www.thebroscientist.com/wim-hof-breathing-technique-method-legit-scientific-critical-review/
+https://the-bodybuilding-blog.com/2016/04/06/12-health-and-fitness-benefits-of-cold-showers/
 http://jackednatural.com/7-hacks-to-boost-your-testosterone-by-462-naturally/
 http://www.elhombresuperior.com/7-beneficios-de-ducharse-con-agua-fria-y-como-hacerlo/
 https://ask.metafilter.com/244006/Ice-baths-testosterone-boost#3543463
@@ -613,22 +807,16 @@ http://www.evolvetowin.com/natural-selection/benefits-cold-showers/
 http://coachmikeblogs.com/consider-the-cold-shower/
 https://www.anabolicmen.com/cold-showers-testosterone/
 https://www.drelist.com/cold-showers-testosterone-levels/
-https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-water-for-health-and-vitality/</p>
-<ul>
-<li>Testosterona</li>
-<li>Músculos</li>
-<li>
-<p>Depresión</p>
-</li>
-<li>
-<p>Voluntad &amp; Resiliencia</p>
-</li>
-<li>Energía</li>
-<li>Sistema Inmune y Linfático</li>
-</ul>
+https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-water-for-health-and-vitality/
 
-              <div>
-              <style>
+https://www.lifeder.com/beneficios-ducharse-agua-fria/
+https://www.vitonica.com/entrenamiento/si-quieres-aumentar-tu-fuerza-y-tu-masa-muscular-no-te-metas-en-agua-fria-despues-de-entrenar
+</div>
+
+-->
+
+                <div>
+                <style>
     .optinwrapper2{
       text-align:center;
       padding:20px;
@@ -662,9 +850,9 @@ https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-w
       margin: auto;
     }
     input.rocksubmit.button-primary{
-      border-top: 3px #de1b1b solid;
-      background-color:#de1b1b;
-      border-color:#de1b1b;
+      border-top: 3px #ff5555 solid;
+      background-color:#ff5555;
+      border-color:#ff5555;
     }
     .widthlimiter2 {
       width: 90%;
@@ -672,10 +860,6 @@ https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-w
     }
     .thesticky2 h4{
       padding-top:30px;
-    }
-    .myred {
-      font-family: Montserrat;
-      color: #de1b1b;
     }
 </style>
 
@@ -689,7 +873,7 @@ https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-w
 
                   <div class="widthlimiter2">
                         <p style="font-size:17px;text-align:center; margin-top:10px; font-weight:500; color:#d7d7d7">
-                        Recibe los artículos más auténticos que escribo para ti y <span style="font-weight:bold; color: #de1b1b">empieza a mover el culo</span>
+                        Recibe los artículos más auténticos que escribo para ti y <span style="font-weight:bold; color: #ff5555">empieza a mover el culo</span>
                         </p>
 
                     <form class="optinform2"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/ue0pj0hhqj" method="post">
@@ -714,9 +898,9 @@ https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-w
           </div>
 
 
-              </div>
+                </div>
 
-              <style>
+                <style>
 </style>
 
               <div class="relatedposts">
@@ -726,36 +910,18 @@ https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-w
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="como-hablar-claro-directo-y-relajado.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/lionroaring.jpg" alt="">
-                            <h6> Cómo Hablar Claro Directo Y Relajado </h6>
+                          <a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/empezarblog.jpg" alt="">
+                            <h6> Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto </h6>
                           </a>
                         </div>
                       </li>
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../life/resumen-de-la-quedada-blogger3cero-y-vivirdetupasion.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/quedada.jpg" alt="">
-                            <h6> Resumen de la quedada Blogger3cero y Vivirdetupasion </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="../life/el-dia-que-deje-mi-trabajo-con-solo-6000-euros-en-mi-cuenta.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/eldiaquedejemitrabajo.jpg" alt="">
-                            <h6> El Día Que Dejé Mi Trabajo Con Sólo 6000 € En Mi Cuenta </h6>
-                          </a>
-                        </div>
-                      </li>
-                  
-                      <li>
-                        <div class="relatedthumb">
-                          <a href="como-vencer-cualquier-miedo.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/bestiaMiedo_opt.jpg" alt="">
-                            <h6> Cómo vencer cualquier miedo </h6>
+                          <a href="../sex-and-girls/como-hacer-squirting-a-una-mujer.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/squirting.jpg" alt="">
+                            <h6> Cómo hacer squirting a una mujer </h6>
                           </a>
                         </div>
                       </li>
@@ -771,9 +937,27 @@ https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-w
                   
                       <li>
                         <div class="relatedthumb">
-                          <a href="../sex-and-girls/como-hacer-el-amor-realmente-bien-a-una-mujer.html">
-                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/makinglove.jpg" alt="">
-                            <h6> Cómo hacer el amor, REALMENTE BIEN, a una mujer </h6>
+                          <a href="../podcast/como-crear-tu-infoproducto.-entrevista-a-jorge-jimenez.-podcast-03.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/jorgejimenez.jpg" alt="">
+                            <h6> Cómo crear tu infoproducto. Entrevista a Jorge Jiménez. Podcast #03 </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="../life/el-dia-que-deje-mi-trabajo-con-solo-6000-euros-en-mi-cuenta.html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/eldiaquedejemitrabajo.jpg" alt="">
+                            <h6> El Día Que Dejé Mi Trabajo Con Sólo 6000 € En Mi Cuenta </h6>
+                          </a>
+                        </div>
+                      </li>
+                  
+                      <li>
+                        <div class="relatedthumb">
+                          <a href="dos-preguntas-para-tus-proyectos-(volvere).html">
+                            <img class="related-post-thumbnail" src="../static/images/posts/thumbnails/T23D.jpg" alt="">
+                            <h6> Dos preguntas para tus proyectos (Volveré) </h6>
                           </a>
                         </div>
                       </li>
@@ -784,8 +968,8 @@ https://www.artofmanliness.com/2010/01/18/the-james-bond-shower-a-shot-of-cold-w
 
 
 
-              
                 
+                  
 <style>
 .header_wrapper_comment, .header_wrapper_comment > div{
   float:left;
@@ -850,7 +1034,7 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 
-                
+                  
 <script asyn src="../static/js/notification-bar/js/jquery.peekabar.min.js"></script>
 <script asyn src="../static/js/social/javascripts/socialShare.js"></script>
 
@@ -864,10 +1048,10 @@ function loadNotificationBar() {
 
     var bar = new $.peekABar({
         position: 'bottom',
-        backgroundColor: '#0e0e0e'
+        backgroundColor: '#161616',
     });
     bar.show({
-      html: '<span style="color:#f7f7f7;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H <span class="bullet"></span> ',
+      html: '<span style="color:#c9c9c9;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H <span class="bullet"></span> ',
     });
 
 		$('.peek-a-bar').socialShare({
@@ -882,546 +1066,12 @@ function loadNotificationBar() {
 
 
 
-              
+                
 
-
-
-
-            </div>
-            <div class="col-md-4" style="">
-              <h4>Mi desafío</h4>
-              <script src="../static/js/jquery.countdown.min.js"></script>
- <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-
-<style>
-
-.main-example {
-  margin: 0 auto;
-  width: 355px;
-  text-align:center;
-}
-.main-example .countdown-container {
-  height: 130px;
-}
-.main-example .time {
-  border-radius: 5px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  height: 95px;
-  width: 65px;
-
-  -webkit-perspective: 479px;
-  -moz-perspective: 479px;
-  -ms-perspective: 479px;
-  -o-perspective: 479px;
-  perspective: 479px;
-
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-.main-example .count {
-  background: #202020;
-  color: #f8f8f8;
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  line-height: 2.4em;
-  overflow: hidden;
-  position: absolute;
-  text-align: center;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  top: 0;
-  width: 100%;
-
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-
-  -webkit-transform-style: flat;
-  -moz-transform-style: flat;
-  -ms-transform-style: flat;
-  -o-transform-style: flat;
-  transform-style: flat;
-}
-.main-example .count.top {
-  border-top: 1px solid rgba(255,255,255,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  border-radius: 5px 5px 0 0;
-  height: 50%;
-
-  -webkit-transform-origin: 50% 100%;
-  -moz-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  -o-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-}
-.main-example .count.bottom {
-  background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
-  background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-radius: 0 0 5px 5px;
-  line-height: 0;
-  height: 50%;
-  top: 50%;
-
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  -ms-transform-origin: 50% 0;
-  -o-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-}
-.main-example .count.next {
-}
-.main-example .label {
-  font-size: normal;
-  margin-top: 5px;
-  display: block;
-  position: absolute;
-  top: 95px;
-  width: 100%;
-}
-/* Animation start */
-.main-example .count.curr.top {
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  z-index: 3;
-}
-.main-example .count.next.bottom {
-  -webkit-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
-  -ms-transform: rotateX(90deg);
-  -o-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  z-index: 2;
-}
-/* Animation end */
-.main-example .flip .count.curr.top {
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  -ms-transform: rotateX(-90deg);
-  -o-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-}
-.main-example .flip .count.next.bottom {
-  -webkit-transition: all 250ms ease-in-out 250ms;
-  -moz-transition: all 250ms ease-in-out 250ms;
-  -ms-transition: all 250ms ease-in-out 250ms;
-  -o-transition: all 250ms ease-in-out 250ms;
-  transition: all 250ms ease-in-out 250ms;
-
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-@media screen and (max-width: 48em) {
-  .main-example {
-    width: 100%;
-  }
-  .main-example .countdown-container {
-    height: 100px;
-  }
-  .main-example .time {
-      height: 70px;
-
-      width: 48px;
-  }
-  .main-example .count {
-    font-size: 1.5em;
-    line-height: 67px;
-  }
-  .main-example .label {
-    font-size: 0.8em;
-    top: 72px;
-  }
-}
-
-
-</style>
-
-<a href="../reto.html" style="text-decoration:none">
-<div class="main-example">
-  <p style="margin-top:15px; text-decoration:underline">
-  Deadline para Monetizar blog <br/>(1 de Junio de 2018)
-  </p>
-  <div class="countdown-container" id="main-example"></div>
-</div>
-</a>
-          
-<script type="text/template" id="main-example-template">
-<div class="time <%= label %>">
-  <span class="count curr top"><%= curr %></span>
-  <span class="count next top"><%= next %></span>
-  <span class="count next bottom"><%= next %></span>
-  <span class="count curr bottom"><%= curr %></span>
-  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
-</div>
-</script>
-<script type="text/javascript">
-  $(window).on('load', function() {
-    var labels = ['Semanas', 'Días', 'Horas', 'Minutos', 'Segundos'],
-      nextYear = (new Date().getFullYear()) + '/06/01',
-      template = _.template($('#main-example-template').html()),
-      currDate = '00:00:00:00:00',
-      nextDate = '00:00:00:00:00',
-      parser = /([0-9]{2})/gi,
-      $example = $('#main-example');
-    // Parse countdown string to an object
-    function strfobj(str) {
-      var parsed = str.match(parser),
-        obj = {};
-      labels.forEach(function(label, i) {
-        obj[label] = parsed[i]
-      });
-      return obj;
-    }
-    // Return the time components that diffs
-    function diff(obj1, obj2) {
-      var diff = [];
-      labels.forEach(function(key) {
-        if (obj1[key] !== obj2[key]) {
-          diff.push(key);
-        }
-      });
-      return diff;
-    }
-    // Build the layout
-    var initData = strfobj(currDate);
-    labels.forEach(function(label, i) {
-      $example.append(template({
-        curr: initData[label],
-        next: initData[label],
-        label: label
-      }));
-    });
-    // Starts the countdown
-    $example.countdown(nextYear, function(event) {
-      var newDate = event.strftime('%w:%d:%H:%M:%S'),
-        data;
-      if (newDate !== nextDate) {
-        currDate = nextDate;
-        nextDate = newDate;
-        // Setup the data
-        data = {
-          'curr': strfobj(currDate),
-          'next': strfobj(nextDate)
-        };
-        // Apply the new values to each node that changed
-        diff(data.curr, data.next).forEach(function(label) {
-          var selector = '.%s'.replace(/%s/, label),
-              $node = $example.find(selector);
-          // Update the node
-          $node.removeClass('flip');
-          $node.find('.curr').text(data.curr[label]);
-          $node.find('.next').text(data.next[label]);
-          // Wait for a repaint to then flip
-          _.delay(function($node) {
-            $node.addClass('flip');
-          }, 50, $node);
-        });
-      }
-    });
-  });
-</script>
-
-              <br/>
-              <style>
-    .optinwrapper{
-      text-align:center;
-      padding:20px;
-      padding-bottom: 40px;
-      border: 1px solid #ccc;
-      background-color: #222;
-      color:white;
-    }
-    @media screen and (max-width: 991px) {
-      .optinwrapper{
-        display: none;
-      }
-    }
-    .optinwrapper p{
-      font-size:18px;
-    }
-    .anotherwrapper{
-      max-width:320px;
-      width:100%;
-      margin: auto;
-      margin-right: 0px;
-      padding-bottom:40px;
-    }
-    .anotherwrapper h2{
-      text-transform: uppercase;
-    }
-    .optinform input{
-      height: 45px;
-      width: 100%;
-      max-width:255px;
-      border-radius:2px;
-      color: #111;
-    }
-    .optinform {
-      margin: auto;
-    }
-    input.rocksubmit.button-primary{
-      background-color:#de1b1b;
-      border-color:#de1b1b;
-    }
-    .widthlimiter {
-      width: 100%;
-      max-width:250px;
-      margin: auto;
-    }
-    .thesticky h4{
-      padding-top:30px;
-    }
-</style>
-
-              <div class="anotherwrapper" style="">
-                <div class="thesticky">
-                <div class="optinwrapper myshadow">
-
-                  <h2 style="color:#eee; font-size:24px; max-width:100%; font-weight:800; margin-top:0;line-height:32px; padding-bottom:15px">
-                    ¿Cómo quieres pasar por este planeta?
-                  </h2>
-
-                  <div class="widthlimiter">
-                        <p style="font-size:17px;text-align:center; font-weight:500; font-family:Lato; color:#d7d7d7">
-                        <b class="myred">ES HORA DE HACER ALGO CON TU VIDA </b><br/>
-                        <span style="font-family:'Lato'">
-                          Únete a la banda, mantente motivado y concentrado y vive como nunca.
-                        </span>
-                        </p>
-
-                    <form class="optinform"enctype="application/x-www-form-urlencoded" action="https://mejorhombre.ip-zone.com/ccm/subscribe/index/form/ue0pj0hhqj" method="post">
-                      <input type="hidden" name="groups[]" value="1"></dd>
-                      <input type="text" placeholder="Nombre" iname="name" id="name" value=""></dd>
-                      <input type="text" placeholder="Tu mejor email" name="email" id="email" value=""></dd>
-                      <input class="rocksubmit button-primary" type="submit" name="submit" id="submit" value="APÚNTAME A LA BANDA"></dd>
-                      <dt id="successUrl-label"> </dt>
-                      <dd id="successUrl-element">
-                      <input type="hidden" name="successUrl" value="http://mejorhombre.com/revisa-tu-correo" id="successUrl"></dd>
-                      <dt id="errorUrl-label"> </dt>
-                      <dd id="errorUrl-element">
-                      <input type="hidden" name="errorUrl" value="http://mejorhombre.com/ops_suscription" id="errorUrl"></dd>
-                      <dt id="confirmationUrl-label"> </dt>
-                      <dd id="confirmationUrl-element">
-                      <input type="hidden" name="confirmationUrl" value="http://mejorhombre.com/bienvenido" id="confirmationUrl"></dd>
-                  </form>
-
-                  </div>
-                </div>
-            </div> <!-- end thesticky-->
-          </div>
-<script>
-  $(document).ready(function(){
-    /*
-    $(".thesticky").sticky({topSpacing:20, bottomSpacing:500});
-    */
-  });
-</script>
-
-              <style>
-    .triangle {
-      content: "";
-      width: 0;
-      height: 0;
-      border-top: 5px solid transparent;
-      border-left: 18px solid black;
-      border-bottom: 5px solid transparent;
-      padding:0;
-      display:inline-block;
-      padding-right: 12px;
-      float: left;
-    }
-    .categories{
-      font-size:15px;
-      padding-top:10px;
-      padding-bottom:30px;
-    }
-    .categories > a{
-      padding-bottom:25px;
-    }
-    .categories  ul {
-      margin-bottom: 10px;
-      margin-top: 4px;
-    }
-    .categories  ul span{
-      display: block;
-      margin-top: 6px;
-    }
-    .categories  ul a{
-    }
-    .categories  ul span::before{
-      content: '\00BB \00A0' !important;
-      color: black;
-      text-decoration:none;
-    }
-    .foo {
-      display: inline-block;
-      float:left;
-      padding-top: 4px;
-      padding-right: 2px;
-    }
-    .pullright{
-    }
-</style>
-
-
-
-      <h4>Categorías</h4>
-           <!--this use  http://github.com/danielstocks/jQuery-Collapse/ plugin:-->
-          <div class="categories" style="padding-left:20px">
-            
-              <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/life.html">Life</a>
-                <div class="foo"><span class="triangle"></span></div>
-                <ul>
-                  
-                  <span><a href="../life/resumen-de-la-quedada-blogger3cero-y-vivirdetupasion.html">Resumen de la quedada Blogger3cero y Vivirdetupasion</a></span>
-                  
-                  <span><a href="../life/el-dia-que-deje-mi-trabajo-con-solo-6000-euros-en-mi-cuenta.html">El Día Que Dejé Mi Trabajo Con Sólo 6000 € En Mi Cuenta</a></span>
-                  
-                  <span><a href="../life/como-resolver-tus-problemas-como-alejandro-magno.html">Cómo resolver tus problemas como Alejandro Magno</a></span>
-                  
-                  <span><a href="../life/la-gran-mentira-del-desarrollo-personal-y-el-por-que-te-la-crees.html">La Gran Mentira Del Desarrollo Personal Y El Por Qué Te La Crees</a></span>
-                  
-                </ul>
               </div>
-            
-              <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/superpoderes.html">Superpoderes</a>
-                <div class="foo"><span class="triangle"></span></div>
-                <ul>
-                  
-                  <span><a href="como-vencer-cualquier-miedo.html">Cómo vencer cualquier miedo</a></span>
-                  
-                  <span><a href="como-hablar-claro-directo-y-relajado.html">Cómo Hablar Claro Directo Y Relajado</a></span>
-                  
-                  <span><a href="¿hasta-los-cojones-de-todo%3F-cambia-tu-vida-levantandote-a-las-5.html">¿Hasta Los Cojones De Todo? Cambia Tu Vida Levantándote a Las 5</a></span>
-                  
-                  <span><a href="lenguaje-corporal-alfa---aumenta-tu-testosterona.html">Lenguaje Corporal Alfa - Aumenta Tu Testosterona</a></span>
-                  
-                  <span><a href="guia-definitiva-sobre-duchas-frias.html">Guía Definitiva Sobre Duchas Frías</a></span>
-                  
-                  <span><a href="./ducharse-con-agua-fria:-3-falsos-mitos-y-3-beneficios-reales.html">Ducharse con Agua Fría: 3 Falsos Mitos y 3 Beneficios Reales</a></span>
-                  
-                </ul>
-              </div>
-            
-              <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/blogging.html">Blogging Y Negocios Digitales</a>
-                <div class="foo"><span class="triangle"></span></div>
-                <ul>
-                  
-                  <span><a href="../blogging/haciendo-pasta-en-3-meses.-hora-de-matar-a-la-bestia.html">Haciendo Pasta en 3 meses (Hora de Matar a la Bestia)</a></span>
-                  
-                  <span><a href="../blogging/mishell.html">Mishell</a></span>
-                  
-                  <span><a href="../blogging/entrevista-a-dean-romero.html">Entrevista a Dean Romero</a></span>
-                  
-                  <span><a href="../blogging/deja-de-leer-consejos-sobre-como-abrir-un-blog-y-lee-esto.html">Deja De Leer Consejos Sobre Cómo Abrir Un Blog Y Lee Esto</a></span>
-                  
-                </ul>
-              </div>
-            
-              <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/sex-and-girls.html">Sex And Girls</a>
-                <div class="foo"><span class="triangle"></span></div>
-                <ul>
-                  
-                  <span><a href="../sex-and-girls/como-hacer-squirting-a-una-mujer.html">Cómo hacer squirting a una mujer</a></span>
-                  
-                  <span><a href="../sex-and-girls/como-hackear-tu-cerebro-para-obtener-lo-que-es-tuyo.html">Cómo hackear tu cerebro para obtener lo que es tuyo</a></span>
-                  
-                  <span><a href="../sex-and-girls/como-hacer-el-amor-realmente-bien-a-una-mujer.html">Cómo hacer el amor, REALMENTE BIEN, a una mujer</a></span>
-                  
-                  <span><a href="../sex-and-girls/¿quieres-poder-hablar-con-cualquier-desconocida%3F-lee-esto..html">¿Quieres Poder Hablar Con Cualquier Desconocida? Lee Esto.</a></span>
-                  
-                  <span><a href="../sex-and-girls/como-vencer-la-ansiedad-sexual.html">Cómo Vencer La Ansiedad Sexual</a></span>
-                  
-                  <span><a href="../sex-and-girls/como-superar-una-ruptura.html">Cómo Superar Una Ruptura</a></span>
-                  
-                </ul>
-              </div>
-            
-              <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/podcast.html">Podcasts</a>
-                <div class="foo"><span class="triangle"></span></div>
-                <ul>
-                  
-                  <span><a href="../podcast/un-trozo-de-mi-alma.-por-que-escribo-como-escribo.html">Un trozo de mi alma. Por qué escribo como escribo</a></span>
-                  
-                </ul>
-              </div>
-            
-              <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/motivacion.html">Motivación</a>
-                <div class="foo"><span class="triangle"></span></div>
-                <ul>
-                  
-                  <span><a href="../motivacion/la-mujer-de-63-anos-que-levanto-un-coche-(y-lo-que-le-ocurrio-luego).html">La mujer de 63 años que levantó un coche (y lo que le ocurrió luego)</a></span>
-                  
-                  <span><a href="../motivacion/un-mensaje-para-vosotros-perdedores.html">Un mensaje para vosotros, Perdedores</a></span>
-                  
-                  <span><a href="../motivacion/mata-a-la-bestia-o-muere-intentandolo.html">Mata A La Bestia O Muere Intentándolo</a></span>
-                  
-                  <span><a href="../motivacion/que-hacer-cuando-estas-deprimido.html">Qué Hacer Cuando Estás Deprimido</a></span>
-                  
-                </ul>
-              </div>
-            
-              <div style="padding-bottom:10px">
-                <a class="pullright" href="../category/fitness.html">Fitness</a>
-                <div class="foo"><span class="triangle"></span></div>
-                <ul>
-                  
-                  <span><a href="../fitness/¿deprimido%3F-hora-de-levantar-pesas.html">¿Deprimido? Hora De Levantar Pesas</a></span>
-                  
-                </ul>
-              </div>
-            
-          </div>
 
-<script>
-  $(document).ready(function(){
-      new jQueryCollapse($(".categories"), {
-        query: '.foo'
-      });
-  });
-</script>
+
+
 
             </div>
           </div>
