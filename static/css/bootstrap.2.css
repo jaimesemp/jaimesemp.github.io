@@ -1570,10 +1570,14 @@ input[type="submit"]:hover{
   color: #f9f9f9;
   background-color: #1b1b1b;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
-  -moz-box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
-  box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);
+  /*-webkit-box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);*/
+  /*-moz-box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);*/
+  /*box-shadow: 0px 2px 10px 1px rgba(60, 60, 60, 0.9);*/
   font-weight:bold;
+  margin-left:-2000px;
+  margin-right:-2000px;
+  padding-left:2000px;
+  padding-right:2000px;
 }
 .nomargin {
   padding: 15px;
@@ -1639,7 +1643,7 @@ a, button, input:focus, input[type="button"], input[type="reset"], input[type="s
 
 /***** BREAK POINTS *********/
   @media (max-width: 719px) {
-    p, li{
+    p {
       margin: 30px 0 20px 0;
       font-size: 17px;
     }
@@ -1647,7 +1651,8 @@ a, button, input:focus, input[type="button"], input[type="reset"], input[type="s
       margin-top:15px;
     }
     li{
-      margin: 20px 0 20px 0;
+      margin: 20px 0 20px 15px;
+      font-size: 17px;
     }
     .site-container {
         padding-left: 5% !important;

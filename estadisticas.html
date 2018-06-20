@@ -2961,17 +2961,20 @@ s.setAttribute('data-timestamp', +new Date());
 <script>
 
 	$(document).ready(function () {
-    window.setTimeout(loadNotificationBar, 2000);
+    window.setTimeout(loadNotificationBar, 16000);
 	});
 
 function loadNotificationBar() {
 
     var bar = new $.peekABar({
+        cssClass: 'peekabar',
+      
         position: 'bottom',
-        backgroundColor: '#161616',
+        backgroundColor: '#f9f9f9',
+        padding: '1.25em'
     });
     bar.show({
-      html: '<span style="color:#c9c9c9;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H <span class="bullet"></span> ',
+      html: '<span style="font-family:Oswald; color:#333;cursor:pointer;font-size:14px">&nbsp;¿Te gusta el post? Gana karma de <span class="myred">M</span>H <span class="bullet" style="background-position-y: 8px;"></span> ',
     });
 
 		$('.peek-a-bar').socialShare({
@@ -2983,6 +2986,16 @@ function loadNotificationBar() {
     $(".arthrefSocialShare .centered").html("<p style='color:black'>Gana karma!</p>" + a);
 }
 </script>
+
+<style>
+.peekabar{
+    border-top: 1px solid #ccc;
+    font-family: Oswald;
+    -webkit-box-shadow: -2px -1px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: -2px -1px 5px rgba(0,0,0,0.2);
+    box-shadow: -2px -1px 5px rgba(0,0,0, 0.2);
+}
+</style>
 
 
 

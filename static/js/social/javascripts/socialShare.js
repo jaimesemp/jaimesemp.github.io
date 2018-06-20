@@ -104,7 +104,7 @@ Designer URI: http://gokhunguneyhan.com
 
       function addCustomContent(){
         var previousContent = $(".arthrefSocialShare .centered").html();
-        var content = "<h4 style='color:white'>Compartir es una mierda.<br/>Pero estoy empezando y ayuda de cojones</h4> <p style='text-align:center; color:white;'>Si te gustó el post, difunde el mensaje. Gracias, tu molas"
+        var content = "<h3 style='text-align:center; color:white'>Compartir es una mierda.<br/>Pero ayuda de cojones</h3> <p style='text-align:center; color:white;'>Si te gustó el post, difunde el mensaje. Gracias, tú molas"
         $(".arthrefSocialShare .centered").html(content + previousContent);
       }
 
